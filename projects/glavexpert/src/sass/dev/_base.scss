@@ -1,0 +1,96 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+  background-color: $color-white;
+}
+
+body {
+  position: relative;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font: $font-normal 13px/1.5 $font-family;
+  font-weight: normal;
+  font-style: normal;
+  color: $font-color_dark;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-width: 980px;
+  min-height: 100%;
+}
+
+.container {
+  width: 980px;
+  margin: 0 auto;
+}
+
+a {
+  color: $font-color_dark;
+  text-decoration: none;
+  transition: color, .2s;
+  
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+h1 {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: $h1-size;
+  color: $color-gray-80;
+  font-family: $font-family_light;
+  font-weight: $font_light;
+}
+
+h2 {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: $h2-size;
+  color: $font-color_dark;
+  font-family: $font-family_bold;
+  font-weight: $font_normal;
+}
+
+h3 {
+  margin: 0;
+  margin-bottom: 15px;
+  font-family: $font-family_bold;
+  font-size: $font_default;
+  color: $font-color_dark;
+}
+
+.h1_small {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: $h1-size;
+  color: $color-gray-80;
+  font-family: $font-family_light;
+  font-weight: $font_light;
+}
+
+.h2_small {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: $font_large;
+  color: $font-color_dark;
+  font-weight: $font_normal;
+}
+
+.h3_small {
+  margin: 0;
+  margin-bottom: 15px;
+  font-family: $font-family_bold;
+  font-size: $font_default;
+  color: $font-color_dark;
+}

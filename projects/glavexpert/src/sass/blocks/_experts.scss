@@ -1,0 +1,95 @@
+.experts-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.experts-list__item {
+  width: 250px;
+  margin-right: 50px;
+  margin-bottom: 80px;
+
+  & img {
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 100%;
+    width: 90px;
+    height: 90px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
+
+.experts-list__title {
+  color: $font-color;
+}
+
+.experts-list__title + p {
+  margin-bottom: 10px;
+}
+
+.experts-list__dropdown {
+  margin-bottom: 10px;
+
+  & .dropdown-light {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  & .dropdown-light__text {
+    position: relative;
+    max-width: 250px;
+    width: 100%;
+    padding-right: 20px;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: initial;
+
+    &:after {
+      display: block;
+      position: absolute;
+      right: 6px;
+    }
+  }
+
+  & .dropdown-light__menu {
+    position: absolute;
+    top: 100%;
+    left: -20px;
+    z-index: 1;
+    display: none;
+    width: 100%;
+    max-width: 300px;
+    background: $color-white;
+    box-shadow: 0 0 20px 0 rgba(215, 215, 217, .8);
+  }
+
+  & .dropdown-light__list {
+    position: absolute;
+    top: 100%;
+    left: -20px;
+    z-index: 1;
+    display: none;
+    width: 100%;
+    max-width: 300px;
+    background: $color-white;
+    box-shadow: 0 0 20px 0 rgba(215, 215, 217, .8);
+    margin: 0;
+    padding: 8px 12px;
+    border: 1px solid $color-gray-30;
+    border-radius: 5px;
+    list-style: none;
+    text-align: left;
+  }
+
+  & .dropdown-light__list li {
+    display: block;
+    padding: 4px 0;
+    white-space: normal;
+    overflow: visible;
+    font-family: $font-family;
+  }
+}

@@ -1,0 +1,109 @@
+.brands {
+  max-width: 70px;
+  flex-basis: 70px;
+  border-right: 1px solid $color-gray-10;
+}
+
+.brands__inner {
+  max-width: 69px;
+}
+
+.brands-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.brands-list__item {
+  display: block;
+  width: 100%;
+  height: 66px;
+  border-bottom: 1px solid $color-gray-10;
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  text-align: center;
+  color: $color-gray-50;
+  padding-top: 12px;
+  font-size: 13px;
+  text-decoration: none;
+  transition: none;
+
+  &.item_1 {
+    background-image: url(../img/ford-gray@2x.png);
+  }
+
+  &.item_2 {
+    background-image: url(../img/kia-gray@2x.png);
+  }
+
+  &.item_3 {
+    background-image: url(../img/peugeot-gray@2x.png);
+  }
+
+  &.item_4 {
+    background-image: url(../img/ssangyong-gray@2x.png);
+  }
+
+  &.item_5 {
+    background-image: url(../img/fiat-pro-gray@2x.png);
+  }
+
+  &.item_6 {
+    background-image: url(../img/ford-trucks-gray@2x.png);
+  }
+
+  &.item_7 {
+    background-image: url(../img/man-gray@2x.png);
+  }
+
+  &.item_8 {
+    background-image: url(../img/peugeot-pro-gray@2x.png);
+  }
+}
+
+.brands-list__item:hover,
+.brands-list__item.item_active {
+  color: $color-red-50;
+
+  &.item_1 {
+    background-image: url(../img/ford@2x.png);
+  }
+
+  &.item_2 {
+    background-image: url(../img/kia@2x.png);
+  }
+
+  &.item_3 {
+    background-image: url(../img/peugeot@2x.png);
+  }
+
+  &.item_4 {
+    background-image: url(../img/ssangyong@2x.png);
+  }
+
+  &.item_5 {
+    background-image: url(../img/fiat-pro@2x.png);
+  }
+
+  &.item_6 {
+    background-image: url(../img/ford-trucks@2x.png);
+  }
+
+  &.item_7 {
+    background-image: url(../img/man@2x.png);
+  }
+
+  &.item_8 {
+    background-image: url(../img/peugeot-pro@2x.png);
+  }
+}
+
+@media (max-width: 1279px) {
+  .brands {
+    display: none;
+  }
+}

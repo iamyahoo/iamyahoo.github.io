@@ -1,0 +1,35 @@
+.column {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  & .column__item:nth-child(odd) {
+    margin-right: 50px;
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+
+  img {
+    margin-bottom: 10px;
+  }
+}
+
+.column__item {
+  margin-bottom: 30px;
+  width: 40%;
+  min-width: 290px;
+  max-width: 350px;
+}
+
+
+@media (max-width: 800px) {
+
+  .column {
+    flex-direction: column;
+  }
+
+  .column__item {
+  }
+}

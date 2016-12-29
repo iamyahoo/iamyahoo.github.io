@@ -1,0 +1,169 @@
+.tabs {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 100%;
+}
+
+.tabs__menu {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tabs__tab {
+  display: block;
+  position: relative;
+  z-index: 3;
+  cursor: pointer;
+  outline: 0;
+  text-decoration: none;
+}
+
+
+.tabs__caption {
+  display: flex;
+  flex-direction: row;
+}
+
+
+/* tabs on appartments page */
+.tabs-result {
+  max-width: 1920px;
+  min-width: 900px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+
+  & .tabs__caption {
+    padding: 10px 20px 0;
+    border: 1px solid $color-gray-20;
+    border-top: none;
+  }
+
+  & .tabs__menu {
+    margin-bottom: 20px;
+  }
+
+  & .tabs__menu-item {
+    margin-right: 30px;
+
+    &.ui-tabs-active {
+
+      & .tabs__tab {
+        color: $color-blue-50;
+      }
+
+      & .tab_plate {
+
+        &:before {
+          content: url('../img/svg/icon-plate_blue.svg');
+        }
+      }
+
+      & .tab_list {
+
+        &:before {
+          content: url('../img/svg/icon-list_blue.svg');
+        }
+      }
+    }
+  }
+
+  & .tabs__tab {
+    line-height: 40px;
+    color: $font-color;
+    padding-left: 35px;
+
+    &:before {
+      display: block;
+      position: absolute;
+      top: 2px;
+      left: 10px;
+      width: 16px;
+      height: 16px;
+    }
+
+    &:hover {
+      color: $color-blue-50;
+    }
+  }
+
+  & .tab_plate {
+
+    &:before {
+      content: url('../img/svg/icon-plate.svg');
+    }
+
+    &:hover:before {
+      content: url('../img/svg/icon-plate_blue.svg');
+    }
+  }
+
+  & .tab_list {
+
+    &:before {
+      content: url('../img/svg/icon-list.svg');
+    }
+
+    &:hover:before {
+      content: url('../img/svg/icon-list_blue.svg');
+    }
+  }
+}
+
+.tabs__content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1920px;
+  min-width: 900px;
+}
+
+.tabs__menu-item {
+  outline: 0;
+}
+
+@media (min-height: 800px) {
+
+  .tabs-promo {
+    & .tabs__item {
+      padding: 11% 150px 8%;
+    }
+  }
+}
+
+@media (min-height: 540px) {
+
+  .tabs-promo {
+    & .tabs__item {
+      padding: 9% 150px 5%;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+
+  .tabs-result {
+    min-width: 280px;
+    width: 100%;
+    max-width: 640px;
+
+    & .tabs__content {
+      min-width: 280px;
+      width: 100%;
+      max-width: 640px;
+    }
+
+    & .tabs__menu {
+      display: none;
+    }
+
+    & .tabs__caption {
+      padding-bottom: 10px;
+    }
+  }
+}

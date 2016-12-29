@@ -1,0 +1,6 @@
+.internet-explorer {
+
+  & .page {
+    min-height: calc(100vh - 84px - 62px); //100vh - header height - footer height
+  }
+}

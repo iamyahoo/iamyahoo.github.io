@@ -1,0 +1,43 @@
+.params {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+  min-height: 360px;
+  background-color: $color-blue-10;
+}
+
+.params__title {
+  margin-bottom: 10px;
+}
+
+.params__subtitle {
+  font-size: 21px;
+  line-height: 21px;
+  margin-bottom: 30px;
+}
+
+.params__desc {
+  display: none;
+  margin-top: 10px;
+  text-align: center;
+}
+
+
+@media (max-width: 640px) {
+
+  .params {
+    padding: 50px 25px;
+    min-height: 0;
+  }
+
+  .params__subtitle {
+    display: none;
+  }
+
+  .params__desc {
+    display: block;
+  }
+}

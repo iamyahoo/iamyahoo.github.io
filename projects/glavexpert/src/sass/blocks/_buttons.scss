@@ -1,0 +1,307 @@
+.btn {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  height: 32px;
+  padding: 5px 12px;
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $color-gray-40;
+  background-color: $color-white;
+  color: $font-color_dark;
+  font-family: $font-family_bold;
+  font-size: $font_default;
+  text-align: center;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+  outline: 0;
+  box-shadow: none;  
+
+  &:hover,
+  &:active,
+  &:focus {
+    outline: 0;
+    text-decoration: none;
+  }
+  
+  &:hover,
+  &:focus {
+    border-color: $color-gray-40;
+    background-color: $color-gray-10;
+  }
+  
+  &:active {
+    background-color: darken($color-gray-10, 5%);
+  }
+}
+
+.btn_disabled {
+  border-color: $color-gray-40;
+  background-color: $color-gray-10;
+  color: $color-gray-60;
+  cursor: default;
+
+  &:hover,
+  &:active,
+  &:focus {
+    border-color: $color-gray-40;
+    background-color: $color-gray-10;
+    color: $color-gray-60;
+  }
+}
+
+.btn_standart {
+  border-color: $color-blue-30;
+  background-color: $color-blue-30;
+  color: $color-white;
+
+  &:hover,
+  &:focus {
+    border-color: $color-blue-50;
+    background-color: $color-blue-50;
+  }
+
+  &:active {
+    border-color: darken($color-blue-50, 5%);
+    background-color: darken($color-blue-50, 5%);
+  }
+}
+
+.btn_blue {
+  border-color: $color-blue-40;
+  background-color: $color-blue-40;
+  color: $color-white;
+
+  &:hover,
+  &:focus {
+    border-color: darken($color-blue-40, 5%);
+    background-color: darken($color-blue-40, 5%);
+  }
+
+  &:active {
+    border-color: darken($color-blue-40, 10%);
+    background-color: darken($color-blue-40, 10%);
+  }
+}
+
+.btn_cancel {
+  border-color: transparent;
+  background-color: transparent;
+  color: $font-color_dark;
+
+  &:hover,
+  &:active,
+  &:focus {
+    border-color: transparent;
+    background-color: transparent;
+  }
+
+  &:hover,
+  &:focus {
+    color: $color-blue-50;
+  }
+
+  &:active {
+    color: $color-blue-80;
+  }
+}
+
+.btn_create {
+  @extend .btn_standart;
+
+  & .fa {
+    padding-right: 10px;
+    font-size: 17px;
+    vertical-align: middle;
+  }
+}
+
+.btn_edit {
+  @extend .btn;
+  padding: 4px 12px;
+
+  &:before {
+    content: url(../img/icon_pen.png);
+    padding-right: 8px;
+    font-size: 17px;
+    vertical-align: middle;
+  }
+}
+
+.btn_file {
+  @extend .btn;
+  padding: 4px 12px;
+
+  &:before {
+    content: '\f016';
+    font-family: 'FontAwesome';
+    padding-right: 8px;
+    font-size: 14px;
+    vertical-align: middle;
+  }
+}
+
+.btn_big {
+  padding: 6px 45px;
+}
+
+.btn_attach {
+  position: relative;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  outline: 0;
+  color: $color-blue-30;
+  font-family: $font-family_bold;
+  overflow: hidden;
+  cursor: pointer;
+  
+  &:hover {
+    color: $color-blue-50;
+  }
+
+  &:before {
+    content: '\f0c6';
+    position: relative;
+    top: 1px;
+    margin-right: 8px;
+    font-family: 'FontAwesome';
+    font-size: 16px;
+  }
+
+  & > input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  &.btn_disabled > input[type=file] {
+    display: none;
+  }
+}
+
+.btn_upload {
+  overflow: hidden;
+
+  & > input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    width: auto;
+    height: auto;
+    font-size: 100px;
+    cursor: pointer;
+  }
+
+  &.btn_disabled > input[type=file] {
+    display: none;
+  }
+}
+
+.btn_delete {
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  position: relative;
+
+  &:active,
+  &:focus {
+    outline: 0;
+  }
+  
+  &:hover:after {
+    color: $color-gray-60;
+  }
+
+  &:active:after {
+    color: $color-gray-80;
+  }
+
+  &:after {
+    content: "\f014";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: FontAwesome;
+    font-size: 20px;
+  }
+}
+
+.btn_enter {
+  display: flex;
+  flex-direction: row;
+
+  & .btn_enter__input {
+    @extend .form__item;
+    margin-bottom: 0;
+    border-radius: 5px 0 0 5px;
+  }
+
+  & .btn_enter__submit {
+    @extend .btn;
+    margin-bottom: 0;
+    border: 1px solid $color-gray-20;
+    border-left: none;
+    border-radius: 0 5px 5px 0;
+    font-size: $font_small;
+  }
+}
+
+.btn_remove {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  width: 18px;
+  height: 18px;
+  margin-left: 10px;
+  cursor: pointer;
+
+  &:before {
+    content: '+';
+    position: absolute;
+    top: -1px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    font-size: 32px;
+    line-height: 16px;
+    font-family: $font-family_light;
+    color: $color-gray-40;
+  }
+
+  &:hover:before {
+    color: $color-gray-60;
+  }
+
+  &:active,
+  &:focus {
+    outline: 0;
+  }
+}
+
+.btn_download {
+  width: 130px;
+  padding: 4px 20px;
+
+  &:before {
+    content: url(../img/icon_download.png);
+    padding-right: 5px;
+    font-size: 14px;
+    vertical-align: middle;
+  }
+}
+

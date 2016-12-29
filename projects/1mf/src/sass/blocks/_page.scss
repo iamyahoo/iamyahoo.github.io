@@ -1,0 +1,64 @@
+.page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  position: relative;
+  min-width: 320px;
+  width: 100%;
+  min-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page {
+  flex-grow: 1;
+}
+
+.page-main {}
+
+.page__inner {
+  @extend .layout-inner;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+
+
+@media (min-width: 641px) and (max-width: 1239px) {
+
+  /**
+    * size on tablet
+    */
+
+  .page {
+    width: 1220%;
+    min-width: 1220px;
+    max-width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .page-container {
+    width: 1220px;
+    min-width: 1220px;
+    max-width: 1220px;
+  }
+}
+
+
+@media (max-width: 640px) {
+
+  /**
+    * size on mobile
+    */
+
+  .page-container {
+    min-width: 320px;
+    width: 100%;
+    max-width: 640px;
+  }
+
+}

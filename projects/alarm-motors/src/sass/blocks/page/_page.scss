@@ -1,0 +1,284 @@
+.page-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  position: relative;
+  min-width: 320px;
+  max-width: 1920px;
+  min-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: calc(100% - 70px - 170px);
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-grow: 1;
+}
+
+.page-interface {
+
+  & .alert {
+    display: block;
+    position: relative;
+    left: 0;
+  }
+}
+
+.page-interface__buttons {
+
+  & .btn {
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.page-item {
+  position: relative;
+  border-bottom: 1px solid $color-gray-10;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  &:last-of-type {
+    border-bottom: none;
+  }
+
+  & h1 + .content-price {
+    margin-top: -20px;
+    margin-bottom: 10px;
+  }
+}
+
+.page-item_no-border {
+  border-color: transparent;
+
+  & h2 {
+    margin-bottom: 0;
+  }
+}
+
+.page-item_colored {
+  background: $color-gray-10;
+}
+
+
+.page-item_picture {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 260px;
+}
+
+.page-item_discount {
+  min-height: 50px;
+  padding: 14px 0;
+  background-color: $color-gray-30;
+  color: $color-gray-70;
+  font-family: $font-family_bold;
+
+  p {
+    position: relative;
+    padding-left: 30px;
+
+    &:before {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      content: '%';
+      font-size: 26px;
+      color: $color-red-30;
+      font-family: $font-family;
+    }
+  }
+}
+
+.page-item_promo {
+  position: relative;
+  max-height: 400px;
+  min-height: 100px;
+  height: 100%;
+  padding: 0 !important;
+  overflow: hidden;
+  max-width: 1560px;
+  width: 100%;
+  margin-bottom: 60px;
+  border-bottom: none;
+
+  & .auto-slider__arrow_prev {
+    top: 20%;
+    left: 6%;
+  }
+
+  & .auto-slider__arrow_next {
+    top: 20%;
+    left: calc(6% + 10px);
+  }
+}
+
+.page-item__half {
+  width: 49%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.page-item__content {
+  position: relative;
+  z-index: 2;
+}
+
+.page-item__settings {
+
+  & h2 {
+    margin-bottom: 10px;
+  }
+}
+
+.page-item__header {
+  display: flex;
+  flex-direction: row;
+
+  h2 {
+    margin-right: 20px;
+  }
+
+  .btn {
+    margin-top: 5px;
+  }
+}
+
+.page-item__header_wide {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .btn {
+    margin-top: 15px;
+  }
+}
+
+.page-submenu {
+  display: flex !important;
+  padding-left: 0 !important;
+  margin-bottom: 10px;
+
+  & .submenu-list__link {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-right: 30px !important;
+  }
+}
+
+@media (min-width: 1900px) {
+  .page-item,
+  .page-item_discount {
+    padding-left: 165px;
+    padding-right: 165px;
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 1899px) {
+  .page-item,
+  .page-item_discount {
+    padding-left: 65px;
+    padding-right: 65px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .page-wrapper {
+    width: calc(100% - 70px - 220px);
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1599px) {
+  .page-item,
+  .page-item_discount {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 1279px) {
+  .page-container {
+    flex-direction: column;
+  }
+
+  .page-wrapper {
+    width: 100%;
+  }
+
+  .page-item,
+  .page-item_discount {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .page-item_top {
+    background: #fff;
+  }
+
+  .page-item_promo {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 719px) {
+  .page-item,
+  .page-item_discount {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+  .page-item {
+      & h1 + .content-price {
+          margin-top: -10px;
+        }
+    }
+
+  .page-item_colored {
+      background: #fff;
+    }
+
+  .page-item__header_wide {
+
+      .btn {
+          margin-top: 5px;
+        }
+    }
+
+  .page-item__half {
+      width: 100%;
+    }
+
+  .page-submenu {
+      padding-left: 10px !important;
+    }
+
+  .page-item_promo__title {
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  .page-item_promo {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 479px) {
+  .page-item__header_wide {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+}

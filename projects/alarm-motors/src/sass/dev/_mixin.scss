@@ -1,0 +1,53 @@
+@mixin absolute-center($horizontal: true, $vertical: true) {
+  position: absolute;
+  @if ($horizontal and $vertical) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } @else if ($horizontal) {
+    left: 50%;
+    transform: translate(-50%, 0);
+  } @else if ($vertical) {
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+}
+
+@mixin btn-close($width, $height, $color) {
+  position: relative;
+  display: inline-block;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  width: $width;
+  height: $width;
+  cursor: pointer;
+  transition: all .2s;
+
+  &:after,
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+    visibility: visible;
+    width: $width;
+    height: $height;
+    background: $color;
+    transition: all .2s;
+  }
+
+  &:after {
+    transform: rotate(45deg);
+  }
+
+  &:before {
+    transform: rotate(-45deg);
+  }
+
+  &:hover:after,
+  &:hover:before {
+    background: $color-red-50;
+  }
+}

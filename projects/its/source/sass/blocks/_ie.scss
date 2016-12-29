@@ -1,0 +1,19 @@
+/* fuck ie */
+
+.internet-explorer {
+
+  & .page__inner {
+    min-height: calc(100vh - 70px - 50px); //100vh - header height - footer height
+  }
+
+  & .page-main {
+
+    & .header {
+      border-bottom: 1px solid $color-gray-10;
+    }
+  }
+
+  & .footer {
+    height: 330px;
+  }
+}

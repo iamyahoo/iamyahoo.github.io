@@ -1,0 +1,160 @@
+.page-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.page {
+  @extend .layout-padding;
+  display: flex;
+  flex: 1;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page__inner {
+  @extend .layout-inner;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+}
+
+.page-main {
+
+  & .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+
+  & .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+  }
+}
+
+
+@media (min-width: 1280px) {
+
+  .page__inner {
+    max-width: 2500px;
+    width: 100%;
+  }
+}
+
+
+@media (min-width: 641px) and (max-width: 1279px) {
+
+  /**
+    * size on tablet
+    */
+
+  .page-container {
+    min-width: 1280px;
+    width: 1280px;
+    max-width: 1280px;
+  }
+
+  .page__inner {
+    min-width: 1240px;
+    width: 1240px;
+    max-width: 1240px;
+  }
+
+  //.page-main {
+  //
+  //  & .page {
+  //    min-width: 1280px;
+  //    width: 1280px;
+  //    max-width: 1280px;
+  //  }
+  //}
+
+  .page-main {
+
+    & .header {
+      position: relative;
+      top: initial;
+      left: initial;
+      z-index: 10;
+    }
+
+    & .footer {
+      position: relative;
+      bottom: initial;
+      left: initial;
+      z-index: 10;
+    }
+  }
+}
+
+
+@media (max-width: 640px) {
+
+  /**
+    * size on mobile
+    */
+
+  .page-container {
+    min-width: 320px;
+    width: 100%;
+    max-width: 640px;
+  }
+
+  .page {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .page__inner {
+    min-width: 280px;
+    width: 100%;
+    max-width: 640px;
+  }
+
+
+  .page-main {
+
+    & .header {
+      position: initial;
+      z-index: initial;
+    }
+
+    & .footer {
+      position: initial;
+      z-index: initial;
+    }
+  }
+
+  .page-item {
+    min-height: 420px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .page-item__subtitle {
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 10px;
+  }
+
+  .page-item_about__img {
+    width: 100%;
+    top: initial;
+    bottom: 0;
+  }
+}

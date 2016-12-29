@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    //= html/_head.html
+    //= html/_style-fancybox.html
+    <link rel="stylesheet" href="js/libs/jquery.slick/slick.css">
+    <title>Аларм-Моторс – официальный дилер Ford, KIA, Peugeot, SsangYong, Fiat Professional. Мы предлагаем новые автомобили, автомобили с пробегом, официальный сервис и продажу запчастей.</title>
+</head>
+<body>
+<div class="page-container">
+    //= html/_nav.html
+    //= html/_brands.html
+
+    <div class="page-wrapper">
+        //= html/_breadcrumbs.html
+        //= html/_mobile-menu.html
+
+        <main class="page">
+            <section class="page-item page-item_no-border">
+                <div class="page-item__header_wide">
+                    <h1>Ford
+                        <div class="dropdown-menu">
+                            <div class="dropdown-menu__text">Fiesta</div>
+                            <ul class="dropdown-menu__list">
+                                <li class="dropdown-menu__item" data-id="0">Fiesta</li>
+                                <li class="dropdown-menu__item" data-id="1">Mondeo</li>
+                                <li class="dropdown-menu__item" data-id="2">Kuga</li>
+                                <li class="dropdown-menu__item" data-id="3">Transit</li>
+                            </ul>
+                        </div>
+                    </h1>
+                    <a href="#" class="btn btn_primary btn_s" type="button" onclick="showModal('modal_special')">Спецпредложения</a>
+                </div>
+                <div class="submenu page-submenu">
+                    <ul class="submenu-list">
+                        <li><a href="auto-info.html" class="submenu-list__link">Описание модели</a></li>
+                        <li><a href="auto-in-stock.html" class="submenu-list__link">72 автомобиля в наличии</a></li>
+                        <li><a href="#" class="submenu-list__link" onclick="showModal('modal_test-drive')">Тест-драйв</a></li>
+                        <li><a href="#" class="submenu-list__link" onclick="showModal('modal_credit')">Рассчёт кредита</a></li>
+                    </ul>
+                </div>
+
+                <div class="auto-settings">
+                    <div class="tabs">
+                        <div class="tabs__inner">
+                            <a href="#" class="tabs__item">Хэтчбек 5 дверей</a>
+                            <a href="#" class="tabs__item">Седан</a>
+                            <a href="#" class="tabs__item">Универсал</a>
+                        </div>
+                    </div>
+                    <div class="tabs">
+                        <div class="tabs__inner">
+                            <a href="#" class="tabs__item">1.6 бензин, 85 л.с.</a>
+                            <a href="#" class="tabs__item">1.6 бензин, 105 л.с.</a>
+                            <a href="#" class="tabs__item">1.6 бензин, 120 л.с.</a>
+                        </div>
+                    </div>
+                    <div class="tabs">
+                        <div class="tabs__inner">
+                            <a href="#" class="tabs__item">МКПП</a>
+                            <a href="#" class="tabs__item">АКПП</a>
+                        </div>
+                    </div>
+                    <div class="tabs">
+                        <div class="tabs__inner">
+                            <a href="#" class="tabs__item">Ambient</a>
+                            <a href="#" class="tabs__item">Trend</a>
+                            <a href="#" class="tabs__item">Titanium</a>
+                        </div>
+                    </div>
+                    <div class="auto-preview__colors">
+                        <div class="auto-preview__colors-wrapper">
+                            <a href="#" class="auto-preview__color color_blue" title="Синий"></a>
+                            <a href="#" class="auto-preview__color color_navy" title="Темно-синий"></a>
+                            <a href="#" class="auto-preview__color color_brown" title="Коричневый"></a>
+                            <a href="#" class="auto-preview__color color_gray" title="Серый"></a>
+                            <a href="#" class="auto-preview__color color_red" title="Красный"></a>
+                            <a href="#" class="auto-preview__color color_silver" title="Серебристый"></a>
+                            <a href="#" class="auto-preview__color color_orange" title="Оранжевый"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="auto-list">
+                    <div class="auto-list-wrapper">
+                        <div class="auto-list__item" onclick="showModal('modal_auto')">
+                            <div class="auto-preview__color color_blue" title="Синий"></div>
+                            <div class="auto-list__img">
+                                <img src="img/content/ford/fiesta/1.png" alt="Ford Fiesta">
+                            </div>
+                            <div class="auto-list__desc">
+                                <p class="auto-list__text">Хэтчбек 5 дверей</p>
+                                <p class="auto-list__text">1.6 бензин, 85 л.с.</p>
+                                <p class="auto-list__text">АКПП</p>
+                                <p class="auto-list__text">Ambiente</p>
+                            </div>
+                            <div class="auto-list__price">
+                                <p class="auto-item__price-old"><span class="price_old">789 000 <span class="rouble">у</span></span></p>
+                                <p class="auto-item__price-new"><span class="price">740 000 <span class="rouble">у</span></span></p>
+                                <p class="auto-item__price-small">от <span class="price">263 <span class="rouble">у</span> / день</span></p>
+                            </div>
+                        </div>
+
+                        <div class="auto-list__item" onclick="showModal('modal_auto')">
+                            <div class="auto-preview__color color_brown" title="Коричневый"></div>
+                            <div class="auto-list__img">
+                                <img src="img/content/ford/fiesta/1.png" alt="Ford Fiesta">
+                            </div>
+                            <div class="auto-list__desc">
+                                <p class="auto-list__text">Хэтчбек 5 дверей</p>
+                                <p class="auto-list__text">1.6 бензин, 105 л.с.</p>
+                                <p class="auto-list__text">МКПП</p>
+                                <p class="auto-list__text">Ambiente</p>
+                            </div>
+                            <div class="auto-list__price">
+                                <p class="auto-item__price-new"><span class="price">740 000 <span class="rouble">у</span></span></p>
+                                <p class="auto-item__price-small">от <span class="price">263 <span class="rouble">у</span> / день</span></p>
+                            </div>
+                        </div>
+                        <div class="auto-list__item" onclick="showModal('modal_auto')">
+                            <div class="auto-preview__color color_blue" title="Синий"></div>
+                            <div class="auto-list__img">
+                                <img src="img/content/ford/fiesta/1.png" alt="Ford Fiesta">
+                            </div>
+                            <div class="auto-list__desc">
+                                <p class="auto-list__text">Хэтчбек 5 дверей</p>
+                                <p class="auto-list__text">1.6 бензин, 85 л.с.</p>
+                                <p class="auto-list__text">АКПП</p>
+                                <p class="auto-list__text">Ambiente</p>
+                            </div>
+                            <div class="auto-list__price">
+                                <p class="auto-item__price-old"><span class="price_old">789 000 <span class="rouble">у</span></span></p>
+                                <p class="auto-item__price-new">Выгода <span class="price">100 000 <span class="rouble">у</span></span></p>
+                                <p class="auto-item__price-small">от <span class="price">263 <span class="rouble">у</span> / день</span></p>
+                            </div>
+                        </div>
+
+                        <div class="auto-list__item" onclick="showModal('modal_auto')">
+                            <div class="auto-preview__color color_blue" title="Синий"></div>
+                            <div class="auto-list__img">
+                                <img src="img/content/ford/fiesta/1.png" alt="Ford Fiesta">
+                            </div>
+                            <div class="auto-list__desc">
+                                <p class="auto-list__text">Хэтчбек 5 дверей</p>
+                                <p class="auto-list__text">1.6 бензин, 125 л.с.</p>
+                                <p class="auto-list__text">МКПП</p>
+                                <p class="auto-list__text">Ambiente</p>
+                            </div>
+                            <div class="auto-list__price">
+                                <a href="#" class="btn btn_s">Запросить цену</a>
+                            </div>
+                        </div>
+
+                        <div class="auto-list__item" onclick="showModal('modal_auto')">
+                            <div class="auto-preview__color color_brown" title="Коричневый"></div>
+                            <div class="auto-list__img">
+                                <img src="img/content/ford/fiesta/1.png" alt="Ford Fiesta">
+                            </div>
+                            <div class="auto-list__desc">
+                                <p class="auto-list__text">Хэтчбек 5 дверей</p>
+                                <p class="auto-list__text">1.6 бензин, 85 л.с.</p>
+                                <p class="auto-list__text">АКПП</p>
+                                <p class="auto-list__text">Ambiente</p>
+                            </div>
+                            <div class="auto-list__price">
+                                <p class="auto-item__price-old"><span class="price_old">789 000 <span class="rouble">у</span></span></p>
+                                <p class="auto-item__price-new">Выгода <span class="price">100 000 <span class="rouble">у</span></span></p>
+                                <p class="auto-item__price-small">от <span class="price">263 <span class="rouble">у</span> / день</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            //= html/_map.html
+            //= html/_feedback.html
+        </main>
+
+        //= html/_footer.html
+    </div>
+
+    //= html/modals/_modal_special.html
+    //= html/modals/_modal_details.html
+    //= html/modals/_modal_auto.html
+    //= html/modals/_modal_credit.html
+    //= html/modals/_modal_test-drive.html
+    //= html/alerts/_alert_geolocation.html
+    //= html/alerts/_alert_callback.html
+</div>
+
+//= html/_scripts.html
+//= html/_scripts-fancybox.html
+</body>
+</html>

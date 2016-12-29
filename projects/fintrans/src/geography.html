@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    //= html/_head.html
+    <title>Транспортная компания ФинТранс - доставка грузов из Финляндии.</title>
+</head>
+<body>
+<div class="page-container">
+    <div class="page-wrapper">
+        //= html/_header.html
+        <main class="page">
+            <div class="page__inner">
+                <div class="page__item page__item_colored">
+                    <ul class="breadcrumbs">
+                        <li>
+                            <a href="main.html" class="breadcrumbs__item">Финтранс ГЛ</a>
+                        </li>
+                        <li>
+                            <span class="breadcrumbs__item active">География присутствия</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="page__item page__item_colored">
+                    <h1 class="no-margin">География присутствия</h1>
+                </div>
+                <section class="geography geography_branches">
+                    <div class="geography-filters">
+                        <p class="geography-counter">Всего: <span>81 филиал</span></p>
+                        <button class="btn btn_map">Все филиалы</button>
+                        <button class="btn btn_map btn_map_green active">Терминалы</button>
+                        <button class="btn btn_map btn_map_blue">Отделения в портах</button>
+                        <button class="btn btn_map btn_map_red">Отделения «Финтранс ГЛ»</button>
+                        <button class="btn btn_map btn_map_cyan">Партнеры</button>
+                    </div>
+                    <div class="geography-filters_mobile">
+                        <select class="form__select form__select_dropdown">
+                            <option value="0">Все филиалы</option>
+                            <option value="1">Терминалы</option>
+                            <option value="2">Отделения в портах</option>
+                            <option value="3">Отделения «Финтранс ГЛ»</option>
+                            <option value="4">Партнеры</option>
+                        </select>
+                    </div>
+                    <div class="geography-map-wrapper">
+                        <div class="map geography-map" id="map-geography_branches"></div>
+                        <div class="geography-sidebar scrollbar-custom">
+                            <div class="geography-sidebar__item geography-sidebar__item_active">
+                                <div class="geography-sidebar__content">
+                                    <a href="#" class="geography-sidebar__title">Терминал «Усть-Илимск»</a>
+                                    <div class="geography__icons">
+                                        <div class="geography__icon">
+                                            <img src="img/svg/svg-icon-container.svg">
+                                        </div>
+                                        <div class="geography__icon">
+                                            <img src="img/svg/svg-icon-multimodal.svg">
+                                        </div>
+                                        <div class="geography__icon">
+                                            <img src="img/svg/svg-icon-railway.svg">
+                                        </div>
+                                        <div class="geography__icon">
+                                            <img src="img/svg/svg-icon-sea.svg">
+                                        </div>
+                                        <div class="geography__icon">
+                                            <img src="img/svg/svg-icon-road.svg">
+                                        </div>
+                                    </div>
+                                    <div class="geography-sidebar__info">
+                                        <p>Иркутская область, Усть-Илимск, Усть-Илимское шоссе</p>
+                                        <p>Режим работы: пн-пт 8.30—17</p>
+                                        <p>Тел: <a href="tel:+73953591770" class="link">8 (395) 359-17-70</a></p>
+                                        <p>E-mail: <a href="mailto:example@fintransgl.com" class="link link_email">example@fintransgl.com</a></p>
+                                    </div>
+                                </div>
+                                <a href="#" class="geography-sidebar__btn btn btn_primary btn_next">Подробнее</a>
+                            </div>
+
+                            <div class="geography-sidebar__item">
+                                <div class="geography-sidebar__content">
+                                    <a href="#" class="geography-sidebar__title">Терминал «Братск», Иркутская область</a>
+                                    <div class="geography__icons">
+                                        <div class="geography__icon">
+                                            <img src="img/svg/svg-icon-container.svg">
+                                        </div>
+                                        <div class="geography__icon">
+                                            <img src="img/svg/svg-icon-multimodal.svg">
+                                        </div>
+                                        <div class="geography__icon">
+                                            <img src="img/svg/svg-icon-railway.svg">
+                                        </div>
+                                    </div>
+                                    <div class="geography-sidebar__info">
+                                        <p>Иркутская область, Братск, Братское шоссе</p>
+                                        <p>Режим работы: пн-пт 8.30—17</p>
+                                        <p>Тел: <a href="tel:+73953591770" class="link">8 (395) 359-17-70</a></p>
+                                        <p>E-mail: <a href="mailto:example@fintransgl.com" class="link link_email">example@fintransgl.com</a></p>
+                                    </div>
+                                </div>
+                                <a href="#" class="geography-sidebar__btn btn btn_primary btn_next">Подробнее</a>
+                            </div>
+
+                            <div class="geography-sidebar__item">
+                                <div class="geography-sidebar__content">
+                                    <a href="#" class="geography-sidebar__title">Представительство в Новороссийске, морской порт</a>
+                                    <div class="geography__icons">
+                                        <div class="geography__icon">
+                                            <img src="img/svg/svg-icon-container.svg">
+                                        </div>
+                                        <div class="geography__icon">
+                                            <img src="img/svg/svg-icon-multimodal.svg">
+                                        </div>
+                                        <div class="geography__icon">
+                                            <img src="img/svg/svg-icon-railway.svg">
+                                        </div>
+                                        <div class="geography__icon">
+                                            <img src="img/svg/svg-icon-sea.svg">
+                                        </div>
+                                    </div>
+                                    <div class="geography-sidebar__info">
+                                        <p>Краснодарский край, Новороссийск, Новороссийское шоссе</p>
+                                        <p>Режим работы: пн-пт 8.30—17</p>
+                                        <p>Тел: <a href="tel:+73953591770" class="link">8 (395) 359-17-70</a></p>
+                                        <p>E-mail: <a href="mailto:example@fintransgl.com" class="link link_email">example@fintransgl.com</a></p>
+                                    </div>
+                                </div>
+                                <a href="#" class="geography-sidebar__btn btn btn_primary btn_next">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        //= html/_menu-bottom.html
+        //= html/_footer.html
+        //= html/_menu-mobile.html
+    </div>
+</div>
+//= html/_scripts.html
+</body>
+</html>

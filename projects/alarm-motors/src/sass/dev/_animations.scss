@@ -1,0 +1,132 @@
+@keyframes show {
+  0% {
+    display: none !important;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  1% {
+    display: block !important;
+  }
+
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes hide {
+  0% {
+    display: block !important;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  99% {
+    display: block !important;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  100% {
+    display: none !important;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    z-index: -100;
+  }
+
+  1% {
+    z-index: 100;
+  }
+
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes slideTop {
+  0% {
+    top: 15%;
+  }
+
+  100% {
+    top: 10%;
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    top: 10%;
+  }
+
+  99% {
+    top: 15%;
+    display: block !important;
+  }
+
+  100% {
+    display: none !important;
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    right: -15%;
+  }
+
+  100% {
+    right: 0;
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    right: 0;
+  }
+
+  99% {
+    right: -15%;
+    display: block !important;
+  }
+
+  100% {
+    display: none !important;
+  }
+}
+
+@keyframes tooltip {
+  5% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  15% {
+    opacity: 1;
+    visibility: visible;
+  }
+  90% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

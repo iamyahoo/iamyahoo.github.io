@@ -1,0 +1,42 @@
+.tabs {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 4px;
+  margin-bottom: 10px;
+}
+
+.tabs__inner {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid $color-gray-30;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.tabs__item {
+  display: block;
+  padding: 8px 15px;
+  min-width: 80px;
+  color: $color-gray-70;
+  text-align: center;
+  text-decoration: none;
+  border-right: 1px solid $color-gray-30;
+
+  &:hover {
+    background-color: $color-gray-10;
+  }
+
+  &:last-child {
+    border-right: none;
+  }
+}
+
+.tabs__item_active {
+  background-color: $color-gray-10;
+}
+
+@media (max-width: 640px) {
+  .tabs__item {
+    min-width: 80px;
+  }
+}

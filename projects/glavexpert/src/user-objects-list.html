@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    //= html/_head.html
+    <title>Главэкспертиза - Список объектов</title>
+</head>
+<body>
+<div class="page-container">
+    //= html/_header.html
+    <main class="page page_colored">
+        //= html/_user_submenu.html
+
+        <div class="page__inner">
+            <section>
+                <h1>Объекты на экспертизу</h1>
+                <a href="user-new-object.html" class="btn btn_create mar_b_30"><i class="fa fa-pencil-square-o"></i>Создать новый объект</a>
+
+                <table class="page-table page-table_objects-list">
+                    <thead>
+                        <th class="page-table__head">Объект</th>
+                        <th class="page-table__head">№ Реестр</th>
+                        <th class="page-table__head">Изменения</th>
+                        <th class="page-table__head">Статус</th>
+                        <th class="page-table__head">Заявление</th>
+                        <th class="page-table__head">Договор</th>
+                    </thead>
+                    <tbody class="page-table__body">
+                        <tr class="page-table__row">
+                            <td class="page-table__data"><a class="link_blue" href="user-object.html">Экспертиза здания Достоевского 43</a></td>
+                            <td class="page-table__data">14562</td>
+                            <td class="page-table__data">12:23 23.02.2016</td>
+                            <td class="page-table__data">В работе</td>
+                            <td class="page-table__data"><i class="fa fa-check"></i></td>
+                            <td class="page-table__data"><i class="fa fa-check"></i></td>
+                        </tr>
+                        <tr class="page-table__row">
+                            <td class="page-table__data">Земельный участок на улице Восстания 43/34 экспертиза нужна срочно!!!</td>
+                            <td class="page-table__data">23414</td>
+                            <td class="page-table__data">12:23 23.02.2016</td>
+                            <td class="page-table__data">В работе</td>
+                            <td class="page-table__data"><i class="fa fa-check"></i></td>
+                            <td class="page-table__data"></td>
+                        </tr>
+                        <tr class="page-table__row">
+                            <td class="page-table__data">Марата 43</td>
+                            <td class="page-table__data">21978</td>
+                            <td class="page-table__data">12:23 23.02.2016</td>
+                            <td class="page-table__data">Утвержден</td>
+                            <td class="page-table__data"></td>
+                            <td class="page-table__data"><i class="fa fa-check"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="pagination">
+                    <a href="#" class="pagination__link">1</a>
+                    <a href="#" class="pagination__link">2</a>
+                    <a href="#" class="pagination__link active">3</a>
+                    <a href="#" class="pagination__link">4</a>
+                    <a href="#" class="pagination__link">5</a>
+                    <a href="#" class="pagination__link">6</a>
+                    <span>&nbsp;...&nbsp;</span>
+                    <a href="#" class="pagination__link">&rarr;</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    //= html/_footer.html
+</div>
+
+//= html/_scripts.html
+</body>
+</html>

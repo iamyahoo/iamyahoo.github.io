@@ -1,0 +1,121 @@
+.investing {
+  background-color: #fff;
+}
+
+.investing__inner {
+  @extend .layout-padding;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.investing__total {
+  font-size: 18px;
+  margin-bottom: 20px;
+
+  span {
+    font-family: $font-family_bold;
+    font-size: 52px;
+    line-height: 64px;
+  }
+}
+
+.investing-graph {
+  display: flex;
+  flex-direction: row;
+}
+
+.investing-graph__item {
+  border-top: 4px solid $color-gray-30;
+  padding: 25px 20px;
+  height: 130px;
+}
+
+.investing-graph__item_1 {
+  border-top-color: $color-green-50;
+  background-color: $color-green-30;
+  width: 39%;
+}
+
+.investing-graph__item_2 {
+  border-top-color: $color-violet-50;
+  background-color: $color-violet-10;
+  width: 18%;
+}
+
+.investing-graph__item_3 {
+  border-top-color: $color-red-50;
+  background-color: $color-red-10;
+  width: 18%;
+}
+
+.investing-graph__item_4 {
+  border-top-color: $color-blue-30;
+  background-color: $color-blue-10;
+  width: 25%;
+}
+
+.investing-graph__count {
+  font-family: $font-family_bold;
+}
+
+
+@media (max-width: 640px) {
+
+  .investing__total {
+    font-size: 12px;
+    margin-bottom: 18px;
+
+    span {
+      display: block;
+      font-family: $font-family_bold;
+      font-size: 26px;
+      line-height: 30px;
+    }
+  }
+
+  .investing-graph {
+    flex-direction: column;
+  }
+
+  .investing-graph__count {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .investing-graph__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    border-top: none;
+    border-left: 4px solid $color-gray-30;
+  }
+
+  .investing-graph__item_1 {
+    border-left-color: $color-green-50;
+    height: 180px;
+  }
+
+  .investing-graph__item_2 {
+    border-left-color: $color-violet-50;
+    height: 86px;
+  }
+
+  .investing-graph__item_3 {
+    border-left-color: $color-red-50;
+    height: 86px;
+
+    br {
+      display: none;
+    }
+  }
+
+  .investing-graph__item_4 {
+    border-left-color: $color-blue-30;
+    height: 110px;
+  }
+
+  .investing-graph__count {
+    font-family: $font-family_bold;
+  }
+}

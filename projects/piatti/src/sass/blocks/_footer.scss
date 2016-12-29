@@ -1,0 +1,30 @@
+.footer {
+  position: relative;
+  min-width: 100%;
+}
+
+.footer__inner {
+  @extend .layout-inner;
+  @extend .layout-padding;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 80px;
+  //border-top: 1px solid $color-gray-10;
+}
+
+.footer_mixed {
+
+  & .icon {
+    opacity: .7;
+    filter: brightness(0) invert(1);
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.footer__dev {
+  margin-left: auto;
+}

@@ -1,0 +1,379 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  & > .page__item {
+    padding-top: 60px;
+  }
+}
+
+.main__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 720px;
+  padding-top: 50px;
+  @extend .layout-padding;
+  padding-bottom: 50px;
+  overflow: hidden;
+
+  & .main-menu {
+    margin-top: auto;
+  }
+}
+
+.main__title {
+  position: relative;
+  z-index: 1;
+}
+
+.main__subtitle {
+  position: relative;
+  z-index: 1;
+  font-weight: normal;
+  max-width: 520px;
+  font-size: 21px;
+  line-height: 32px;
+  font-family: $font-family;
+}
+
+.main-about {
+  padding-top: 275px;
+  background-color: $color-blue-10;
+  overflow: hidden;
+
+  & .svg-clouds_1 {
+    position: absolute;
+    top: 130px;
+    left: 600px;
+  }
+
+  & .svg-ship {
+    position: absolute;
+    top: 100px;
+    left: 850px;
+    transform: rotate(-0.5deg);
+  }
+
+  & .svg-seawave {
+    position: absolute;
+    top: 313px;
+    left: 850px;
+  }
+
+  & .svg-truck {
+    position: absolute;
+    top: 300px;
+    left: 700px;
+  }
+
+  & .svg-vagon {
+    position: absolute;
+    top: 335px;
+    left: 1050px;
+  }
+
+  & .svg-road_1 {
+    position: absolute;
+    top: 392px;
+    left: 640px;
+
+    & path {
+      stroke: #636363;
+    }
+  }
+
+  & .svg-road_2 {
+    position: absolute;
+    top: 465px;
+    left: 1000px;
+
+    & path {
+      stroke: #636363;
+    }
+  }
+}
+
+.main-about__pics {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.main-about__content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  z-index: 10;
+}
+
+.main-account {
+  padding-top: 265px;
+  background-color: $color-gray-10;
+  background-repeat: no-repeat;
+  background-image: url('../img/content/main-smartphone.png'), url('../img/content/main-laptop.png');
+  background-position: 1060px 220px , 640px 166px;
+}
+
+.main-news {
+  padding-top: 100px;
+  background-color: #fff;
+  min-height: 580px;
+
+  & .news__items {
+    justify-content: space-between;
+  }
+}
+
+
+.main-branch {
+  padding-top: 180px;
+  background-color: $color-gray-70;
+  color: $color-gray-20;
+
+  & .main__map-geomark {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.main-branch_animated {
+
+  & .main__map-geomark {
+    animation-name: show-geomark;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+  }
+
+
+  & .main__map-geomark_1 {
+    animation-delay: .3s;
+  }
+
+  & .main__map-geomark_2 {
+    animation-delay: 1.3s;
+  }
+
+  & .main__map-geomark_3 {
+    animation-delay: .7s;
+  }
+
+  & .main__map-geomark_4 {
+    animation-delay: .9s;
+  }
+
+  & .main__map-geomark_5 {
+    animation-delay: 1.1s;
+  }
+
+  & .main__map-geomark_6 {
+    animation-delay: 1.3s;
+  }
+
+  & .main__map-geomark_7 {
+    animation-delay: .5s;
+  }
+
+  & .main__map-geomark_8 {
+    animation-delay: 1.7s;
+  }
+}
+
+.main-branch__number {
+  font-size: 120px;
+  margin-left: -1px;
+}
+
+.main__map {
+  position: absolute;
+  top: 30px;
+  left: 680px;
+  width: 720px;
+  height: 460px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.main__map_mobile {
+  display: none;
+}
+
+.main__map-bg {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+}
+
+.main__map-geomark {
+  position: absolute;
+  width: 29px;
+  height: 28px;
+}
+
+.main__map-geomark_1 {
+  top: 60px;
+  left: 185px;
+}
+
+.main__map-geomark_2 {
+  top: 66px;
+  left: 195px;
+}
+
+.main__map-geomark_3 {
+  top: 150px;
+  left: 340px;
+}
+
+.main__map-geomark_4 {
+  top: 230px;
+  left: 20px;
+}
+
+.main__map-geomark_5 {
+  top: 350px;
+  left: 480px;
+}
+
+.main__map-geomark_6 {
+  top: 405px;
+  left: 680px;
+}
+
+.main__map-geomark_7 {
+  top: 310px;
+  left: 630px;
+}
+
+.main__map-geomark_8 {
+  top: 285px;
+  left: 645px;
+}
+
+@media (max-width: 640px) {
+
+  .main__item {
+    padding: 40px 15px;
+  }
+
+  .main__subtitle {
+    margin-bottom: 220px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .main-menu_branch {
+    position: relative;
+    z-index: 2;
+
+    & .main-menu__item {
+
+      &:before {
+        display: none;
+      }
+
+      &:last-child {
+
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .main-branch__number {
+    font-size: 60px;
+  }
+
+  .main-about {
+
+    & .svg-clouds_1 {
+      top: 190px;
+      left: -50px;
+    }
+
+    & .svg-ship {
+      top: 170px;
+      left: 238px;
+    }
+
+    & .svg-seawave {
+      top: 262px;
+      left: 230px;
+      opacity: .6;
+    }
+
+    & .svg-truck {
+      top: 260px;
+      left: 30px;
+    }
+
+    & .svg-vagon {
+      top: 285px;
+      left: 180px;
+    }
+
+    & .svg-road_1 {
+      top: 300px;
+      left: 30px;
+
+      & path {
+        stroke: #636363;
+      }
+    }
+
+    & .svg-road_2 {
+      top: 340px;
+      left: 170px;
+
+      & path {
+        stroke: #636363;
+      }
+    }
+  }
+
+  .main__map {
+    top: 170px;
+    left: 10px;
+    width: 550px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+
+  .main__map_desktop {
+    display: none;
+  }
+
+  .main__map_mobile {
+    display: block;
+  }
+
+  .main-account {
+    background-size: 60px auto, 290px auto;
+    background-position: 80% 203px, center 181px;
+  }
+}
+
+@media (max-width: 1439px) {
+
+  .main__map.main__map_desktop {
+    left: 620px;
+  }
+}
+
+@media (max-width: 1359px) {
+
+  .main__map.main__map_desktop {
+    left: 525px;
+  }
+}

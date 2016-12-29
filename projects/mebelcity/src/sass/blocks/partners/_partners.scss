@@ -1,0 +1,27 @@
+.partners {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.partners__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 90px;
+  margin-bottom: 10px;
+
+  & > img {
+    margin: 0;
+  }
+}
+
+@media (max-width: 390px) {
+  .partners {
+    justify-content: center;
+  }
+}

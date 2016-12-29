@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <title>Авиатор — клубный дом</title>
+</head>
+<body>
+<div class="page-container">
+    <header class="header">
+        <div class="header__inner">
+            <a href="index.html" class="logo"></a>
+            <nav class="nav">
+                <a href="project.html" class="nav__link"><span class="nav__text">О комплексе</span></a>
+                <a href="apartments.html" class="nav__link"><span class="nav__text">Квартиры</span></a>
+                <a href="placement.html" class="nav__link"><span class="nav__text">Расположение</span></a>
+                <a href="timeline.html" class="nav__link"><span class="nav__text">Ход строительства</span></a>
+                <a href="contacts.html" class="nav__link"><span class="nav__text">Контакты</span></a>
+            </nav>
+            <a href="tel:+78123366355" class="header__tel link link_dark">+7 (812) 336-63-55</a>
+            <a href="#" id="modal-callback-mobile" class="btn btn_primary btn_callback">Перезвоните мне</a>
+            <button class="hamburger">
+                <span></span>
+            </button>
+        </div>
+    </header>
+    <main class="page">
+        <div class="page__inner">
+            <section class="project">
+                <div class="project__header">
+                    <h1 class="project__title">О проекте</h1>
+                    <nav class="project__nav">
+                        <a href="#" class="link project__link">О доме</a>
+                        <a href="#" class="link project__link">Паркинг</a>
+                        <a href="#" class="link project__link">Галерея</a>
+                        <a href="#" class="link project__link">Документация</a>
+                    </nav>
+                </div>
+                <div class="project__content">
+                    <div class="gallery">
+                        <div class="gallery-slider-wrapper">
+                            <div class="gallery-slider">
+                                <div class="gallery__item">
+                                    <div class="gallery__img">
+                                        <img src="img/content/gallery/gallery-slide2.jpg" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="gallery__item">
+                                    <div class="gallery__img">
+                                        <img src="img/content/gallery/gallery-slide1.jpg" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="gallery__item">
+                                    <div class="gallery__img">
+                                        <img src="img/content/gallery/gallery-slide3.jpg" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="gallery__item">
+                                    <div class="gallery__img">
+                                        <img src="img/content/gallery/gallery-slide4.jpg" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="gallery__item">
+                                    <div class="gallery__img">
+                                        <img src="img/content/gallery/gallery-slide5.jpg" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="gallery__item">
+                                    <div class="gallery__img">
+                                        <img src="img/content/gallery/gallery-slide6.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__inner">
+            <p class="footer__copyright">© Строительная компания «Авиатор»</p>
+            <a href="http://its.agency/" class="link footer__development" target="_blank">Разработка сайта <span>ITS</span></a>
+        </div>
+    </footer>
+</div>
+<div class="menu-mobile">
+    <div class="menu-mobile__inner">
+        <nav class="nav-mobile">
+            <a href="project.html" class="nav-mobile__link">О проекте</a>
+            <a href="apartments.html" class="nav-mobile__link">Квартиры</a>
+            <a href="placement.html" class="nav-mobile__link">Расположение</a>
+            <a href="timeline.html" class="nav-mobile__link">Ход строительства</a>
+            <a href="contacts.html" class="nav-mobile__link">Контакты</a>
+        </nav>
+        <a href="tel:+78123366355" class="link link_tel">+7 (812) 336-63-55</a>
+        <a href="#" id="modal-callback" class="btn btn_primary btn_callback">Перезвоните мне</a>
+    </div>
+</div>
+<div class="modal modal-callback">
+    <p class="modal-callback__title">Наш менеджер свяжется с вами в течение 15 минут</p>
+    <form class="form form-modal">
+        <input type="text" class="form__input" placeholder="Имя">
+        <input type="tel" class="form__input" placeholder="Телефон">
+        <button class="btn btn_primary btn_arrow" type="submit">Отправить</button>
+    </form>
+</div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_KN38WFcmjBkbBmjdxukx5r8Q3wnm8ig&callback=initMap" async defer></script>
+<script src="js/libs/jquery/jquery.min.js"></script>
+<script src="js/libs/jquery.ui/jquery.ui.min.js"></script>
+<script src="js/libs/jquery.slick/slick.min.js"></script>
+<script src="js/libs/jquery.fullpage/jquery.fullpage.min.js"></script>
+<script src="js/libs/jquery.sticky/jquery.hc-sticky.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

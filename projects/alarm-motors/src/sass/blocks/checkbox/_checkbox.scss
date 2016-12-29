@@ -1,0 +1,179 @@
+//стили чекбокса (label>input+span)
+
+.form__checkbox {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: $font_default;
+  margin-right: 30px;
+}
+
+.form__checkbox:hover {
+  
+  & .form__checkbox_indicator {
+    border-color: $color-red-50;;
+  }
+}
+
+.form__checkbox_small {
+  padding-left: 25px;
+
+  & .form__checkbox_indicator {
+    top: 4px;
+    width: 15px;
+    height: 15px;
+
+    &:after {
+      top: 2px;
+      left: 2px;
+      width: 9px;
+      height: 6px;
+    }
+  }
+
+  & .form__checkbox_text {
+    font-size: 15px;
+    font-family: $font-family;
+  }
+}
+
+.form__checkbox_hidden {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  margin: 0;
+}
+
+.form__checkbox_indicator {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  border: 1px solid $color-gray-30;
+  border-radius: 2px;
+  background: #fff;
+  transition: all .2s;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 14px;
+    height: 8px;
+    border-left: 2px solid  $color-red-50;
+    border-bottom: 2px solid  $color-red-50;
+    transform: rotate(-45deg);
+    transition: all .2s;
+  }
+}
+
+.form__checkbox_text {
+  font-size: 21px;
+  line-height: 24px;
+  font-family: $font-family_bold;
+}
+
+.form__checkbox_desc {
+  margin-bottom: 25px;
+}
+
+.form__checkbox_bank {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  height: 60px;
+  border: 1px solid $color-gray-30;
+  border-radius: 2px;
+  transition: all .2s;
+  padding: 5px;
+  text-align: center;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  
+  &:hover {
+    border-color: $color-red-50;
+  }
+
+  & .form__checkbox_indicator {
+    top: -1px;
+    left: -1px;
+  }
+
+  & img {
+  }
+}
+
+//стили отмеченного чекбокса
+.form__checkbox > input:checked ~ .form__checkbox_indicator {
+  background: #fff;
+  border-color: $color-red-50;
+
+  &:after {
+    transform: scale(1) rotate(-45deg);
+  }
+}
+
+//стили неотмеченного чекбокса
+.form__checkbox > input:not(checked) ~ .form__checkbox_indicator {
+
+  &:after {
+    transform: scale(0) rotate(-45deg);
+  }
+}
+
+//стиль при получении фокуса
+.form__checkbox > input:focus ~ .form__checkbox_indicator {
+  border-color: #fff;
+
+  &:after {
+    border-color: $color-gray-30;
+  }
+}
+
+//стили отключенного чекбокса
+.form__checkbox > input:disabled ~ .form__checkbox_indicator {
+  background-color: $color-gray-30;
+  cursor: default;
+
+  &:after {
+    border-color: $color-gray-30;
+  }
+}
+
+.form__checkbox > input:disabled ~ .form__checkbox_text {
+  color: $color-gray-50;
+  cursor: default;
+}
+
+@media (max-width: 719px) {
+
+  .form__checkbox {
+    padding-left: 30px;
+  }
+
+  .form__checkbox_indicator {
+    width: 20px;
+    height: 20px;
+
+    &:after {
+      width: 10px;
+      height: 6px;
+    }
+  }
+
+  .form__checkbox_small {
+
+    & .form__checkbox_text {
+      font-size: 14px;
+    }
+  }
+}

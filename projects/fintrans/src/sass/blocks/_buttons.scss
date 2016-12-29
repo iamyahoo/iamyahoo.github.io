@@ -1,0 +1,459 @@
+.btn {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  height: 46px;
+  line-height: 44px;
+  padding: 0 25px;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  font-family: $font-family_medium;
+  font-size: $font_default;
+  text-align: left;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+  outline: 0;
+  box-shadow: none;
+  transition: all .2s;
+  margin-bottom: 25px;
+  margin-right: 20px;
+
+  &:hover,
+  &:active,
+  &:focus {
+    outline: 0;
+    text-decoration: none;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.btn_disabled {
+  border-color: $color-gray-40;
+  background-color: $color-gray-10;
+  color: $color-gray-60;
+  cursor: default;
+
+  &:hover,
+  &:active,
+  &:focus {
+    border-color: $color-gray-40;
+    background-color: $color-gray-10;
+    color: $color-gray-60;
+  }
+}
+
+.btn_standart {
+  border-color: $color-gray-40;
+  background-color: $color-white;
+  color: $font-color_dark;
+
+  &:hover,
+  &:focus {
+    border-color: $color-gray-40;
+    background-color: $color-gray-40;
+  }
+
+  &:active {
+    border-color: darken($color-gray-40, 5%);
+    background-color: darken($color-gray-40, 5%);
+  }
+}
+
+.btn_primary {
+  border-color: $color-green-50;
+  background-color: $color-green-50;
+  color: #fff;
+
+  &:hover,
+  &:focus {
+    border-color: darken($color-green-50, 5%);
+    background-color: darken($color-green-50, 5%);
+  }
+
+  &:active {
+    border-color: darken($color-green-50, 10%);
+    background-color: darken($color-green-50, 10%);
+  }
+
+  &:after {
+    border-color: #fff;
+  }
+
+  &:hover:after {
+    border-color: #fff;
+  }
+}
+
+.btn_secondary {
+  border-color: $color-green-50;
+  background-color: #fff;
+  color: $color-green-50;
+
+  &:hover,
+  &:focus {
+    border-color: $color-green-50;
+    background-color: $color-green-50;
+    color: #fff;
+  }
+
+  &:active {
+    border-color: darken($color-green-50, 5%);
+    background-color: darken($color-green-50, 5%);
+  }
+  
+  &:after {
+    border-color: $color-green-50;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+
+    &:after {
+      border-color: #fff;
+    }
+  }
+  
+  
+  &.btn_next,
+  &.btn_prev {
+
+    &:before,
+    &:after {
+      border-color: $color-green-50;
+    }
+
+    &:hover {
+
+      &:before,
+      &:after {
+        border-color: $color-white;
+      }
+    }
+  }
+}
+
+.btn_dark {
+  color: $color-gray-20;
+  background-color: $color-gray-80;
+  border-color: $color-gray-50;
+  text-transform: uppercase;
+  font-family: $font-family_bold;
+  font-size: $font_small;
+
+  &:hover,
+  &:focus {
+    border-color: $color-gray-50;
+    background-color: $color-gray-20;
+    color: $color-gray-80;
+  }
+
+  &:active {
+    border-color: $color-gray-50;
+    background-color: $color-gray-10;
+    color: $color-gray-80;
+  }
+}
+
+.btn_next {
+  padding-right: 45px;
+
+  &:after {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-right: 1px solid #fff;
+    border-top: 1px solid #fff;
+    transform: translateY(-50%) rotate(45deg);
+    transition: all .2s;
+  }
+}
+
+.btn_prev {
+  padding-left: 45px;
+
+  &:before {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-right: 1px solid #fff;
+    border-top: 1px solid #fff;
+    transform: translateY(-50%) rotate(-135deg);
+    transition: all .2s;
+  }
+}
+
+.btn-close {
+  display: block;
+  border: none;
+  outline: 0;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  text-indent: -9999px;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAFN0lEQVR4Xu2dS27UQBCG/9wDEAGSdaQQKTvgDjzuyOMMwDJSUNYJIoTHOQCVGIvJMOMuz3S7q/4qb7JI2+6q73O53X7MHnIJnYG90NFn8EgBgkuQAqQAwTMQPPysAClA8AwEDz8rQAoQPAPBw88KkAIEz0Dw8LMCpADBMxA8/KwAKUDwDAQPPytAChA8A8HDzwqQAgTPQPDwswKkAE0zcAjgN4DPTffCu/Hm+WtVAR4AeAfgaMHmE4AXAL7ysqoa2UMAb1fy9xzATdW9AM2eCbxY6vzQ5+8AngG4rh0E2fYeAXgP4M5KXOcATmrH2qICSNm63NDRlGCc4Cb4w1pSGaoeQC0EOABwNRJnSrA+OSX4stZ+7dNACwGko1KujlMCdcHWwD8DcKreorJhKwHE1I8A7qYERRIa+N8APAEgf6surQSQTsqVwIeUYJSXFv7T2qV/6FVLAVKC3QZ8srYc8c3gyw5aC5ASbD/gaw5/LgFSgtsSdC/7y92ZowIM+9OMCX4sSl7Va92qo6bdNmYK/pwVICUAzMHvIYD2dMBWCUzC7yVANAnMwu8pQBQJTMPvLYDsX25uyJ2vsRlDr6cD8/AtCMAqgQv4VgRgk8ANfEsCsEjgCr41AaZIIE8WfdltTqb62u7gWxTAqwQu4VsVwJsEbuFbFsCLBK7hWxfAugTu4XsQYJBAnixafUx6eRQnk0VzDgwp4HsRwJoEWvgipPkXYeZ8HmDX6y6ZNu5dCajge6oAgzw9JaCD71GAXqcDSvheBdBK8HPxeNmuM4a08D0LMJcE1PC9C9BaAnr4DAK0kiAEfBYBakuggS9vOMsbO+av80vX3p7mAUqxaMCVBoaabdDAZ6oAgxwagJsk0KxLBZ9RAIlJA3JVAs06dPBZBZgqgZwG132TZ/mUQwmfWYApEkjbsTuNtPDZBdBKMDa4pIYfQYBdJKCHH0WAbSQIAT+SAFMkCAM/BVh/9g/1HUOmmcCxwZzmOn/1si/EZ20jCDAV/iBCiErALsC28MNIwCyABr4c5bLcGzl/UFcCVgG08OWW7jAVHFICRgGmwB/u58sn7OR+QDgJ2ATYBv5Q/UNKwCTALvDDSsAiQA34ISVgEKAm/HASeBegBfxQEngWoCX8MBJ4FUADX763X+MVbeqrA48CzAmfvhJ4E6AHfGoJPAnQEz6tBF4EsACfUgIPAliCTyeBdQEswqeSwLIAluHTSGBVAA/wKSSwKIAn+O4lsCaAFn7Tn1Mde7x45H8uZwwtCeAZvttKYEUABvguJbAgABN8dxL0FoARvisJegrADN+NBL0EiADfhQQ9BIgE37wEcwsQEb5pCeYUIDJ8sxLMJUDC/zeFaGrGcA4BEv7/88dmJGgtQMLffPPAhAQtBUj45btK3SVoJYDmx53kuX2Ld/XK2Oq20ErQ5PP0rQS4AHA0kqeEfzs5GgnOAZzUde/v1zFqL4cALhP+5LRqJJDKej15yyMrtBDgAMDVhn3mkT9OryTBPoAb6wJI/6RcHa90NOHryG2S4AzAqW4T+lYtKoDs/T6ANwAeL7oinX8FQCTIpZwBOdJfr+TvJYDhq2blLShbtBJg2L3Y/Kt22VLGxtBMRJCl2Y9TtRaAAQJ1DCkANd5ycClAOUfULVIAarzl4FKAco6oW6QA1HjLwaUA5RxRt0gBqPGWg0sByjmibpECUOMtB5cClHNE3SIFoMZbDi4FKOeIukUKQI23HFwKUM4RdYsUgBpvObgUoJwj6hYpADXecnApQDlH1C1SAGq85eD+ADbI5ZB6sei2AAAAAElFTkSuQmCC") no-repeat 0 0;
+  background-size: 24px 24px;
+
+  &:hover,
+  &:focus {
+    outline: 0;
+  }
+}
+
+.btn-delete {
+  display: inline-block;
+  vertical-align: baseline;
+  border: none;
+  outline: 0;
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  text-indent: -9999px;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAFN0lEQVR4Xu2dS27UQBCG/9wDEAGSdaQQKTvgDjzuyOMMwDJSUNYJIoTHOQCVGIvJMOMuz3S7q/4qb7JI2+6q73O53X7MHnIJnYG90NFn8EgBgkuQAqQAwTMQPPysAClA8AwEDz8rQAoQPAPBw88KkAIEz0Dw8LMCpADBMxA8/KwAKUDwDAQPPytAChA8A8HDzwqQAgTPQPDwswKkAE0zcAjgN4DPTffCu/Hm+WtVAR4AeAfgaMHmE4AXAL7ysqoa2UMAb1fy9xzATdW9AM2eCbxY6vzQ5+8AngG4rh0E2fYeAXgP4M5KXOcATmrH2qICSNm63NDRlGCc4Cb4w1pSGaoeQC0EOABwNRJnSrA+OSX4stZ+7dNACwGko1KujlMCdcHWwD8DcKreorJhKwHE1I8A7qYERRIa+N8APAEgf6surQSQTsqVwIeUYJSXFv7T2qV/6FVLAVKC3QZ8srYc8c3gyw5aC5ASbD/gaw5/LgFSgtsSdC/7y92ZowIM+9OMCX4sSl7Va92qo6bdNmYK/pwVICUAzMHvIYD2dMBWCUzC7yVANAnMwu8pQBQJTMPvLYDsX25uyJ2vsRlDr6cD8/AtCMAqgQv4VgRgk8ANfEsCsEjgCr41AaZIIE8WfdltTqb62u7gWxTAqwQu4VsVwJsEbuFbFsCLBK7hWxfAugTu4XsQYJBAnixafUx6eRQnk0VzDgwp4HsRwJoEWvgipPkXYeZ8HmDX6y6ZNu5dCajge6oAgzw9JaCD71GAXqcDSvheBdBK8HPxeNmuM4a08D0LMJcE1PC9C9BaAnr4DAK0kiAEfBYBakuggS9vOMsbO+av80vX3p7mAUqxaMCVBoaabdDAZ6oAgxwagJsk0KxLBZ9RAIlJA3JVAs06dPBZBZgqgZwG132TZ/mUQwmfWYApEkjbsTuNtPDZBdBKMDa4pIYfQYBdJKCHH0WAbSQIAT+SAFMkCAM/BVh/9g/1HUOmmcCxwZzmOn/1si/EZ20jCDAV/iBCiErALsC28MNIwCyABr4c5bLcGzl/UFcCVgG08OWW7jAVHFICRgGmwB/u58sn7OR+QDgJ2ATYBv5Q/UNKwCTALvDDSsAiQA34ISVgEKAm/HASeBegBfxQEngWoCX8MBJ4FUADX763X+MVbeqrA48CzAmfvhJ4E6AHfGoJPAnQEz6tBF4EsACfUgIPAliCTyeBdQEswqeSwLIAluHTSGBVAA/wKSSwKIAn+O4lsCaAFn7Tn1Mde7x45H8uZwwtCeAZvttKYEUABvguJbAgABN8dxL0FoARvisJegrADN+NBL0EiADfhQQ9BIgE37wEcwsQEb5pCeYUIDJ8sxLMJUDC/zeFaGrGcA4BEv7/88dmJGgtQMLffPPAhAQtBUj45btK3SVoJYDmx53kuX2Ld/XK2Oq20ErQ5PP0rQS4AHA0kqeEfzs5GgnOAZzUde/v1zFqL4cALhP+5LRqJJDKej15yyMrtBDgAMDVhn3mkT9OryTBPoAb6wJI/6RcHa90NOHryG2S4AzAqW4T+lYtKoDs/T6ANwAeL7oinX8FQCTIpZwBOdJfr+TvJYDhq2blLShbtBJg2L3Y/Kt22VLGxtBMRJCl2Y9TtRaAAQJ1DCkANd5ycClAOUfULVIAarzl4FKAco6oW6QA1HjLwaUA5RxRt0gBqPGWg0sByjmibpECUOMtB5cClHNE3SIFoMZbDi4FKOeIukUKQI23HFwKUM4RdYsUgBpvObgUoJwj6hYpADXecnApQDlH1C1SAGq85eD+ADbI5ZB6sei2AAAAAElFTkSuQmCC") no-repeat 0 0;
+  background-size: 15px 15px;
+
+  &:hover,
+  &:focus {
+    outline: 0;
+  }
+}
+
+.btn_attach {
+  overflow: hidden;
+  padding-left: 40px;
+
+  &:before {
+    position: absolute;
+    content: url('../img/icons/icon-attach.png');
+    display: block;
+    width: 17px;
+    height: 34px;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+  }
+
+  &:hover:before,
+  &:focus:before {
+    filter: brightness(0) invert(1);
+  }
+
+  & > input[type=file] {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    width: auto;
+    height: auto;
+    font-size: 50px;
+    line-height: 100;
+  }
+
+  &.btn_disabled > input[type=file] {
+    display: none;
+  }
+}
+
+.btn_message {
+  overflow: hidden;
+  padding-left: 40px;
+
+  &:before {
+    position: absolute;
+    content: url('../img/icons/icon-pen.png');
+    display: block;
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    line-height: 0;
+  }
+}
+
+.btn_signin {
+  border: none;
+  border-radius: 0;
+  background-color: $color-green-50;
+  color: #fff;
+  margin: 0;
+  min-width: 180px;
+  min-height: 70px;
+  line-height: 70px;
+
+  &:hover {
+    background-color: lighten($color-green-50, 5%);
+  }
+}
+
+.btn_signup {
+  border: none;
+  border-radius: 0;
+  background-color: $color-gray-70;
+  color: #fff;
+  margin: 0;
+  min-width: 180px;
+  min-height: 70px;
+  line-height: 70px;
+
+  &:hover {
+    background-color: lighten($color-gray-70, 5%);
+  }
+
+  &:after,
+  &:before {
+    position: absolute;
+    top: 50%;
+    right: 18px;
+    content: '';
+    display: block;
+    width: 10px;
+    height: 2px;
+    background-color: #fff;
+  }
+
+  &:after {
+    transform: rotate(90deg);
+  }
+}
+
+.btn_map {
+  border-color: $color-gray-20;
+  background-color: $color-gray-10;
+  
+  &:hover {
+    background-color: #fff;
+  }
+  
+  &.active {
+    border-color: $color-green-50;
+  }
+
+  &:before {
+    display: inline-block;
+    vertical-align: baseline;
+    width: 10px;
+    height: 15px;
+    margin-right: 10px;
+    line-height: 0;
+  }
+}
+
+.btn_map_green {
+  padding-left: 10px;
+
+  &:before {
+    content: url('../img/svg/svg-geomark_green.svg');
+  }
+}
+
+.btn_map_blue {
+  padding-left: 10px;
+
+  &:before {
+    content: url('../img/svg/svg-geomark_blue.svg');
+  }
+}
+
+.btn_map_red {
+  padding-left: 10px;
+
+  &:before {
+    content: url('../img/svg/svg-geomark_red.svg');
+  }
+}
+
+.btn_map_cyan {
+  padding-left: 10px;
+
+  &:before {
+    content: url('../img/svg/svg-geomark_cyan.svg');
+  }
+}
+
+.btn_map_city {
+  color: $color-green-50;
+  background-color: #fff;
+  padding-left: 10px;
+  
+  &:hover {
+    border-color: $color-green-50;
+  }
+
+  &:before {
+    content: url('../img/svg/svg-geomark_green.svg');
+  }
+}
+
+.btn_icon {
+  border-color: $color-gray-20;
+  background-color: $color-gray-10;
+
+  &:hover {
+    background-color: #fff;
+  }
+
+  &.active {
+    border-color: $color-green-50;
+  }
+
+  &:before,
+  img {
+    position: absolute;
+    top: 50%;
+    left: 13px;
+    transform: translateY(-50%);
+    display: inline-block;
+    vertical-align: baseline;
+    width: 100%;
+    height: auto;
+    max-width: 24px;
+    max-height: 24px;
+    margin-right: 10px;
+    line-height: 0;
+  }
+}
+
+.btn_icon_sea,
+.btn_icon_railway,
+.btn_icon_multimodal,
+.btn_icon_road,
+.btn_icon_container {
+  padding-left: 50px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 640px) {
+
+  .btn {
+    font-size: 12px;
+  }
+
+  .btn_signin {
+    min-width: 120px;
+  }
+
+  .btn_signup {
+    min-width: 120px;
+  }
+}

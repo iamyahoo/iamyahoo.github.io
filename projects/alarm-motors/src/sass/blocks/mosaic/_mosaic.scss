@@ -1,0 +1,385 @@
+.mosaic {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1560px;
+  min-width: 320px;
+  width: 100%;
+  margin-bottom: 50px;
+  border-top: 1px solid $color-gray-10;
+}
+
+.mosaic__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 50%;
+  max-width: 780px;
+  min-width: 320px;
+
+  & .mosaic__item_small {
+    width: 50%;
+  }
+
+  & .mosaic__item_medium {
+    width: 100%;
+  }
+}
+
+.mosaic__container_vertical {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 25%;
+  max-width: 390px;
+  min-width: 250px;
+
+  & .mosaic__item_small {
+    width: 100%;
+  }
+}
+
+
+.mosaic__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid $color-gray-10;
+  border-right: 1px solid $color-gray-10;
+  padding: 25px 15px 10px;
+  color: $color-gray-70;
+  text-decoration: none;
+  min-height: 200px;
+  
+  &:hover {
+    color: $color-red-50;
+  }
+}
+
+.mosaic__item_small {
+  width: 100%;
+  max-width: 480px;
+  min-width: 250px;
+  height: 200px;
+
+  & .mosaic__img {
+
+    & img {
+      max-width: 210px;
+      max-height: 120px;
+    }
+  }
+}
+
+.mosaic__item_medium {
+  padding: 30px 15px 15px;
+  width: 100%;
+  max-width: 780px;
+  min-width: 320px;
+  height: 400px;
+
+  & .mosaic__img {
+
+    & img {
+      max-width: 490px;
+      max-height: 265px;
+    }
+  }
+}
+
+.mosaic__item_promo {
+  color: #fff;
+  overflow: hidden;
+
+  & .mosaic__title {
+    position: relative;
+    z-index: 1;
+  }
+
+  & .mosaic__info {
+    position: relative;
+  }
+
+  & .mosaic__img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      max-height: 300%;
+    }
+  }
+}
+
+.mosaic__auto-of-year {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 130px;
+  height: 33px;
+  background-image: url('../img/content/autogoda-logo-png-2016.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.mosaic__trade-in {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 140px;
+  height: 33px;
+  line-height: 33px;
+  text-align: center;
+  background-color: $color-blue-50;
+  z-index: 2;
+  color: #fff;
+}
+
+.mosaic__item_medium.mosaic__item_promo {
+  & .mosaic__price {
+    font-size: 28px;
+    line-height: 23px;
+  }
+}
+
+.mosaic__double {
+  display: flex;
+  width: 100%;
+}
+
+.mosaic__double_horizontal {
+  max-width: 780px;
+  min-height: 200px;
+
+  & .mosaic__item_small {
+    width: 50% !important;
+  }
+}
+
+.mosaic__double_vertical {
+  flex-direction: column;
+  max-width: 390px;
+  min-width: 250px;
+
+  & .mosaic__item_small {
+    width: 100% !important;
+  }
+}
+
+.mosaic__line {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1560px;
+  min-width: 250px;
+
+  & .mosaic__double {
+    width: 50%;
+  }
+
+  & .mosaic__item_small {
+    width: 25%;
+  }
+}
+
+
+.mosaic__img {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  & img {
+    @extend .responsive-img;
+    vertical-align: top;
+  }
+}
+
+.mosaic__title {
+  @extend .nowrap;
+  font-family: $font-family_bold;
+  margin-top: auto;
+  margin-bottom: 5px;
+}
+
+.mosaic__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.mosaic__price {
+  font-family: $font-family_bold;
+  font-size: 18px;
+}
+
+.mosaic__number {
+  line-height: 32px;
+}
+
+.mosaic__special {
+  position: relative;
+  background: $color-red-50;
+  text-align: center;
+  color: #fff;
+
+  &:hover {
+    background: $color-red-70;
+    color: #ffffff;
+  }
+
+  & .mosaic__title {
+      margin-bottom: auto;
+    }
+}
+
+.mosaic__special_left {
+
+  &:after {
+    position: absolute;
+    content: '▲';
+    font-size: 16px;
+    color: $color-red-50;
+    transform: rotate(270deg) scaleX(1.6) translateX(50%) translateY(-50%);
+    left: -2px;
+    top: 50%;
+    z-index: 10;
+  }
+}
+
+.mosaic__special_top {
+
+  &:after {
+    position: absolute;
+    content: '▲';
+    font-size: 16px;
+    color: $color-red-50;
+    transform: rotate(0deg) scaleX(1.6) translateX(0%) translateY(0%);
+    left: 50%;
+    top: -18px;
+    z-index: 10;
+  }
+}
+
+@media (max-width: 1300px) {
+  .mosaic {
+    max-width: 1040px;
+  }
+}
+
+@media (max-width: 1060px) {
+
+  .mosaic {
+    flex-direction: column;
+    max-width: 960px;
+  }
+
+  .mosaic__container {
+    width: 100%;
+    max-width: 960px;
+  }
+
+  .mosaic__container_vertical {
+    width: 100%;
+    max-width: 960px;
+    flex-direction: row;
+
+    & .mosaic__item_small {
+      width: 50%;
+    }
+  }
+
+  .mosaic__line {
+
+    & .mosaic__double {
+      width: 100%;
+    }
+  }
+
+  .mosaic__double_horizontal {
+    max-width: 960px;
+  }
+
+  .mosaic__container_horizontal {
+    max-width: 960px;
+
+    & .mosaic__item_small {
+      width: 50%;
+    }
+  }
+
+  .mosaic__item_medium {
+    width: 100%;
+    max-width: 960px;
+    height: auto;
+  }
+
+  .mosaic__item_small {
+    width: 50%;
+    min-width: 220px;
+    height: auto;
+  }
+
+  .mosaic__line {
+    flex-wrap: wrap;
+
+    & .mosaic__item_small {
+      width: 50%;
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .mosaic__item_small {
+    width: 100%;
+    max-width: 520px;
+    min-width: 290px;
+  }
+
+  .mosaic__container {
+
+    & .mosaic__item_small {
+      width: 100%;
+    }
+  }
+
+  .mosaic__container_vertical {
+
+    & .mosaic__item_small {
+      width: 100%;
+    }
+  }
+
+  .mosaic__container_horizontal {
+
+    & .mosaic__item_small {
+      width: 100%;
+    }
+  }
+
+  .mosaic__double_horizontal {
+    max-width: 780px;
+    min-height: 200px;
+    flex-wrap: wrap;
+
+    & .mosaic__item_small {
+      width: 100% !important;
+    }
+  }
+
+  .mosaic__line {
+
+    & .mosaic__item_small {
+      width: 100%;
+    }
+  }
+}

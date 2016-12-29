@@ -1,0 +1,32 @@
+//some styles
+
+.logo {
+  display: block;
+  width: 88px;
+  min-width: 88px;
+  height: 56px;
+  margin-bottom: 20px;
+}
+
+.rouble {
+  font-family: 'RoubleSans', serif;
+}
+
+@media (max-width: 1279px) {
+  .logo {
+    margin-bottom: 0;
+    margin-right: 1em;
+    height: 40px;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 719px) {
+  .logo {
+    height: 30px;
+
+    & svg {
+      height: 42px;
+    }
+  }
+}

@@ -1,0 +1,78 @@
+.breadcrumbs {
+  height: 40px;
+  //height: 150px;
+  background: $color-gray-10;
+  border-bottom: 1px solid $color-gray-30;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.breadcrumbs-list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumbs-list > li {
+  position: relative;
+
+  &:after {
+    position: absolute;
+    content: '>';
+    top: 8px;
+    right: -4px;
+  }
+}
+
+.breadcrumbs-list > li:last-child {
+
+  &:after {
+    display: none;
+  }
+
+}
+
+.breadcrumbs-list__link {
+  @extend .link;
+  padding: 7px 15px;
+}
+
+@media (min-width: 1900px) {
+  .breadcrumbs {
+    padding-left: 140px;
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 1899px) {
+  .breadcrumbs {
+    padding-left: 40px;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1599px) {
+  .breadcrumbs {
+    padding-left: 25px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .breadcrumbs {
+    display: none;
+  }
+}
+
+@media (max-width: 1279px) {
+  .breadcrumbs {
+    display: block;
+    padding-left: 5px;
+  }
+}
+
+@media (max-width: 719px) {
+  .breadcrumbs {
+    padding-left: 0;
+  }
+}

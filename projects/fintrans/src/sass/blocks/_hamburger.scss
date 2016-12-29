@@ -1,0 +1,72 @@
+.hamburger {
+  display: none;
+  position: relative;
+  z-index: 110;
+  width: 50px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.hamburger__item {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: $color-gray-60;
+  transition: all 0.3s ease-out;
+}
+
+.hamburger div {
+  @extend .hamburger__item;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.hamburger div:before {
+  @extend .hamburger__item;
+  content: '';
+  position: absolute;
+  top: -7px;
+}
+
+.hamburger div:after {
+  @extend .hamburger__item;
+  content: '';
+  position: absolute;
+  top: 7px;
+}
+
+.hamburger_active {
+  z-index: 120;
+
+  & div {
+    transform: rotate(90deg);
+    background: #fff;
+    width: 20px;
+  }
+
+  & div:before {
+    transform: rotate(0deg);
+    background: #fff;
+    width: 20px;
+  }
+  
+  & div:after {
+    transform: rotate(0deg);
+    background: #fff;
+    width: 20px;
+  }
+}
+
+
+@media (max-width: 640px) {
+
+  .hamburger {
+    display: block;
+  }
+}

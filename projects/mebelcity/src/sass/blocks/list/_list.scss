@@ -1,0 +1,117 @@
+.list-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 650px;
+  width: 100%;
+
+  & .list {
+    margin-bottom: 0;
+  }
+
+  & .list:nth-child(odd) {
+    margin-right: 50px;
+  }
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+  list-style: none;
+
+  & li {
+    position: relative;
+    padding: 5px 0 5px 0;
+    transition: color .2s;
+    cursor: default;
+  }
+
+  & li.active {
+    font-family: $font-family_bold;
+    color: #000;
+  }
+}
+
+.list_dashed {
+
+  & li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 1px;
+    background: $color-blue-30;
+  }
+}
+
+
+.list_numbers {
+  counter-reset: number;
+
+  li {
+    counter-increment: number;
+    padding-left: 30px;
+  }
+
+  li:before {
+    content: counter(number) ".";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    color: $color-blue-50;
+    font-family: $font-family_bold;
+  }
+}
+
+.list_interactive {
+
+  li {
+    cursor: pointer;
+  }
+
+  li:hover {
+    color: $color-pink;
+  }
+}
+
+.list_dotted {
+
+  li {
+    padding-left: 15px;
+  }
+
+  & li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: #000;
+  }
+}
+
+.sublist {
+  list-style: none;
+  margin-top: 10px;
+  padding-left: 30px;
+
+  li {
+    font-family: $font-family;
+  }
+}
+
+
+@media (max-width: 720px) {
+  .list-wrapper {
+    flex-wrap: wrap;
+  }
+}

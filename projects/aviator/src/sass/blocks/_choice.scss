@@ -1,0 +1,40 @@
+.choice {
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1860px;
+  border: 1px solid $color-blue-10;
+}
+
+.choice__sidebar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100px;
+  min-width: 100px;
+  width: 100%;
+}
+
+.choice__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 700px;
+  padding: 80px;
+  background-color: $color-blue-10;
+}
+
+.choice__title {
+  margin-bottom: 10px;
+}
+
+.choice__subtitle {
+  font-size: 21px;
+  line-height: 21px;
+  margin-bottom: 80px;
+}

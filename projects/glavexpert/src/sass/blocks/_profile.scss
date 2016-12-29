@@ -1,0 +1,157 @@
+.profile {
+  margin-left: auto;
+}
+
+.profile-menu {
+
+  .profile-menu__link {
+    white-space: normal;
+    color: $font-color;
+    font-family: $font-family_bold;
+  }
+
+  .dropdown-light__menu {
+    width: 170px;
+  }
+}
+
+.profile__login {
+  @extend .link_blue;
+  font-family: $font-family_bold;
+}
+
+.profile__link {
+  @extend .link;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  font-family: $font-family_bold;
+  font-size: $font_small;
+  color: $font-color_dark;
+  padding-left: 30px;
+
+  &:focus {
+    outline: 0;
+  }
+
+  &:before {
+    position: absolute;
+    left: 0;
+    top: -2px;
+    display: inline-block;
+    content: url(../img/icon_profile.png);
+    width: 21px;
+    height: 21px;
+  }
+}
+
+.profile__account {
+  @extend .profile__link;
+  color: $color-gray-60;
+
+  &:after {
+    position: relative;
+    top: -1px;
+    content: url(../img/icon_arrow.png);
+    margin-left: 10px;
+  }
+}
+
+.profile__info {
+  display: flex;
+  margin-bottom: 50px;
+  align-items: center;
+}
+
+.profile-photo {
+  position: relative;
+  flex-basis: 64px;
+  width: 64px;
+  height: 64px;
+  margin-right: 25px;
+  margin-top: 10px;
+  border-radius: 50%;
+  overflow: hidden;
+
+  img {
+    @extend .responsive-img;
+  }
+}
+
+.profile-photo:hover {
+
+  & .profile-btn_upload {
+    display: block;
+  }
+}
+
+.profile-btn_upload {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid $color-gray-20;
+  border-radius: 50%;
+  box-shadow: none;
+  background: $color-gray-10 url(../img/icon_photo.svg) no-repeat center center;
+  background-size: 40%;
+}
+
+.profile__name {
+
+  h1 {
+    flex-basis: 100%;
+    margin-bottom: 0;
+  }
+
+  p {
+    color: $color-gray-80;
+  }
+}
+
+.profile__account.dropdown-light__text {
+  overflow: visible;
+}
+
+.profile-table {
+  width: 100%;
+  max-width: 690px;
+  margin-bottom: 30px;
+
+  .profile-table__data {
+    padding-bottom: 12px;
+  }
+
+  .profile-table__data:nth-child(1) {
+    color: $font-color_dark;
+    width: 300px;
+  }
+
+  .profile-table__data:nth-child(2) {
+    color: $font-color_dark;
+  }
+
+  .form__item {
+    margin-bottom: 0;
+  }
+}
+
+.profile_logout {
+
+  & .profile__login {
+    display: inline-block;
+  }
+}
+
+.profile_login {
+
+  & .profile__login {
+    display: none;
+  }
+
+  & .profile-menu {
+    display: inline-block;
+  }
+}

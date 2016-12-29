@@ -1,0 +1,61 @@
+<section id="modal-datetime" class="modal-window">
+    <div class="calc">
+        <div class="calc__inner">
+            <div class="calc__head">
+                <h3 class="calc__title">Вызвать замерщика</h3>
+            </div>
+            <div class="calc__form">
+                <form class="form form-datetime">
+                    <div class="datetime">
+                        <div class="datetime__form">
+                            <div class="form__row">
+                                <div class="form__item form__item_name">
+                                    <label for="datetime-name" class="required">Имя</label>
+                                    <input id="datetime-name" type="text" class="form__input">
+                                </div>
+                                <div class="form__item form__item_tel">
+                                    <label for="datetime-tel" class="required">Телефон</label>
+                                    <input id="datetime-tel" type="tel" class="form__input" placeholder="+7" pattern="(\+?\d[- .]*){7,13}">
+                                </div>
+                                <div class="form__item form__item_date">
+                                    <label for="datetime-date">Удобная дата</label>
+                                    <div class="form__input_date">
+                                        <input id="datetime-date" type="date" class="form__input">
+                                    </div>
+                                </div>
+                                <div class="form__item form__item_time">
+                                    <label for="datetime-time">И время</label>
+                                    <input id="datetime-time" type="time" class="form__input" placeholder="12:00">
+                                </div>
+                            </div>
+                            <div class="form__row">
+                                <div class="form__item form__item_city">
+                                    <label for="datetime-city" class="required">Город</label>
+                                    <div class="form__select_simple">
+                                        <select id="datetime-city" class="form__select">
+                                            <option value="0" selected disabled>Санкт-Петербург</option>
+                                            <option value="1">Москва</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form__item form__item_adress">
+                                    <label for="datetime-adress" class="required">Адрес</label>
+                                    <input id="datetime-adress" type="text" class="form__input">
+                                </div>
+                            </div>
+                            <div class="form__item form__item_comment">
+                                <label for="datetime-comment">Комментарий</label>
+                                <textarea id="datetime-comment" class="form__textarea"></textarea>
+                            </div>
+                        </div>
+                        <div class="datetime__img">
+                            <svg class="svg-roulette" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 848 556.2"><defs><path id="a" d="M0 0h848v556.2H0z"/></defs><clipPath id="b"><use xlink:href="#a" overflow="visible"/></clipPath><path clip-path="url(#b)" d="M751.8 447.7c-10.1 0-18.3 8.2-18.3 18.3 0 10.1 8.2 18.3 18.3 18.3 10.1 0 18.3-8.2 18.3-18.3.1-10.1-8.2-18.3-18.3-18.3m0 25.7c-4.1 0-7.4-3.3-7.4-7.4s3.3-7.4 7.4-7.4c4.1 0 7.4 3.3 7.4 7.4s-3.3 7.4-7.4 7.4M340.1 472c-2.1-2.1-5.6-2.1-7.7 0-2.1 2.1-2.1 5.6 0 7.7l33.2 32.8c1.1 1.1 2.4 1.6 3.8 1.6s2.8-.5 3.9-1.6c2.1-2.1 2.1-5.6 0-7.7L340.1 472z"/><path clip-path="url(#b)" d="M839.1 236.6V125.2c0-18.6-15.1-33.7-33.7-33.7h-44c-19.7-16.8-43.9-32.4-74.2-47.7l4.8-12.5c1.4-3.7-.2-7.9-3.8-9.6C686.5 20.8 642.9 0 580 0c-76.3 0-148 31.4-207.5 90.9-106 106-84.2 227.9-61.8 291.1 8.8 24.9 5.2 52.5-9.5 74l-.6.9c-10.8 15.7-8.7 36.6 5 49.8l4.9 4.7H7.6c-4.2 0-7.6 3.4-7.6 7.6v29.6c0 4.2 3.4 7.6 7.6 7.6 4.2 0 7.6-3.4 7.6-7.6v-22h310.9l23.7 22.9c1.4 1.4 3.3 2.1 5.3 2.1h369.2c68 0 123.4-55.3 123.4-123.3l.1-74.8c.2-45.7-2.7-84.1-8.7-116.9m-15.2-111.4v55.1c-4.3-11.3-9.2-21.8-14.8-31.6-8.6-15.2-18.8-29-31.3-41.9h27.7c10.1 0 18.4 8.3 18.4 18.4m-28.1 31c12.8 22.6 22.1 49.2 28.1 81.6v1.2h.2c5.8 31.9 8.6 69.5 8.6 114.5l-.1 46.2-33.4-29.5c-16.3-14.4-25-36.1-23.2-58.1 6.7-84.2-15-144.3-70.3-194.9-16.5-15.1-24.3-36.8-22.1-58.2 57.1 29.4 89.9 58 112.2 97.2m-71.4 380.1H358.3l-42.2-40.7c-8.3-8-9.5-20.7-3-30.1l.6-.9c17.6-25.5 21.8-58.3 11.4-87.8-21.2-59.8-41.9-175.1 58.2-275.2C440.6 44.4 506.8 15.3 580 15.3c45.2 0 80.3 11.6 94.7 17.2-14 33.1-6.1 71.5 20.7 96 52.2 47.8 71.8 102.3 65.4 182.4-2.1 26.8 8.5 53.3 28.3 70.8l43.5 38.3v8.2c-.1 59.7-48.6 108.1-108.2 108.1"/><path clip-path="url(#b)" d="M555.8 130.2c-40.3 0-78.4 15.5-107.3 43.5-29.5 28.7-46 67.1-46.6 108.2-.6 41.1 14.9 80 43.5 109.5 29.2 30.1 68.4 46.6 110.4 46.6 40.3 0 78.4-15.5 107.3-43.5 60.9-59.1 62.3-156.8 3.1-217.6-29.3-30.1-68.5-46.7-110.4-46.7M429.6 341.7l187.4-182c7.9 3.9 15.4 8.5 22.4 13.9l-196.6 191c-5.1-7.2-9.5-14.9-13.2-22.9m-10.5-34.5l163.7-159.1c9.6 1.9 18.9 4.8 27.8 8.6L426.9 335.3c-3.6-9-6.2-18.5-7.8-28.1m155.6-160.4L418 299.1c-.6-5.6-.9-11.2-.8-17 .1-6.6.7-13.1 1.7-19.5l119.3-116c5.8-.7 11.7-1.1 17.6-1.1 6.4 0 12.7.5 18.9 1.3m-115.5 37.9c18.9-18.4 42.3-30.8 67.6-36.1L421.1 251.3c6.1-25.2 19.1-48.1 38.1-66.6m-12.4 185.1l197.8-192.2c3.7 3.1 7.2 6.4 10.6 9.9 2.6 2.7 5 5.5 7.4 8.3L464.5 388.4c-2.8-2.4-5.5-5-8.1-7.6-3.4-3.6-6.6-7.2-9.6-11m233.6-146.4L491.4 407c-7.7-4-15-8.9-21.9-14.4L666.7 201c5.3 7.1 9.9 14.6 13.7 22.4m11.3 33.8L524.9 419.3c-9.4-2.1-18.5-5.2-27.2-9.2l185.6-180.3c3.7 8.8 6.5 18 8.4 27.4m-159 163.6L693 265c1.6 11.7 1.7 23.6.4 35.3L568 422.2c-4 .3-8.1.6-12.2.6-7.8 0-15.5-.7-23.1-2m119.7-37.3c-20.4 19.9-46 32.7-73.6 37.3l112.9-109.7c-5.3 26.7-18.4 52.1-39.3 72.4"/></svg>
+                        </div>
+                    </div>
+                    <!--<button class="btn btn_primary btn_xl" type="submit">Подать заявку</button>-->
+                    <a href="#modal-thanks" rel="modal:open" class="btn btn_primary btn_xl" type="submit">Отправить заявку</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

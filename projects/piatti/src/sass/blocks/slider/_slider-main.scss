@@ -1,0 +1,165 @@
+$slider-main-small-height: 116px;
+
+/* slider main styling */
+.slider-main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  & .slider-small-wrapper {
+    width: 52%;
+  }
+
+  & .slider-small {
+    z-index: 202;
+
+    & .slider__img {
+      height: $slider-main-small-height;
+
+      img {
+        max-height: $slider-main-small-height;
+        height: 100%;
+        width: auto;
+      }
+    }
+
+    & .slider__item {
+      margin-right: 10px;
+    }
+
+    & .slider__link {
+      display: none;
+    }
+
+    .slider__arrow_left {
+      right: 100px;
+      bottom: -60px;
+    }
+
+    .slider__arrow_right {
+      right: 50px;
+      top: -60px;
+    }
+  }
+
+  & .slider-big-wrapper {
+    width: 48%;
+  }
+
+  & .slider-big {
+    position: relative;
+    max-height: 550px;
+    height: auto;
+    z-index: 202;
+
+    & .slider__img {
+
+      img {
+        max-height: 550px;
+        height: auto;
+        width: auto;
+      }
+    }
+  }
+
+  & .slider-shadow {
+    z-index: 201;
+  }
+}
+
+@media (max-width: 1500px) {
+
+  .slider-main {
+
+    & .slider-big-wrapper {
+      width: 53%;
+    }
+
+    & .slider-small-wrapper {
+      width: 47%;
+    }
+  }
+}
+
+@media (max-width: 1500px) and (max-height: 700px) {
+
+  .slider-main {
+
+    & .slider-big-wrapper {
+      width: 48%;
+    }
+
+    & .slider-small-wrapper {
+      width: 52%;
+    }
+  }
+}
+
+@media (max-height: 920px) {
+
+  .slider-main {
+
+    & .slider-big {
+      max-height: 500px;
+
+      & .slider__img {
+
+        img {
+          max-height: 500px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-height: 860px) {
+
+  .slider-main {
+
+    & .slider-big {
+      max-height: 450px;
+
+      & .slider__img {
+
+        img {
+          max-height: 450px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-height: 780px) {
+
+  .slider-main {
+
+    .slider-big {
+      max-height: 400px;
+
+      & .slider__img {
+
+        img {
+          max-height: 400px;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-height: 700px) {
+
+  .slider-main {
+
+    & .slider-big {
+      max-height: 350px;
+
+      & .slider__img {
+
+        img {
+          max-height: 350px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+//development styles
+@import "dev/_normalize.scss";
+@import "dev/_variables.scss";
+@import "dev/_fonts.scss";
+@import "dev/_base.scss";
+@import "dev/_animations.scss";
+
+//blocks styles
+@import "blocks/_buttons.scss";
+@import "blocks/_contact";
+@import "blocks/_footer.scss";
+@import "blocks/_form.scss";
+@import "blocks/_header.scss";
+@import "blocks/_history.scss";
+@import "blocks/_icons.scss";
+@import "blocks/_internet-explorer.scss";
+@import "blocks/_layout.scss";
+@import "blocks/_links.scss";
+@import "blocks/_main.scss";
+@import "blocks/_map.scss";
+@import "blocks/_nav.scss";
+@import "blocks/_page.scss";
+@import "blocks/_styles.scss";
+@import "blocks/slider/_slider";
+@import "blocks/slider/_slider-main";
+@import "blocks/slider/_slider-catalog";
+@import "blocks/slider/_slider-history";
+@import "blocks/_slick.scss";
+@import "blocks/_social.scss";
+@import "blocks/_submenu.scss";
+@import "blocks/_text.scss";
+
+//don't move
+@import "dev/_helpers.scss";

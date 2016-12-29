@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="js/libs/lightbox/css/jquery.lightbox.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Главэкспертиза - Список объектов</title>
+</head>
+<body>
+<div class="page-container">
+    <header class="header">
+        <div class="header__inner">
+            <a href="index.html" class="header__logo">
+                <img src="img/logo_small.png" alt="Главэкспертиза">
+            </a>
+            <nav class="nav nav_header" role="navigation">
+                <ul class="nav__list">
+                    <li><a href="#" class="nav__link">Деятельность</a></li>
+                    <li><a href="#" class="nav__link">Новости</a></li>
+                    <li><a href="experts-public.html" class="nav__link">Эксперты</a></li>
+                    <li><a href="#" class="nav__link">Реестр</a></li>
+                    <li><a href="contacts.html" class="nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+            <a href="tel:+78124323242" class="nav__tel">(812) 432-32-42</a>
+            <div class="profile profile_logout">
+                <div class="dropdown-light profile-menu">
+                    <span class="dropdown-light__text profile__account">Мой кабинет</span>
+                    <div class="dropdown-light__menu">
+                        <ul class="dropdown-light__list">
+                            <li><span class="profile-menu__link">Константин Недашковский</span></li>
+                            <li><a href="admin-profile.html" class="dropdown-light__link">Профиль</a></li>
+                            <li><a href="#" class="dropdown-light__link">Выйти</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="page page_colored">
+        <div class="submenu">
+            <div class="submenu__inner">
+                <div class="submenu-back"></div>
+                <ul class="submenu__list">
+                    <li><a href="admin-objects-list.html" class="submenu__link">Объекты</a></li>
+                    <li><a href="admin-experts-list.html" class="submenu__link">Эксперты</a></li>
+                    <li><a href="admin-clients.html" class="submenu__link">Заявители</a></li>
+                    <li><a href="admin-profile.html" class="submenu__link">Профиль</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="page__inner">
+            <section class="page_colored">
+                <h1>Объекты экспертизы: 147</h1>
+
+                <div class="page-filters">
+                    <p class="page-filters__text">Фильтр</p>
+                    <div class="form__item_inline mar_r_100">
+                        <select class="dropdown-text" name="" id="">
+                            <option selected>Не выбран</option>
+                            <option value="1">В работе</option>
+                            <option value="2">Утвержден</option>
+                        </select>
+                    </div>
+                    <label class="form__checkbox mar_r_30">
+                        <input class="form__checkbox_hidden" name="checkbox" id="checkbox_contract" type="checkbox">
+                        <span class="form__checkbox_indicator"></span>
+                        <span class="form__checkbox_text">Договор</span>
+                    </label>
+                    <label class="form__checkbox">
+                        <input class="form__checkbox_hidden" name="checkbox" id="checkbox_application" type="checkbox">
+                        <span class="form__checkbox_indicator"></span>
+                        <span class="form__checkbox_text">Заявление</span>
+                    </label>
+                </div>
+
+                <table class="page-table page-table_admin-objects-list">
+                    <thead>
+                        <th class="page-table__head">Объект</th>
+                        <th class="page-table__head">№ Реестр</th>
+                        <th class="page-table__head">Изменения</th>
+                        <th class="page-table__head">Статус</th>
+                        <th class="page-table__head">Заяв.</th>
+                        <th class="page-table__head">Дог.</th>
+                        <th class="page-table__head">Заявитель</th>
+                    </thead>
+                    <tbody class="page-table__body">
+                    <tr class="page-table__row">
+                        <td class="page-table__data"><a href="admin-object.html" class="link_blue">Экспертиза здания Достоевского 43</a></td>
+                        <td class="page-table__data">14562</td>
+                        <td class="page-table__data">12:23 23.02.2016</td>
+                        <td class="page-table__data">В работе</td>
+                        <td class="page-table__data"><i class="fa fa-check"></i></td>
+                        <td class="page-table__data"><i class="fa fa-check"></i></td>
+                        <td class="page-table__data"><a href="#" class="link_blue">Константин Нидашевский</a></td>
+                    </tr>
+                    <tr class="page-table__row">
+                        <td class="page-table__data">Земельный участок на улице Восстания 43/34 экспертиза нужна срочно!!!</td>
+                        <td class="page-table__data">23414</td>
+                        <td class="page-table__data">12:23 23.02.2016</td>
+                        <td class="page-table__data">В работе</td>
+                        <td class="page-table__data"><i class="fa fa-check"></i></td>
+                        <td class="page-table__data"></td>
+                        <td class="page-table__data"><a href="#" class="link_blue">Аркадий Севастопольский</a></td>
+                    </tr>
+                    <tr class="page-table__row">
+                        <td class="page-table__data">Марата 43</td>
+                        <td class="page-table__data">21978</td>
+                        <td class="page-table__data">12:23 23.02.2016</td>
+                        <td class="page-table__data">Утвержден</td>
+                        <td class="page-table__data"></td>
+                        <td class="page-table__data"><i class="fa fa-check"></i></td>
+                        <td class="page-table__data"><a href="#" class="link_blue">Константинополь Семенов</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="pagination">
+                    <a href="#" class="pagination__link">1</a>
+                    <a href="#" class="pagination__link">2</a>
+                    <a href="#" class="pagination__link active">3</a>
+                    <a href="#" class="pagination__link">4</a>
+                    <a href="#" class="pagination__link">5</a>
+                    <a href="#" class="pagination__link">6</a>
+                    <span>&nbsp;...&nbsp;</span>
+                    <a href="#" class="pagination__link">&rarr;</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__part_top">
+                <div class="footer__part_top_left">
+                    <p class="mar_b_10">Санкт-Петербург, пл. Конституции, д. 7</p>
+                    <a class="footer__link mar_b_10" href="tel:+78126022921">8 (812) 602-29-21</a><br>
+                    <a class="footer__link mar_b_10" href="mailto:info@glavexpert.spb.ru">info@glavexpert.spb.ru</a>
+                </div>
+                <div class="footer__part_top_right">
+                    <nav class="nav nav_footer">
+                        <ul class="nav__list">
+                            <li><a href="#" class="nav__link">Деятельность</a></li>
+                            <li><a href="#" class="nav__link">Новости</a></li>
+                            <li><a href="experts-public.html" class="nav__link">Эксперты</a></li>
+                            <li><a href="#" class="nav__link">Документы</a></li>
+                            <li><a href="#" class="nav__link">Реестр</a></li>
+                            <li><a href="#" class="nav__link">Кабинет</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer__part_bottom">
+                <div class="footer__part_bottom_left">
+                    <p>&copy; ООО «Главная Негосударственная Экспертиза», 2016</p>
+                </div>
+                <div class="footer__part_bottom_right">
+                    <a href="http://itstudio.ru/" class="link_development" target="_blank">Сделано в ITS</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="js/libs/jquery/jquery.min.js"></script>
+<script src="js/libs/lightbox/js/jquery.lightbox.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

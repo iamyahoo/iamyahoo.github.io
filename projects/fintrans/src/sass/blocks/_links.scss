@@ -1,0 +1,125 @@
+.link {
+  display: inline-block;
+  vertical-align: baseline;
+  text-decoration: none;
+  transition: color, .2s;
+  color: $font-color;
+
+  &:hover {
+    color: $color-green-70;
+  }
+
+  &:focus,
+  &:active {
+    outline: 0;
+    text-decoration: none;
+  }
+}
+
+.link_active {
+  color: $color-green-70;
+}
+
+.link_promo {
+  color: $color-green-70;
+
+  &:hover {
+    color: $font-color;
+  }
+}
+
+.link_light {
+  color: #fff;
+
+  &:hover {
+    color: $color-green-70;
+  }
+}
+
+.link_dark {
+  color: $font-color_dark;
+
+  &:hover {
+    color: $color-green-70;
+  }
+}
+
+.link_underlined {
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.link_tel {
+  font-family: $font-family_bold;
+  font-size: 18px;
+  color: $font-color;
+
+  &:hover {
+    color: $font-color;
+  }
+}
+
+.link_email {
+  font-size: 16px;
+  color: $color-green-70;
+  
+  &:hover {
+    color:$color-green-70;
+  }
+}
+
+.link_docs {
+  position: relative;
+  padding-left: 45px;
+  line-height: 30px;
+
+  &:before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.link_map {
+  position: relative;
+  padding-left: 20px;
+
+  &:before {
+    display: block;
+    position: absolute;
+    top: 45%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 15px;
+    content: url('../img/svg/svg-geomark_green.svg');
+  }
+}
+
+.link_restore {
+  margin-top: 12px;
+}
+
+a[href$= ".pdf"],
+.link_docs_pdf {
+
+  &:before {
+    content: url('../img/svg/svg-icon-pdf.svg');
+  }
+}
+
+a[href$= ".doc"],
+a[href$= ".docx"],
+.link_docs_doc {
+
+  &:before {
+    content: url('../img/svg/svg-icon-doc.svg');
+  }
+}

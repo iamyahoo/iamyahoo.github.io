@@ -1,0 +1,12 @@
+.lang-switch {
+  display: flex;
+  flex-direction: row;
+}
+
+.lang-switch__link {
+  color: $font-color;
+
+  &:first-child {
+    margin-right: 25px;
+  }
+}

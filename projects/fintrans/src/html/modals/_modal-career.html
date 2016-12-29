@@ -1,0 +1,41 @@
+<section class="modal modal_wide" id="modal-career">
+    <div class="modal__inner">
+        <h2 class="modal__title">Хотите у нас работать?</h2>
+        <div class="modal__form">
+            <form class="form form-career form_modal">
+                <label class="form-label">
+                    <span class="form-label__text">Вакансия</span>
+                    <select class="form__select form__select_search">
+                        <option value="0">Технический сотрудник на полсмены</option>
+                        <option value="1">Администратор ORACLE (Москва)</option>
+                        <option value="2">Системный аналитик (Братск)</option>
+                    </select>
+                </label>
+                <label class="form-label">
+                    <span class="form-label__text">Ваше имя</span>
+                    <input type="text" class="form__input">
+                </label>
+                <label class="form-label">
+                    <span class="form-label__text">Телефон</span>
+                    <input type="tel" class="form__input">
+                </label>
+                <label class="form-label">
+                    <span class="form-label__text">E-mail</span>
+                    <input type="email" class="form__input">
+                </label>
+                <label class="form-label">
+                    <span class="form-label__text">Сообщение</span>
+                    <textarea class="form__textarea"></textarea>
+                </label>
+                <a href="#" class="btn btn_secondary btn_attach">Прикрепить резюме <input type="file"></a>
+                <p class="form-filename">
+                    <span class="form-filename__text">Название_файла.pdf</span>
+                    <button class="btn-delete" type="button"></button>
+                </p>
+                <a href="#modal-answer" rel="modal:open" class="btn btn_primary btn_next" type="submit">Отправить</a>
+                <!--<button rel="open:modal-answer" class="btn btn_primary btn_next" type="submit">Отправить</button>-->
+            </form>
+        </div>
+    </div>
+    <a href="#modal-career" rel="modal:close" class="close-modal"></a>
+</section>

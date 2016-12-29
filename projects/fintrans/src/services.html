@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    //= html/_head.html
+    <title>Транспортная компания ФинТранс - доставка грузов из Финляндии.</title>
+</head>
+<body>
+<div class="page-container">
+    <div class="page-wrapper">
+        //= html/_header.html
+        <main class="page">
+            <div class="page__inner">
+                <div class="page__item page__item_colored">
+                    <ul class="breadcrumbs">
+                        <li>
+                            <a href="main.html" class="breadcrumbs__item">Финтранс ГЛ</a>
+                        </li>
+                        <li>
+                            <span class="breadcrumbs__item active">Услуги</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="page__item page__item_colored">
+                    <div class="page__item-header">
+                        <h1>Логистические услуги</h1>
+                        <a href="#geography-services" class="btn btn_secondary btn_next" id="geography-services-link">География услуг</a>
+                    </div>
+                    <section class="services">
+                        <a href="service.html" class="service__item service__item_1 service__item_big">
+                            <img src="img/svg/svg-img-transporting.svg" alt="">
+                            <p class="service__title">Мультимодальные перевозки</p>
+                        </a>
+                        <a href="service.html" class="service__item service__item_2 service__item_big">
+                            <img src="img/svg/svg-img-ship-seawave.svg" alt="">
+                            <p class="service__title">Морские перевозки</p>
+                        </a>
+                        <a href="service.html" class="service__item service__item_3">
+                            <img src="img/svg/svg-img-vagon-road.svg" alt="">
+                            <p class="service__title">Ж/Д <br>перевозки</p>
+                        </a>
+                        <a href="service.html" class="service__item service__item_4">
+                            <img src="img/svg/svg-img-truck-road.svg" alt="">
+                            <p class="service__title">Автомобильные <br>перевозки</p>
+                        </a>
+                        <a href="service.html" class="service__item service__item_5">
+                            <img src="img/svg/svg-img-lifting.svg" alt="">
+                            <p class="service__title">Контейнерные <br>перевозки</p>
+                        </a>
+                    </section>
+                    <h2 class="no-margin">География услуг</h2>
+                </div>
+                <section class="geography geography_services" id="geography-services">
+                    <div class="geography-filters">
+                        <button class="btn btn_secondary active">Все услуги</button>
+                        <button class="btn btn_icon btn_icon_sea"><img src="img/svg/svg-icon-sea.svg" alt="">Морские</button>
+                        <button class="btn btn_icon btn_icon_railway"><img src="img/svg/svg-icon-railway.svg" alt="">Ж/Д</button>
+                        <button class="btn btn_icon btn_icon_multimodal"><img src="img/svg/svg-icon-multimodal.svg" alt="">Мультимодальные</button>
+                        <button class="btn btn_icon btn_icon_road"><img src="img/svg/svg-icon-road.svg" alt="">Автомобильные</button>
+                        <button class="btn btn_icon btn_icon_railway"><img src="img/svg/svg-icon-railway.svg" alt="">Контейнерные</button>
+                    </div>
+                    <div class="geography-map-wrapper">
+                        <div class="map geography-map" id="map-geography_services"></div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        //= html/_menu-bottom.html
+        //= html/_footer.html
+        //= html/_menu-mobile.html
+    </div>
+</div>
+//= html/_scripts.html
+</body>
+</html>

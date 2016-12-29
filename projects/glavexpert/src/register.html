@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    //= html/_head.html
+    <title>Главэкспертиза - Вход</title>
+</head>
+<body>
+<div class="page-container">
+    //= html/_header.html
+
+    <main class="page">
+        <div class="page__inner">
+            <section class="page-form">
+                <p class="form-error">Пароль должен содержать не менее 6 символов</p>
+                <h1>Регистрация</h1>
+                <form class="form-register">
+                    <input class="form__item" type="text" placeholder="Имя" required>
+                    <input class="form__item" type="text" placeholder="Фамилия" required>
+                    <input class="form__item" type="text" placeholder="E-mail" required>
+                    <div class="form-password">
+                        <input class="form__item invalid" type="password" placeholder="Пароль" required>
+                        <button class="form-password__btn"></button>
+                    </div>
+                    <input class="form__item" type="tel" placeholder="Телефон">
+                    <img src="img/content/recaptcha.jpg" width="320" height="110" alt="" class="mar_b_30">
+                    <button class="btn btn_standart btn_big" type="submit">Зарегистрироваться</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    //= html/_footer.html
+</div>
+
+//= html/_scripts.html
+</body>
+</html>

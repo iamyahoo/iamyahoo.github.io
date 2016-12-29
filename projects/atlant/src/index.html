@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    //= html/_head.html
+    <link rel="stylesheet" type="text/css" href="js/libs/jquery.slick/slick.css">
+    <title>Атлант – клубный дом</title>
+</head>
+<body>
+<div class="page-container page-main">
+    //= html/_header.html
+    <main class="page">
+        <div class="page__inner">
+            <div id="fullpage-slider" class="main-slider fullpage-slider fullpage_enabled">
+                <section id="section0" class="section main-item promo" data-anchor="fp-promo">
+                    <div class="main-item__content">
+                        <div class="promo__content promo__content_hidden promo__content_day"></div>
+                        <div class="promo__content promo__content_night"></div>
+                        <a href="#" class="main-item__btn btn btn_action">Выбрать квартиру</a>
+                        <div class="promo__desc">
+                            <p class="promo__number">57</p>
+                            <p class="promo__text promo__text_top">Клубный дом на</p>
+                            <p class="promo__text promo__text_center">квартир</p>
+                            <p class="promo__text promo__text_bottom">Мира 36</p>
+                        </div>
+                    </div>
+                    <div class="promo-switcher promo-switcher_night">
+                        <div class="promo-switcher__btns">
+                            <button class="promo-switcher__btn promo-switcher__btn_day" type="button"></button>
+                            <button class="promo-switcher__btn promo-switcher__btn_night" type="button"></button>
+                        </div>
+                        <div class="promo-switcher__line"></div>
+                    </div>
+                </section>
+
+
+                <section id="section1" class="section main-item place" data-anchor="fp-place">
+                    <div class="main-item__content place__content">
+                        <a href="#" class="main-item__btn btn btn_action">Открыть на карте</a>
+                        <h1 class="main-item__title">Местоположение</h1>
+                        <div class="main-item__text">
+                            <p>Дом расположен в <span class="text_cyan">исторической</span> части Петроградского района.</p>
+                            <p>До станции метро <span class="text_blue">Горьковская</span> 880 метров, до крейсера <span class="text_green">«Аврора»</span> один километр. В пешей доступности Каменноостровский проспект, <span class="text_cyan">Петропавловская крепость</span> и станция метро <span class="text_blue">Петроградская</span>.</p>
+                        </div>
+                        <a href="#" class="link link_promo link_light">Подробнее</a>
+                        <div class="place__img">
+                            <img src="img/content/petr1.png" alt="">
+                        </div>
+                        <div class="place__slider">
+                            <div class="slider-wrapper">
+                                <div id="slider-place" class="slider slider-place">
+                                    <div class="slider__item">
+                                        <img src="img/content/photo-place_1.jpg" alt="">
+                                    </div>
+                                    <div class="slider__item">
+                                        <img src="img/content/photo-place_2.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="slider__control"></div>
+                            </div>
+                        </div>
+                        <div class="place__map">
+                            <div class="map" id="map-main"></div>
+                            <a href="#" class="btn btn_action btn_l">Открыть на карте</a>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section id="section2" class="section main-item architecture" data-anchor="fp-architecture">
+                    <div class="main-item__content architecture__content">
+                        <h1 class="main-item__title">Архитектура</h1>
+                        <div class="main-item__text">
+                            <p>Дом состоит из двух корпусов, выполненных в разных архитектурных стилях.</p>
+                            <p>Первый корпус воссоздает исторический фасад дома в стиле петербургского модерна начала двадцатого века.</p>
+                            <p>Второй корпус — это современная архитектурная концепция с многоуровневым фасадом и террасами от 15 до 80 м² на седьмом и восьмом этажах.</p>
+                            <p>Проект ЖК «Атлант» награжден Серебряным дипломом Санкт-Петербургского Смотра-конкурса «Архитектон – 2013».</p>
+                        </div>
+                        <a href="#" class="link link_promo link_light">Подробнее</a>
+                    </div>
+                </section>
+
+
+                <section id="section3" class="section main-item interior" data-anchor="fp-interior">
+                    <div class="main-item__content interior__content">
+                        <h1 class="main-item__title">Интерьеры</h1>
+                        <div class="main-item__text">
+                            <p>Для дома разработан эксклюзивный дизайн проект общественных пространств. Входные группы, лестницы и лифтовые холлы будут оформлены природными и внешне привлекательными материалами: деревянные стеновые панели, мрамор, керамический гранит, панели с декоративной штукатуркой.</p>
+                        </div>
+                        <a href="#" class="link link_promo link_light">Подробнее</a>
+                    </div>
+                </section>
+
+
+                <section id="section4" class="section main-item terrace" data-anchor="fp-terrace">
+                    <div class="main-item__content terrace__content">
+                        <a href="#" class="main-item__btn btn btn_action">Выбрать квартиру с террасой</a>
+                        <h1 class="terrace__title">Терраса</h1>
+                        <a href="#" class="link link_promo link_light">Подробнее</a>
+                    </div>
+                </section>
+
+
+                <section id="section5" class="section main-item comfort" data-anchor="fp-comfort">
+                    <div class="main-item__content comfort__content">
+                        <a href="#" class="main-item__btn btn btn_action">Выбрать место на парковке</a>
+                        <h1 class="main-item__title">Комфорт <br>и безопасность</h1>
+                        <div class="main-item__text">
+                            <p>Внутренний двор дома закрыт от посторонних, здесь можно спокойно гулять с детьми.</p>
+                            <p>Территория охраняется, работает система видеонаблюдения и служба консьержей. Для машин есть подземный отапливаемый паркинг.</p>
+                        </div>
+                        <a href="#" class="link link_promo link_light">Подробнее</a>
+                        <div class="comfort__img">
+                            <img src="img/content/camera.png" alt="">
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    //= html/_footer.html
+    //= html/_menu-mobile.html
+    //= html/modals/_modal-connect.html
+    <div class="preloader"></div>
+</div>
+//= html/_scripts.html
+</body>
+</html>

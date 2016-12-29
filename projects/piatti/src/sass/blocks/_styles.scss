@@ -1,0 +1,19 @@
+//some styles
+
+.logo {
+  display: block;
+  min-width: 148px;
+  max-width: 148px;
+  width: 148px;
+  height: 30px;
+  background: url('../img/icons/logo.png') no-repeat center center;
+}
+
+.logo_light {
+  background: url('../img/icons/logo_light.png') no-repeat center center;
+}
+
+.anim-opacity {
+  animation-name: anim-opacity;
+  animation-duration: .8s;
+}

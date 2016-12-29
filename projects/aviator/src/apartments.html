@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    //= html/_head.html
+    <title>Авиатор – квартиры</title>
+    <link href="js/libs/jquery.ui/jquery.ui.no-theme.css">
+</head>
+<body>
+<div class="page-container">
+    //= html/_header.html
+    <main class="page page-apartments">
+        <div class="page__inner">
+            <form class="form">
+                <div class="params">
+                    <h1 class="params__title">Выбор квартиры</h1>
+                    <p class="params__subtitle">по параметрам или <a href="house.html" class="link link_active link_dotted">на этаже</a></p>
+                    <button class="filters__btn-open btn" type="button">Фильтры</button>
+                    <div class="filters">
+                        <div class="filters__inner">
+                            <div class="filters__item">
+                                <p class="filters__title">Количество комнат</p>
+                                <div class="filters__buttons">
+                                    <button class="filters__btn" type="button">1</button>
+                                    <button class="filters__btn filters__btn_active" type="button">2</button>
+                                    <button class="filters__btn" type="button">3</button>
+                                </div>
+                            </div>
+
+                            <div class="filters__item">
+                                <p class="filters__title">Стоимость, Р</p>
+                                <div class="range-slider">
+                                    <div class="range-slider__desc">
+                                        <p class="range-slider__text">от <span class="range-slider__text_min">3 000 000</span></p>
+                                        <p class="range-slider__text">до <span class="range-slider__text_max">5 500 000</span></p>
+                                    </div>
+                                    <div class="range-slider_filter"></div>
+                                </div>
+                            </div>
+
+                            <div class="filters__item">
+                                <p class="filters__title">Этаж</p>
+                                <div class="filters__buttons">
+                                    <button class="filters__btn filters__btn_active" type="button">2</button>
+                                    <button class="filters__btn" type="button">3</button>
+                                    <button class="filters__btn" type="button">4</button>
+                                    <button class="filters__btn" type="button">Мансарда</button>
+                                </div>
+                            </div>
+
+                            <button class="filters__btn-submit btn btn_m btn_primary" type="button">Применить</button>
+                            <button class="filters__btn-reset" type="reset">Показать все квартиры</button>
+                        </div>
+                    </div>
+                    <p class="params__desc">Откройте сайт на компьютере, чтобы выбрать квартиру на схеме этажа</p>
+                </div>
+
+                <div class="result">
+                    <div class="tabs tabs-result">
+                        <div class="tabs__caption">
+                            <p class="result__count">Найдено <span class="params__count-number">14</span> квартир</p>
+                            <ul class="tabs__menu">
+                                <li class="tabs__menu-item"><a href="#tab_plate" class="tabs__tab tab_plate">Плиткой</a></li>
+                                <li class="tabs__menu-item"><a href="#tab_list" class="tabs__tab tab_list">Таблицей</a></li>
+                            </ul>
+                            <button class="result__reset" type="reset">Сбросить фильтры</button>
+                        </div>
+
+                        <div class="tabs__content">
+                            //= html/tabs/_tabs_result-tab_1.html
+                            //= html/tabs/_tabs_result-tab_2.html
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pagination">
+                    <a href="#" class="pagination__link">1</a>
+                    <a href="#" class="pagination__link active">2</a>
+                    <a href="#" class="pagination__link">3</a>
+                    <a href="#" class="pagination__link">4</a>
+                    <a href="#" class="pagination__link">5</a>
+                </div>
+            </form>
+        </div>
+    </main>
+    //= html/_footer.html
+    //= html/_menu-mobile.html
+</div>
+//= html/_modal-apartment.html
+//= html/_modal-callback.html
+//= html/_scripts.html
+</body>
+</html>

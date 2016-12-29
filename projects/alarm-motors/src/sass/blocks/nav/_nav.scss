@@ -1,0 +1,168 @@
+.nav {
+  flex-grow: 1;
+  width: 170px;
+  background-color: $color-gray-70;
+  padding: 0px 20px;
+  color: #fff;
+  z-index: 51;
+}
+
+.nav__inner {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0;
+  width: 130px;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 30px 0 110px;
+  padding: 0;
+  list-style: none;
+  font-size: 15px;
+
+  & li {
+    flex: 0 1 auto;
+  }
+}
+
+.nav-menu__link {
+  @extend .link_light;
+  padding: 7px 0;
+  font-family: $font-family_bold;
+}
+
+.nav__tel {
+  @extend .link_light;
+  margin-top: auto;
+  margin-bottom: 20px;
+  white-space: nowrap;
+  font-family: $font-family_bold;
+
+  & > span {
+    color: $color-red-50;
+  }
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 0 40px;
+  padding: 0;
+  list-style: none;
+  font-size: 13px;
+}
+
+.nav-list__link {
+  @extend .link_light;
+}
+
+
+@media (min-width: 1600px) {
+  .nav {
+    width: 200px;
+    padding-left: 30px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .nav .dropdown-light {
+    margin-left: -6px;
+  }
+}
+
+@media (max-width: 1279px) {
+  .nav {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-grow: 0;
+    width: 100%;
+    height: 60px;
+  }
+
+  .nav__inner {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+
+  .nav__tel {
+    order: 1;
+    padding: 0 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-list {
+    min-width: 200px;
+  }
+
+  .nav-list_login {
+    display: none;
+  }
+
+  .nav-list_contact {
+    flex-direction: row;
+    margin-left: auto;
+    margin-bottom: 0;
+
+    & li {
+      margin-right: 30px;
+    }
+
+    & li:first-child {
+      order: 1;
+      margin-right: 5px;
+    }
+  }
+
+  .nav-list__link {
+    padding-left: 0;
+    margin: 0;
+    white-space: nowrap;
+
+    & > svg {
+      display: none;
+    }
+  }
+
+  .dropdown {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 719px) {
+  .nav {
+    height: 42px;
+  }
+
+  .nav-list_contact {
+    display: none;
+  }
+
+  .dropdown-light {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 519px) {
+  .nav {
+    padding-right: 20px;
+  }
+
+  .nav__tel {
+    display: none !important;
+  }
+}

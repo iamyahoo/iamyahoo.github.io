@@ -1,0 +1,56 @@
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  line-height: 30px;
+
+  span {
+    margin-right: 5px;
+    cursor: default;
+  }
+}
+
+.pagination__link {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  transition: opacity .2s;
+  font-size: 18px;
+  font-family: $font-family_light;
+  color: $color-blue-30;
+
+  &:hover {
+    opacity: .7;
+    text-decoration: underline;
+  }
+}
+
+.pagination__link.active {
+  color: #000;
+  font-family: $font-family_bold;
+  text-decoration: none;
+  border-color: transparent;
+  cursor: default;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.pagination__link_left,
+.pagination__link_right {
+  display: block;
+  height: 34px;
+  width: 34px;
+  background: url(../img/icon/arrow.png) no-repeat center center;
+
+  &:hover {
+    opacity: .7;
+  }
+}
+
+.pagination__link_left {
+  transform: rotate(180deg);
+}

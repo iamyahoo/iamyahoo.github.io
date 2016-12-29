@@ -1,0 +1,53 @@
+.icon-scroll {
+  position: relative;
+  display: block;
+  width: 26px;
+  height: 40px;
+  border-radius: 14px;
+  background-color: #fff;
+  border: 2px solid $color-blue-90;
+  padding-bottom: 10px;
+
+  &:before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 2px;
+    height: 8px;
+    background-color: $color-blue-90;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation-name: up-down;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+
+  div {
+    position: absolute;
+    display: block;
+    width: 8px;
+    height: 8px;
+    left: 50%;
+    bottom: -12px;
+    transform: translateX(-50%);
+
+    &:after {
+      position: absolute;
+      display: block;
+      content: '';
+      border-left: 2px solid $color-blue-90;
+      border-top: 2px solid $color-blue-90;
+      width: 8px;
+      height: 8px;
+      transform: rotate(-135deg);
+    }
+  }
+}
+
+
+@media (max-width: 640px) {
+  .icon-scroll {
+    display: none;
+  }
+}

@@ -1,0 +1,88 @@
+.alert {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #fff;
+  border-radius: 2px;
+  padding: 20px;
+  z-index: 20;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.4);
+}
+
+.alert_active {
+  display: block;
+}
+
+.alert__header {
+  display: flex;
+  flex-direction: row;
+
+  & .btn_close {
+    margin-left: auto;
+  }
+}
+
+.alert_top:after {
+  @extend .triangle;
+  transform: rotate(0deg) scaleX(1.6) translateX(-50%);
+  top: -16px;
+  left: 50%;
+  z-index: 10;
+}
+
+.alert_right:after {
+  @extend .triangle;
+  transform: rotate(90deg) scaleX(1.6) translateX(-50%);
+  right: -10px;
+  top: 50%;
+  z-index: 10;
+}
+
+.alert_bottom:after {
+  @extend .triangle;
+  transform: rotate(180deg) scaleX(1.6) translateX(0%);
+  bottom: -16px;
+  left: 50%;
+  z-index: 10;
+}
+
+.alert_left:after {
+  @extend .triangle;
+  transform: rotate(270deg) scaleX(1.6) translateX(0%);
+  left: -10px;
+  top: 50%;
+  z-index: 10;
+}
+
+//alert blocks
+.alert_callback {
+  max-width: 420px;
+  padding: 20px 20px 10px;
+  top: 9.1%;
+  left: 12%;
+}
+
+.alert_geolocation {
+  max-width: 220px;
+  top: 1.5%;
+  left: 12%;
+
+  &.alert_left:after {
+    top: 20%;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+}
+
+.alert_geolocation-inner {
+  display: flex;
+  flex-direction: column;
+}
+
+//alert links
+.alert-callback {}
+
+.alert-geolocation {}

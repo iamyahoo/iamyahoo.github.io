@@ -1,0 +1,9 @@
+.architecture {}
+
+.architecture__content {
+  background-image: url('../img/content/photo-architecture.jpg');
+
+  & .main-item__text {
+    max-width: 700px;
+  }
+}

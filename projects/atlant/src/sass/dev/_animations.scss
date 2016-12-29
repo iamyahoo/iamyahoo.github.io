@@ -1,0 +1,111 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+
+@keyframes show {
+  0% {
+    display: none !important;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  1% {
+    display: block !important;
+  }
+
+  100% {
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes hide {
+  0% {
+    display: block !important;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  99% {
+    display: block !important;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  100% {
+    display: none !important;
+  }
+}
+
+
+@keyframes up-down {
+  0% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(50%);
+  }
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+
+  0% {
+    opacity: 0;
+  }
+
+  70% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+
+  0% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes rotate-colors {
+
+  100% {
+    -webkit-filter: hue-rotate(360deg);
+  }
+}
+
+
+@keyframes anim-opacity {
+  0% { opacity: 0.7; }
+
+  20% { opacity: 1; }
+
+  40% { opacity: 0.7; }
+
+  60% { opacity: 0.9; }
+
+  80% { opacity: 0.5; }
+
+  100% { opacity: 0.7; }
+}

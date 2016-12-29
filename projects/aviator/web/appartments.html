@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="js/libs/jquery.slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="js/libs/jquery.ui/jquery.ui.min.css">
+    <title>Авиатор — квартиры</title>
+</head>
+<body>
+<div class="page-container">
+    <header class="header">
+        <div class="header__inner">
+            <a href="#" class="logo"></a>
+            <nav class="nav">
+                <a href="#" class="nav__link"><span class="nav__text">О проекте</span></a>
+                <a href="#" class="nav__link"><span class="nav__text">Квартиры</span></a>
+                <a href="#" class="nav__link"><span class="nav__text">Расположение</span></a>
+                <a href="#" class="nav__link"><span class="nav__text">Ход строительства</span></a>
+                <a href="#" class="nav__link"><span class="nav__text">Контакты</span></a>
+            </nav>
+            <a href="tel:880095634556" class="header__tel link link_dark">8 800 956 34 556</a>
+            <a href="#" class="btn btn_primary btn_callback">Перезвоните мне</a>
+        </div>
+    </header>
+    <main class="page page-apartments">
+        <div class="page__inner">
+            <form class="params">
+                <h1 class="params__title">Выбор квартиры</h1>
+                <p class="params__subtitle">по параметрам или <a href="#" class="link link_active link_dotted">на этаже</a></p>
+                <div class="filters">
+                    <div class="filters__item">
+                        <p class="filters__title">Количество комнат</p>
+                        <div class="filters__buttons">
+                            <button class="filters__btn" type="button">1</button>
+                            <button class="filters__btn" type="button">2</button>
+                            <button class="filters__btn" type="button">3</button>
+                        </div>
+                    </div>
+
+                    <div class="filters__item">
+                        <p class="filters__title">Стоимость, Р</p>
+                        <div class="range-slider">
+                            <div class="range-slider__desc">
+                                <p class="range-slider__text">от <span class="range-slider__text_min">3 000 000</span></p>
+                                <p class="range-slider__text">до <span class="range-slider__text_max">5 500 000</span></p>
+                            </div>
+                            <div class="range-slider_filter"></div>
+                        </div>
+                    </div>
+
+                    <div class="filters__item">
+                        <p class="filters__title">Количество комнат</p>
+                        <div class="filters__buttons">
+                            <button class="filters__btn" type="button">2</button>
+                            <button class="filters__btn" type="button">3</button>
+                            <button class="filters__btn" type="button">4</button>
+                            <button class="filters__btn" type="button">Мансарда</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn_reset">Сбросить фильтры</button>
+            </form>
+
+            <div class="tabs-choose">
+                <p class="params__count">Найдено <span class="params__count-number">14</span> квартир</p>
+                <div class="params__tab"></div>
+            </div>
+
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__inner">
+            <p class="footer__copyright">© Строительная компания «Авиатор»</p>
+            <a href="http://its.agency/" class="link footer__development" target="_blank">Разработка сайта <span>ITS</span></a>
+        </div>
+    </footer>
+</div>
+<script src="js/libs/jquery/jquery.min.js"></script>
+<script src="js/libs/jquery.ui/jquery.ui.min.js"></script>
+<script src="js/libs/jquery.slick/slick.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

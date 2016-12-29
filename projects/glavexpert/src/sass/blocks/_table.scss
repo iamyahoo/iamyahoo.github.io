@@ -1,0 +1,31 @@
+.table-request {
+  width: 100%;
+  max-width: 550px;
+  margin-bottom: 30px;
+
+  .table-request__data {
+    padding: 6px 0;
+  }
+
+  .table-request__data:nth-child(1) {
+    width: 25px;
+    padding-right: 10px;
+  }
+
+  .table-request__data:nth-child(2) {
+    color: $font-color_dark;
+  }
+}
+
+.table-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  max-width: 350px;
+  white-space: normal;
+
+  & li {
+    max-width: 350px;
+    margin-bottom: 8px;
+  }
+}

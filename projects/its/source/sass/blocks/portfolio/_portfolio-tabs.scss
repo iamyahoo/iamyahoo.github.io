@@ -1,0 +1,72 @@
+.portfolio-tabs {
+
+  & .tabs__buttons {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 30px;
+    left: 60px;
+    z-index: 2;
+    list-style: none;
+  }
+
+  & .tabs__btn {
+    position: relative;
+    display: block;
+    width: 26px;
+    height: 16px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: all .2s;
+  }
+
+  & .tabs__btn_slider {
+    background-color: $color-gray-20;
+
+    &.active {
+      background-color: #000;
+    }
+  }
+
+  & .tabs__btn_list {
+
+    &:after,
+    &:before {
+      position: absolute;
+      content: '';
+      width: 26px;
+      height: 6px;
+      background-color: $color-gray-20;
+      transition: all .2s;
+    }
+
+    &:after {
+      top: 0;
+    }
+
+    &:before {
+      bottom: 0;
+    }
+
+    &.active {
+      &:after,
+      &:before {
+        background-color: #000;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 750px) {
+
+  .portfolio-tabs {
+
+    & .tabs__buttons {
+      display: none;
+      left: 40px;
+    }
+  }
+}

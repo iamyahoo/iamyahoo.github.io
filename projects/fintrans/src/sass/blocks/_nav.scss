@@ -1,0 +1,20 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__link {
+  padding: 15px;
+  margin: 0 40px 0 0;
+  text-decoration: none;
+  font-family: $font-family_bold;
+  font-size: 16px;
+  white-space: nowrap;
+
+  &:first-child {
+    padding-left: 0;
+  }
+}

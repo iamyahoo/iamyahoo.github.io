@@ -1,0 +1,30 @@
+.pagination {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  line-height: 30px;
+
+  span {
+    margin-right: 5px;
+  }
+}
+
+.pagination__link {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  transition: none;
+
+  &:hover {
+    background: $color-blue-50;
+    border-radius: 50%;
+    color: #fff;
+  }
+}
+
+.pagination__link.active {
+  background: $color-blue-50;
+  border-radius: 50%;
+  color: #fff;
+}

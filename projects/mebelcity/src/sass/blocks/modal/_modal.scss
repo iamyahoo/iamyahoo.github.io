@@ -1,0 +1,159 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.modal_side.modal_opened + .modal_side.modal_opened {
+  & .modal__body {
+    max-width: 760px;
+  }
+}
+
+.modal_opened {
+  display: block;
+  animation: fadeIn .2s;
+
+  & .modal__popup {
+    animation: slideDown .2s;
+  }
+
+  & .modal__body {
+    animation: slideLeft .2s;
+  }
+}
+
+.modal_closed {
+  display: block;
+  animation: fadeOut .1s;
+
+  & .modal__popup {
+    animation: slideTop .1s;
+  }
+
+  & .modal__body {
+    animation: slideRight .1s;
+  }
+}
+
+.modal__backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 101;
+  background-color: rgba(40, 40, 40, .85);
+  width: 100%;
+  height: 100vh;
+}
+
+.modal__popup {
+  position: relative;
+  top: 15%;
+  z-index: 102;
+  margin: auto;
+  width: 90%;
+  max-width: 640px;
+  min-width: 290px;
+  background: #fff;
+  text-align: center;
+  padding: 40px 40px;
+
+  & .btn_close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+
+  & .form {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.modal__body {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 102;
+  width: 70%;
+  height: 100%;
+  max-width: 780px;
+  min-width: 320px;
+  background: #fff;
+  overflow: auto;
+
+  & .btn_close {
+    position: fixed;
+    z-index: 50;
+    top: 25px;
+    right: 35px;
+  }
+}
+
+.modal__header {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  padding: 30px 8% 20px;
+  //border-bottom: 1px solid $color-gray-10;
+
+  & h1, h2, h3, h4 {
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+}
+
+.modal__content {
+  padding: 20px 8%;
+}
+
+.modal__item {
+  margin-bottom: 40px;
+}
+
+.modal__title {
+  margin-bottom: 10px;
+}
+
+.modal__text {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 960px) {
+  .modal__body {
+    width: calc(100% - 56px);
+  }
+}
+
+@media (max-width: 719px) {
+  .modal__popup {
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 40px 20px;
+  }
+
+  .modal__header {
+    padding: 20px 50px;
+  }
+
+  .modal__content {
+    padding: 20px 50px;
+  }
+}
+
+@media (max-width: 450px) {
+  .modal__body {
+    width: 100%;
+  }
+  .modal__header {
+    padding: 20px 10px;
+  }
+
+  .modal__content {
+    padding: 20px 10px;
+  }
+}

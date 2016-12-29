@@ -1,0 +1,32 @@
+.page-case {
+
+  & .page__inner {
+    padding: 100px 0 100px;
+  }
+
+  & .link-anchor {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 960px) {
+
+  .page-case {
+
+    & .page__inner {
+      padding: 60px 0 0;
+    }
+  }
+}
+
+
+@media (max-width: 760px) {
+
+  .page-case {
+
+    & .page__inner {
+      padding: 0;
+    }
+  }
+}

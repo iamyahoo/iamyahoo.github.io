@@ -1,0 +1,23 @@
+<section class="modal modal_simple" id="modal-login">
+    <div class="modal__inner">
+        <h2 class="modal__title">Вход</h2>
+        <div class="modal__form">
+            <form class="form form-career form_modal">
+                <label class="form-label">
+                    <span class="form-label__text">E-mail</span>
+                    <input type="email" class="form__input">
+                </label>
+                <label class="form-label">
+                    <span class="form-label__text">Пароль</span>
+                    <input type="password" class="form__input">
+                </label>
+                <div class="modal__login">
+                    <a href="account-new-message.html" class="btn btn_signin btn_next">Войти</a>
+                    <a href="#modal-register" rel="modal:open" class="btn btn_signup">Регистрация</a>
+                </div>
+                <a href="#modal-restore-password" rel="modal:open" class="link link_restore">Восстановить пароль</a>
+            </form>
+        </div>
+    </div>
+    <a href="#modal-login" rel="modal:close" class="close-modal"></a>
+</section>

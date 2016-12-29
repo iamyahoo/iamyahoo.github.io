@@ -1,0 +1,387 @@
+.btn {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  height: 50px;
+  line-height: 48px;
+  padding: 0 30px;
+  background-color: transparent;
+  border-radius: 25px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  color: $font-color;
+  text-align: center;
+  transition: all .2s;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+  outline: 0;
+  box-shadow: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    outline: 0;
+    text-decoration: none;
+  }
+
+  &:hover {
+    color: $color-blue-50;
+  }
+
+  &:active {
+    color: $color-blue-70;
+  }
+}
+
+
+.btn_s {}
+
+.btn_m {
+  width: 160px;
+}
+
+.btn_l {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+
+.btn_simple {
+  border-color: $color-gray-50;
+  background-color: $color-white;
+  text-transform: uppercase;
+  font-family: $font-family_bold;
+  font-size: $font_small;
+
+  &:hover,
+  &:focus {
+    border-color: $color-gray-50;
+    background-color: $color-gray-10;
+  }
+
+  &:active {
+    background-color: darken($color-gray-10, 5%);
+  }
+}
+
+
+.btn_disabled {
+  border-color: $color-gray-50;
+  background-color: $color-gray-10;
+  color: $color-gray-50;
+  cursor: default;
+
+  &:hover,
+  &:active,
+  &:focus {
+    border-color: $color-gray-50;
+    background-color: $color-gray-10;
+    color: $color-gray-50;
+  }
+}
+
+
+.btn_primary {
+  border-color: $color-gold;
+  background-color: $color-gold;
+  text-transform: uppercase;
+  font-family: $font-family_bold;
+  font-size: $font_small;
+
+  &:hover,
+  &:focus {
+    border-color: darken($color-gold, 5%);
+    background-color: darken($color-gold, 5%);
+    color: $font-color;
+  }
+
+  &:active {
+    border-color: darken($color-gold, 10%);
+    background-color: darken($color-gold, 10%);
+    color: $font-color;
+  }
+}
+
+
+.btn_secondary {
+  border-color: $color-blue-50;
+  background-color: $color-white;
+  text-transform: uppercase;
+  font-family: $font-family_bold;
+  font-size: $font_small;
+
+  &:hover,
+  &:focus {
+    border-color: $color-blue-50;
+    background-color: $color-blue-50;
+    color: $color-white;
+  }
+
+  &:active {
+    border-color: darken($color-blue-50, 5%);
+    background-color: darken($color-blue-50, 5%);
+  }
+}
+
+
+.btn_transparent {
+  border-color: $color-blue-20;
+  background-color: transparent;
+  color: $color-blue-20;
+
+  &:hover,
+  &:focus {
+    border-color: $color-blue-20;
+    background-color: $color-blue-20;
+    color: $color-black;
+  }
+
+  &:active {
+    border-color: darken($color-blue-20, 5%);
+    background-color: darken($color-blue-20, 5%);
+  }
+}
+
+
+.btn_action {
+  border-color: $color-gold;
+  background-color: transparent;
+  color: $color-gold;
+  font-family: $font-family;
+  text-transform: none;
+  font-size: 14px;
+
+  &:hover,
+  &:focus {
+    background-color: $color-gold;
+    color: $color-black;
+  }
+
+  &:active {
+    background-color: darken($color-gold, 10%);
+    color: $color-black;
+  }
+}
+
+
+.btn_attach {
+  position: relative;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  outline: 0;
+  color: $color-blue-30;
+  font-family: $font-family_bold;
+  overflow: hidden;
+  cursor: pointer;
+  
+  &:hover {
+    color: $color-blue-50;
+  }
+
+  & > input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  &.btn_disabled > input[type=file] {
+    display: none;
+  }
+}
+
+
+.btn_upload {
+  overflow: hidden;
+
+  & > input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  &.btn_disabled > input[type=file] {
+    display: none;
+  }
+}
+
+
+.btn_callback {
+  padding-left: 48px;
+  background-image: url(../img/svg/phone.svg);
+  background-repeat: no-repeat;
+  background-position:  15px center;
+  background-size: 21px 21px;
+  text-transform: none;
+  font-family: $font-family;
+  font-size: $font_default;
+  height: 40px;
+  line-height: 40px;
+}
+
+
+.btn_webcam {
+  padding-left: 55px;
+  text-transform: uppercase;
+  font-family: $font-family_bold;
+  font-size: $font_small;
+  font-weight: normal;
+  border-color: $color-blue-50;
+
+  &:before {
+    position: absolute;
+    display: block;
+    width: 28px;
+    height: 28px;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    content: '';
+    background-image: url(../img/icons/icon-webcam.png);
+    background-repeat: no-repeat;
+  }
+
+  &:hover {
+    background-color: $color-blue-50;
+    color: #fff;
+
+    &:before {
+      filter: brightness(0) invert(1);
+    }
+  }
+}
+
+
+.btn_arrow {
+  padding-right: 100px;
+
+  &:before,
+  &:after {
+    position: absolute;
+    content: '';
+    transition: all .2s;
+  }
+
+  &:before {
+    top: 50%;
+    right: 20px;
+    width: 16px;
+    height: 2px;
+    background-color: $color-gray-90;
+  }
+
+  &:after {
+    top: 50%;
+    right: 18px;
+    width: 6px;
+    height: 6px;
+    border-right: 2px solid $color-gray-90;
+    border-top: 2px solid $color-gray-90;
+    transform: rotate(45deg) translateX(-50%);
+  }
+}
+
+
+.btn_arrow.btn_secondary {
+
+  &:hover {
+    &:before {
+      background-color: $color-white;
+    }
+
+    &:after {
+      border-color: $color-white;
+    }
+  }
+}
+
+
+.btn_like {
+  background-color: transparent;
+  border: none;
+  position: relative;
+  padding-left: 45px;
+  outline: none;
+  transition: all .2s;
+  
+  &:hover {
+    color: $color-gold-50;
+  }
+
+  &:hover:before {
+    background-image: url('../img/icons/icon-like.png');
+    border-color: $color-gold-50;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 34px;
+    height: 34px;
+    border: 1px solid $color-gray-20;
+    border-radius: 50%;
+    background-image: url('../img/icons/icon-like_gray.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    outline: 0;
+    transition: all .2s;
+    transform: translateY(-50%);
+  }
+}
+
+
+.btn_download {
+  background-color: transparent;
+  border: none;
+  position: relative;
+  padding-left: 45px;
+  outline: none;
+  transition: all .2s;
+
+  &:hover {
+    color: $color-gold-50;
+  }
+
+  &:hover:before {
+    background-image: url('../img/icons/icon-download.png');
+    border-color: $color-gold-50;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 34px;
+    height: 34px;
+    border: 1px solid $color-gray-20;
+    border-radius: 50%;
+    background-image: url('../img/icons/icon-download_gray.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    outline: 0;
+    transition: all .2s;
+    transform: translateY(-50%);
+  }
+}

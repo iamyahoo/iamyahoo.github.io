@@ -1,0 +1,54 @@
+.accordion {
+  width: 100%;
+}
+
+.accordion_catalog {
+  display: block;
+}
+
+.accordion_open {
+  font-family: $font-family_bold;
+  color: #000;
+}
+
+.accordion__btn {
+  position: relative;
+  padding: 5px 0 5px 0;
+  cursor: pointer;
+  transition: color .2s;
+
+  &:hover {
+    color: $color-pink;
+  }
+}
+
+.accordion__list {
+  display: none;
+  margin: 0;
+  padding: 0 0 0 30px;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.accordion__link {
+
+}
+
+.accordion__item {
+  position: relative;
+  padding: 5px 0 5px 0;
+  cursor: pointer;
+  transition: color .2s;
+  font-family: $font-family;
+
+  &:hover {
+    color: $color-pink;
+  }
+}
+
+@media (max-width: 799px) {
+
+  .accordion_catalog {
+    display: none;
+  }
+}

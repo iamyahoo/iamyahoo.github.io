@@ -1,0 +1,119 @@
+.svg-logo {
+  width: 157px;
+  height: 28px;
+}
+
+.svg-logo-small {
+  height: 28px;
+  width: 28px;
+}
+
+.svg-clouds {
+  position: relative;
+  width: 1030px;
+  height: 143px;
+  z-index: 1;
+}
+
+.svg-ship {
+  position: relative;
+  width: 648px;
+  height: 219px;
+  //animation-name: anim-ship;
+  //animation-duration: 30s;
+  //animation-iteration-count: 1;
+  //animation-timing-function: ease-in-out;
+  //animation-fill-mode: forwards;
+  //transform: rotate(-0.5deg);
+  will-change: auto;
+  z-index: 2;
+}
+
+.svg-truck {
+  position: relative;
+  width: 387px;
+  height: 93px;
+  z-index: 4;
+}
+
+.svg-vagon {
+  position: relative;
+  width: 504px;
+  height: 130px;
+  will-change: auto;
+  animation-name: anim-vagon;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  //animation-direction: normal;
+  //animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-delay: 3s;
+  z-index: 5;
+}
+
+.svg-road {
+  position: relative;
+  height: 2px;
+  width: 1000px;
+  z-index: 1;
+}
+
+.svg-about {
+  width: 540px;
+  height: 480px;
+}
+
+.svg-seawave {
+  width: 665px;
+  height: 4px;
+  z-index: 3;
+  background-image: url('../img/svg/svg-icon-seawave.svg');
+  background-repeat: repeat-x;
+  background-position: 0 0;
+  //background-size: 665px 4px;
+  animation-name: anim-seawave;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+
+@media (max-width: 640px) {
+
+  .svg-logo {
+    width: 114px;
+    height: 20px;
+  }
+
+  .svg-clouds {
+    width: 454px;
+    height: 64px;
+  }
+
+  .svg-ship {
+    width: 285px;
+    height: 96px;
+  }
+
+  .svg-seawave {
+    animation: none;
+  }
+
+  .svg-truck {
+    width: 162px;
+    height: 41px;
+  }
+
+  .svg-vagon {
+    width: 222px;
+    height: 57px;
+  }
+
+  .svg-road {}
+
+  .svg-about {
+    width: 287px;
+    height: 252px;
+  }
+}

@@ -1,0 +1,9 @@
+/* //= parts/_map.js */
+//= parts/_map_google.js
+//= parts/_slider.js
+//= parts/_dropdown.js
+//= parts/_accordion.js
+//= parts/_tabs.js
+//= parts/_switcher.js
+//= parts/_nav.js
+//= parts/_hamburger.js

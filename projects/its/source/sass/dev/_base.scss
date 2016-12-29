@@ -1,0 +1,139 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+  background-color: #fff;
+}
+
+body {
+  position: relative;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font: $font-normal 16px/1.4 $font-family;
+  font-weight: normal;
+  font-style: normal;
+  color: $font-color;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-button {
+    display: none;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #a0a0a0;
+  }
+}
+
+a {
+  transition: color, .2s;
+  
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+h1 {
+  font-family: $font-family_light;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 64px;
+  margin: 0 0 60px;
+}
+
+h2 {
+  font-family: $font-family_light;
+  font-weight: normal;
+  margin: 0 0 40px;
+  font-size: 48px;
+  line-height: 48px;
+}
+
+h3 {
+  font-family: $font-family_medium;
+  font-weight: normal;
+  margin: 0 0 20px;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+h1, h2, h3, h4, p, span, a, img, br {
+
+  &::selection {
+    background-color: $color-yellow-50;
+    color: #000;
+  }
+}
+
+@media (max-height: 740px) {
+
+  h1 {
+    margin: 0 0 40px;
+  }
+
+  h2 {
+    margin: 0 0 30px;
+  }
+}
+
+@media (max-width: 750px) {
+
+
+  h1 {
+    font-family: $font-family_light;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 56px;
+    margin: 0 0 60px;
+  }
+
+  h2 {
+    font-family: $font-family_light;
+    font-weight: normal;
+    margin: 0 0 40px;
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  h3 {
+    font-family: $font-family_semibold;
+    font-weight: normal;
+    margin: 0 0 20px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 520px) {
+
+  h1 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  h2 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  h3 {
+    font-family: $font-family_semibold;
+    font-weight: normal;
+    margin: 0 0 20px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

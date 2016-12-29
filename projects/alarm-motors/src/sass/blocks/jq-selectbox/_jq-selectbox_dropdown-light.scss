@@ -1,0 +1,99 @@
+.dropdown-light {
+
+  &.jq-selectbox {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    background-color: $color-gray-70;
+    border: 1px solid $color-gray-60;
+    border-radius: 5px;
+    min-width: 140px;
+    cursor: pointer;
+    font-size: 13px;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 10px;
+      right: 8px;
+      width: 0;
+      height: 0;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-top: 5px solid $color-gray-60;
+      transition: all .3s;
+    }
+  }
+
+  &.jq-selectbox.opened {
+    border-radius: 5px 5px 0 0;
+    background: $color-gray-60;
+    border-color: $color-gray-70;
+
+    &:after {
+      border-top: 5px solid $color-red-50;
+      transform: rotate(180deg);
+      transition: all .3s;
+    }
+
+    & .jq-selectbox__dropdown {
+      background: $color-gray-60;
+      border-color: $color-gray-70;
+    }
+  }
+
+  &.jq-selectbox.disabled {
+    color: $color-gray-50;
+
+    & .jq-selectbox__dropdown {
+      display: none !important;
+    }
+  }
+
+  & .jq-selectbox__select-text {
+    max-width: 150px;
+    width: 100% !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 3px 15px;
+  }
+
+  & .jq-selectbox__dropdown {
+    position: absolute;
+    top: 100%;
+    left: -1px;
+    z-index: 1;
+    display: none;
+    width: calc(100% + 2px);
+    margin: 0;
+    padding: 8px 12px;
+    background-color: $color-gray-70;
+    border: 1px solid $color-gray-60;
+    border-radius: 0 0 5px 5px;
+    list-style: none;
+    text-align: left;
+  }
+
+  & .jq-selectbox__dropdown ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  & .jq-selectbox__dropdown li {
+    display: block;
+    padding: 4px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: $font-family;
+
+    &:hover {
+      color: $color-red-50;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,248 @@
+.page-table {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 35px;
+}
+
+.page-table__head {
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  font-family: $font-family_bold;
+  font-size: $font_nano;
+  color: $font-color;
+
+  &:first-child {
+    padding-left: 20px;
+  }
+}
+
+.page-table__body {
+  background-color: $color-white;
+  border: 1px solid $color-gray-30;
+  border-radius: 5px;
+  color: $font-color_dark;
+}
+
+.page-table__row {
+  border-bottom: 1px solid $color-gray-30;
+
+  &:hover {
+    background-color: $color-gray-30;
+  }
+}
+
+.page-table__data {
+  padding: 20px 0;
+  padding-right: 20px;
+
+  &:first-child {
+    padding-left: 20px;
+  }
+}
+
+.page-table_merged {
+  margin-bottom: 0;
+
+  & .page-table__row {
+    border-color: transparent;
+
+    &:hover {
+      background-color: #fff;
+    }
+  }
+
+  & .page-table__row:last-child {
+
+    & .page-table__data {
+      padding-bottom: 20px;
+    }
+  }
+
+  & .page-table__data {
+    padding: 18px 0 0;
+
+    &:first-child {
+      padding-left: 20px;
+    }
+  }
+}
+
+.page-table_merged + .page-table_merged {
+
+  & .page-table__body {
+    border-top: none;
+  }
+}
+
+.page-table_merged.page-table_experts {
+
+  & td:nth-child(3) {
+    white-space: normal;
+  }
+}
+
+// таблица список объектов
+.page-table_objects-list {
+
+  td:nth-child(1) {
+    width: 350px;
+    font-family: $font-family_bold;
+  }
+
+  td:nth-child(2) {
+    width: 90px;
+  }
+
+  td:nth-child(3) {
+    width: 130px;
+    color: $color-gray-40;
+  }
+
+  td:nth-child(4) {
+    width: 85px;
+  }
+
+  td:nth-child(5) {
+    width: 85px;
+  }
+
+  td:nth-child(6) {
+    width: 85px;
+  }
+}
+
+//таблица объект
+.page-table_object {
+
+  td:nth-child(1) {
+    width: 250px;
+    font-family: $font-family_bold;
+  }
+
+  td:nth-child(2) {
+    width: 120px;
+    white-space: nowrap;
+    color: $color-gray-40;
+  }
+
+  td:nth-child(3) {
+    width: 120px;
+    white-space: nowrap;
+  }
+
+  td:nth-child(4) {
+    width: 170px;
+    white-space: nowrap;
+  }
+}
+
+//таблица клиенты
+.page-table_clients {
+
+  td:nth-child(1) {
+    width: 35%;
+    font-family: $font-family_bold;
+  }
+
+  td:nth-child(2) {
+    width: 20%;
+    color: $color-gray-60;
+  }
+
+  td:nth-child(3) {
+    width: 20%;
+    white-space: nowrap;
+    color: $color-gray-40;
+  }
+
+  td:nth-child(4) {
+    width: 25%;
+    white-space: nowrap;
+  }
+}
+
+//таблица эксперты
+.page-table_experts {
+
+  & .page-table__body {
+    vertical-align: top;
+  }
+
+  td:nth-child(1) {
+    width: 30%;
+    font-family: $font-family_bold;
+  }
+
+  td:nth-child(2) {
+    width: 8%;
+    color: $color-gray-60;
+  }
+
+  td:nth-child(3) {
+    width: 30%;
+    white-space: nowrap;
+    color: $color-gray-40;
+  }
+
+  td:nth-child(4) {
+    width: 14%;
+    white-space: nowrap;
+  }
+
+  td:nth-child(5) {
+    width: 18%;
+    white-space: nowrap;
+  }
+}
+
+//таблица - список объектов админа
+.page-table_admin-objects-list {
+
+  td:nth-child(1) {
+    width: 30%;
+    font-family: $font-family_bold;
+  }
+
+  td:nth-child(2) {
+    width: 8%;
+  }
+
+  td:nth-child(3) {
+    width: 17%;
+    color: $color-gray-40;
+  }
+
+  td:nth-child(4) {
+    width: 10%;
+  }
+
+  td:nth-child(5) {
+    width: 5%;
+  }
+
+  td:nth-child(6) {
+    width: 5%;
+  }
+
+  td:nth-child(7) {
+    width: 20%;
+    max-width: 170px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+// таблица - новый объект
+.page-table_new-object {
+
+  td:nth-child(1) {
+    width: 45%;
+    color: $color-gray-40;
+  }
+
+  td:nth-child(2) {
+    width: 55%;
+  }
+}

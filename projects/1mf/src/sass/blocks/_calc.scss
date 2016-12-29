@@ -1,0 +1,159 @@
+.calc {
+  height: 100%;
+  width: 100%;
+}
+
+.calc__inner {
+  @extend .layout-inner;
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+.calc__head {
+  //display: flex;
+  //flex-direction: row;
+  //align-items: baseline;
+}
+
+.calc__back {
+  position: relative;
+  margin-left: auto;
+  padding-left: 40px;
+  margin-bottom: 20px;
+
+  &:after {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-left: 1px solid $color-red-50;
+    border-bottom: 1px solid $color-red-50;
+    transform: translateY(-50%) rotate(45deg);
+  }
+}
+
+.calc__title {
+  margin-bottom: 40px;
+}
+
+.calc__columns {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.calc__column {
+  width: 48%;
+}
+
+.calc__size {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  & .form__item {
+    width: 30%;
+  }
+}
+
+.calc__furniture {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  & .form__item {
+    width: 45%;
+  }
+}
+
+.calc__contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.calc__contacts-part {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 48%;
+
+  & .form__input {
+      width: 30%;
+    }
+
+    & .form__select_simple {
+        width: 47%;
+      }
+
+  & .form__textarea {
+    height: 120px;
+  }
+}
+
+
+@media (max-width: 640px) {
+
+  .calc__inner {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+
+  .calc__back {
+    margin-bottom: 40px;
+  }
+
+  .calc__columns {
+    flex-direction: column;
+  }
+
+  .calc__column {
+    width: 100%;
+  }
+
+  .calc__form {
+
+    & .btn_primary {
+      max-width: 270px;
+    }
+  }
+
+  .calc__size {
+    flex-direction: column;
+
+    & .form__item {
+      width: 100%;
+    }
+  }
+
+  .calc__furniture {
+    flex-direction: column;
+
+    & .form__item {
+      width: 100%;
+    }
+  }
+
+  .calc__contacts {
+    flex-direction: column;
+  }
+
+  .calc__contacts-part {
+    width: 100%;
+
+    & .form__input {
+      width: 100%;
+    }
+
+    & .form__select_simple {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+}

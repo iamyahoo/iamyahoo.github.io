@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <title>Авиатор — квартиры</title>
+    <link href="js/libs/jquery.ui/jquery.ui.no-theme.css">
+</head>
+<body>
+<div class="page-container">
+    <header class="header">
+        <div class="header__inner">
+            <a href="index.html" class="logo"></a>
+            <nav class="nav">
+                <a href="project.html" class="nav__link"><span class="nav__text">О комплексе</span></a>
+                <a href="apartments.html" class="nav__link"><span class="nav__text">Квартиры</span></a>
+                <a href="placement.html" class="nav__link"><span class="nav__text">Расположение</span></a>
+                <a href="timeline.html" class="nav__link"><span class="nav__text">Ход строительства</span></a>
+                <a href="contacts.html" class="nav__link"><span class="nav__text">Контакты</span></a>
+            </nav>
+            <a href="tel:+78123366355" class="header__tel link link_dark">+7 (812) 336-63-55</a>
+            <a href="#" id="modal-callback-mobile" class="btn btn_primary btn_callback">Перезвоните мне</a>
+            <button class="hamburger">
+                <span></span>
+            </button>
+        </div>
+    </header>
+    <main class="page page-apartments">
+        <div class="page__inner">
+            <form class="form">
+                <div class="params">
+                    <h1 class="params__title">Выбор квартиры</h1>
+                    <p class="params__subtitle">по параметрам или <a href="house.html" class="link link_active link_dotted">на этаже</a></p>
+                    <button class="filters__btn-open btn" type="button">Фильтры</button>
+                    <div class="filters">
+                        <div class="filters__inner">
+                            <div class="filters__item">
+                                <p class="filters__title">Количество комнат</p>
+                                <div class="filters__buttons">
+                                    <button class="filters__btn" type="button">1</button>
+                                    <button class="filters__btn filters__btn_active" type="button">2</button>
+                                    <button class="filters__btn" type="button">3</button>
+                                </div>
+                            </div>
+
+                            <div class="filters__item">
+                                <p class="filters__title">Стоимость, Р</p>
+                                <div class="range-slider">
+                                    <div class="range-slider__desc">
+                                        <p class="range-slider__text">от <span class="range-slider__text_min">3 000 000</span></p>
+                                        <p class="range-slider__text">до <span class="range-slider__text_max">5 500 000</span></p>
+                                    </div>
+                                    <div class="range-slider_filter"></div>
+                                </div>
+                            </div>
+
+                            <div class="filters__item">
+                                <p class="filters__title">Этаж</p>
+                                <div class="filters__buttons">
+                                    <button class="filters__btn filters__btn_active" type="button">2</button>
+                                    <button class="filters__btn" type="button">3</button>
+                                    <button class="filters__btn" type="button">4</button>
+                                    <button class="filters__btn" type="button">Мансарда</button>
+                                </div>
+                            </div>
+
+                            <button class="filters__btn-submit btn btn_m btn_primary" type="button">Применить</button>
+                            <button class="filters__btn-reset" type="reset">Показать все квартиры</button>
+                        </div>
+                    </div>
+                    <p class="params__desc">Откройте сайт на компьютере, чтобы выбрать квартиру на схеме этажа</p>
+                </div>
+
+                <div class="result">
+                    <div class="tabs tabs-result">
+                        <div class="tabs__caption">
+                            <p class="result__count">Найдено <span class="params__count-number">14</span> квартир</p>
+                            <ul class="tabs__menu">
+                                <li class="tabs__menu-item"><a href="#tab_plate" class="tabs__tab tab_plate">Плиткой</a></li>
+                                <li class="tabs__menu-item"><a href="#tab_list" class="tabs__tab tab_list">Таблицей</a></li>
+                            </ul>
+                            <button class="result__reset" type="reset">Сбросить фильтры</button>
+                        </div>
+
+                        <div class="tabs__content">
+                            <div class="tabs__item" id="tab_plate">
+                                <div class="cards cards_plate">
+                                    <div id="card1" class="card">
+                                        <a href="#" class="card__link"></a>
+                                        <p class="card__number"><span class="card__text">№</span>1</p>
+                                        <div class="card__img">
+                                            <img src="img/content/schema/1-room.png" alt="">
+                                        </div>
+                                        <div class="card__info">
+                                            <div class="card__text">
+                                                <p class="card__desc">комнат</p>
+                                                <p class="card__desc-number">1</p>
+                                            </div>
+                                            <div class="card__text">
+                                                <p class="card__desc">площадь</p>
+                                                <p class="card__desc-number">36 м<sup>2</sup></p>
+                                            </div>
+                                            <div class="card__text">
+                                                <p class="card__desc">этаж</p>
+                                                <p class="card__desc-number">3</p>
+                                            </div>
+                                            <div class="card__text">
+                                                <p class="card__desc">стоимость</p>
+                                                <p class="card__desc-number">3 560 000 <span class="card__desc">Р</span></p>
+                                            </div>
+                                        </div>
+                                        <button class="icon-like" type="button"></button>
+                                    </div>
+
+                                    <div class="card">
+                                        <a href="#" class="card__link"></a>
+                                        <p class="card__number"><span class="card__text">№</span>1</p>
+                                        <div class="card__img">
+                                            <img src="img/content/schema/2-room.png" alt="">
+                                        </div>
+                                        <div class="card__info">
+                                            <p class="card__text"><span class="card__desc">комнат</span> 2</p>
+                                            <p class="card__text"><span class="card__desc">площадь</span> 86 м²</p>
+                                            <p class="card__text"><span class="card__desc">этаж</span> 3</p>
+                                            <p class="card__text"><span class="card__desc">стоимость</span> <nobr>5 560 000 <span class="card__desc">Р</span></nobr></p>
+                                        </div>
+                                        <button class="icon-like" type="button"></button>
+                                    </div>
+
+                                    <div class="card card-promo">
+                                        <h2 class="card-promo__title">Суперакция</h2>
+                                        <p class="card-promo__text">при покупке двухкомнатной квартиры <br>парковочное место в подарок</p>
+                                        <div class="card-promo__img">
+                                            <img src="img/content/promo-parking.png" alt="Парковочное место в подарок">
+                                        </div>
+                                        <a href="#" class="btn btn_action">Подробнее</a>
+                                    </div>
+
+                                    <div class="card">
+                                        <a href="#" class="card__link"></a>
+                                        <p class="card__number"><span class="card__text">№</span>1</p>
+                                        <div class="card__img">
+                                            <img src="img/content/schema/2-room.png" alt="">
+                                        </div>
+                                        <div class="card__info">
+                                            <p class="card__text"><span class="card__desc">комнат</span> 2</p>
+                                            <p class="card__text"><span class="card__desc">площадь</span> 86 м 2</p>
+                                            <p class="card__text"><span class="card__desc">этаж</span> 3</p>
+                                            <p class="card__text"><span class="card__desc">стоимость</span> <nobr>5 560 000 <span class="card__desc">Р</span></nobr></p>
+                                        </div>
+                                        <button class="icon-like" type="button"></button>
+                                    </div>
+
+                                    <div class="card">
+                                        <a href="#" class="card__link"></a>
+                                        <p class="card__number"><span class="card__text">№</span>1</p>
+                                        <div class="card__img">
+                                            <img src="img/content/schema/1-room.png" alt="">
+                                        </div>
+                                        <div class="card__info">
+                                            <div class="card__text">
+                                                <p class="card__desc">комнат</p>
+                                                <p class="card__desc-number">1</p>
+                                            </div>
+                                            <div class="card__text">
+                                                <p class="card__desc">площадь</p>
+                                                <p class="card__desc-number">36 м<sup>2</sup></p>
+                                            </div>
+                                            <div class="card__text">
+                                                <p class="card__desc">этаж</p>
+                                                <p class="card__desc-number">3</p>
+                                            </div>
+                                            <div class="card__text">
+                                                <p class="card__desc">стоимость</p>
+                                                <p class="card__desc-number">3 560 000 <span class="card__desc">Р</span></p>
+                                            </div>
+                                        </div>
+                                        <button class="icon-like" type="button"></button>
+                                    </div>
+
+                                    <div class="card card-promo">
+                                        <h2 class="card-promo__title">Суперакция</h2>
+                                        <p class="card-promo__text">при покупке двухкомнатной квартиры <br>парковочное место в подарок</p>
+                                        <div class="card-promo__img">
+                                            <img src="img/content/promo-parking.png" alt="Парковочное место в подарок">
+                                        </div>
+                                        <a href="#" class="btn btn_action">Подробнее</a>
+                                    </div>
+
+                                    <div class="card">
+                                        <a href="#" class="card__link"></a>
+                                        <p class="card__number"><span class="card__text">№</span>1</p>
+                                        <div class="card__img">
+                                            <img src="img/content/schema/1-room.png" alt="">
+                                        </div>
+                                        <div class="card__info">
+                                            <div class="card__text">
+                                                <p class="card__desc">комнат</p>
+                                                <p class="card__desc-number">1</p>
+                                            </div>
+                                            <div class="card__text">
+                                                <p class="card__desc">площадь</p>
+                                                <p class="card__desc-number">36 м<sup>2</sup></p>
+                                            </div>
+                                            <div class="card__text">
+                                                <p class="card__desc">этаж</p>
+                                                <p class="card__desc-number">3</p>
+                                            </div>
+                                            <div class="card__text">
+                                                <p class="card__desc">стоимость</p>
+                                                <p class="card__desc-number">3 560 000 <span class="card__desc">Р</span></p>
+                                            </div>
+                                        </div>
+                                        <button class="icon-like" type="button"></button>
+                                    </div>
+
+                                    <div class="card">
+                                        <a href="#" class="card__link"></a>
+                                        <p class="card__number"><span class="card__text">№</span>1</p>
+                                        <div class="card__img">
+                                            <img src="img/content/schema/1-room.png" alt="">
+                                        </div>
+                                        <div class="card__info">
+                                            <div class="card__text">
+                                                <p class="card__desc">комнат</p>
+                                                <p class="card__desc-number">1</p>
+                                            </div>
+                                            <div class="card__text">
+                                                <p class="card__desc">площадь</p>
+                                                <p class="card__desc-number">36 м<sup>2</sup></p>
+                                            </div>
+                                            <div class="card__text">
+                                                <p class="card__desc">этаж</p>
+                                                <p class="card__desc-number">3</p>
+                                            </div>
+                                            <div class="card__text">
+                                                <p class="card__desc">стоимость</p>
+                                                <p class="card__desc-number">3 560 000 <span class="card__desc">Р</span></p>
+                                            </div>
+                                        </div>
+                                        <button class="icon-like" type="button"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs__item" id="tab_list">
+                                <div class="cards cards_list">
+                                    <div class="card">
+                                        <a href="#" class="card__link"></a>
+                                        <p class="card__number"><span class="card__desc">№</span>1</p>
+                                        <div class="card__img">
+                                            <img src="img/content/schema/1-room.png" alt="">
+                                        </div>
+                                        <div class="card__text">
+                                            <span class="card__desc">комнат</span>
+                                            <span class="card__desc-number">1</span>
+                                        </div>
+                                        <div class="card__text">
+                                            <span class="card__desc">площадь</span>
+                                            <span class="card__desc-number">36 м <sup>2</sup></span>
+                                        </div>
+                                        <div class="card__text">
+                                            <span class="card__desc">этаж</span>
+                                            <span class="card__desc-number">3</span>
+                                        </div>
+                                        <div class="card__text">
+                                            <span class="card__desc-number">3 560 000</span>
+                                            <span class="card__desc">Р</span>
+                                        </div>
+                                        <button class="icon-like" type="button"></button>
+                                    </div>
+
+                                    <div class="card">
+                                        <a href="#" class="card__link"></a>
+                                        <p class="card__number"><span class="card__desc">№</span>1</p>
+                                        <div class="card__img">
+                                            <img src="img/content/schema/2-room.png" alt="">
+                                        </div>
+                                        <p class="card__text"><span class="card__desc">комнат</span> 2</p>
+                                        <p class="card__text"><span class="card__desc">площадь</span> 86 м²</p>
+                                        <p class="card__text"><span class="card__desc">этаж</span> 3</p>
+                                        <p class="card__text">5 560 000 <span class="card__desc">Р</span></p>
+                                        <button class="icon-like" type="button"></button>
+                                    </div>
+
+                                    <div class="card">
+                                        <a href="#" class="card__link"></a>
+                                        <p class="card__number"><span class="card__desc">№</span>1</p>
+                                        <div class="card__img">
+                                            <img src="img/content/schema/1-room.png" alt="">
+                                        </div>
+                                        <p class="card__text"><span class="card__desc">комнат</span> 1</p>
+                                        <p class="card__text"><span class="card__desc">площадь</span> 36 м²</p>
+                                        <p class="card__text"><span class="card__desc">этаж</span> 3</p>
+                                        <p class="card__text">3 560 000 <span class="card__desc">Р</span></p>
+                                        <button class="icon-like" type="button"></button>
+                                    </div>
+
+                                    <div class="card">
+                                        <a href="#" class="card__link"></a>
+                                        <p class="card__number"><span class="card__desc">№</span>1</p>
+                                        <div class="card__img">
+                                            <img src="img/content/schema/2-room.png" alt="">
+                                        </div>
+                                        <p class="card__text"><span class="card__desc">комнат</span> 2</p>
+                                        <p class="card__text"><span class="card__desc">площадь</span> 86 м²</p>
+                                        <p class="card__text"><span class="card__desc">этаж</span> 3</p>
+                                        <p class="card__text">5 560 000 <span class="card__desc">Р</span></p>
+                                        <button class="icon-like" type="button"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pagination">
+                    <a href="#" class="pagination__link">1</a>
+                    <a href="#" class="pagination__link active">2</a>
+                    <a href="#" class="pagination__link">3</a>
+                    <a href="#" class="pagination__link">4</a>
+                    <a href="#" class="pagination__link">5</a>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__inner">
+            <p class="footer__copyright">© Строительная компания «Авиатор»</p>
+            <a href="http://its.agency/" class="link footer__development" target="_blank">Разработка сайта <span>ITS</span></a>
+        </div>
+    </footer>
+    <div class="menu-mobile">
+        <div class="menu-mobile__inner">
+            <nav class="nav-mobile">
+                <a href="project.html" class="nav-mobile__link">О проекте</a>
+                <a href="apartments.html" class="nav-mobile__link">Квартиры</a>
+                <a href="placement.html" class="nav-mobile__link">Расположение</a>
+                <a href="timeline.html" class="nav-mobile__link">Ход строительства</a>
+                <a href="contacts.html" class="nav-mobile__link">Контакты</a>
+            </nav>
+            <a href="tel:+78123366355" class="link link_tel">+7 (812) 336-63-55</a>
+            <a href="#" id="modal-callback" class="btn btn_primary btn_callback">Перезвоните мне</a>
+        </div>
+    </div>
+</div>
+<div class="modal modal-apartment">
+    <div class="modal__header">
+        <h1 class="modal__title">2-комнатная квартира</h1>
+        <p class="modal__number">№ 2</p>
+        <div class="flex-wrap"></div>
+        <button class="btn btn_like" type="button">В избранное</button>
+        <button class="btn btn_download" type="button">Скачать PDF</button>
+    </div>
+    <div class="modal__body">
+        <div class="modal__content">
+            <div class="modal__schema">
+                <p class="modal__subtitle">планировка квартиры</p>
+                <div class="modal__img">
+                    <img src="img/content/schema/2-room_big.png" alt="2 комнатная квартира">
+                </div>
+            </div>
+            <div class="modal__schema">
+                <p class="modal__subtitle">расположение на этаже</p>
+                <div class="modal__img">
+                    <img src="img/content/schema/2-floor.png" alt="2 этаж">
+                </div>
+            </div>
+        </div>
+        <div class="modal__sidebar">
+            <div class="table table_info">
+                <div class="table__body">
+                    <div class="table__row">
+                        <div class="table__data">
+                            <p class="table__text">стоимость</p>
+                        </div>
+                        <div class="table__data">
+                            <p class="table__number">4 340 000 Р</p>
+                        </div>
+                    </div>
+
+                    <div class="table__row">
+                        <div class="table__data">
+                            <p class="table__text">этаж</p>
+                        </div>
+                        <div class="table__data">
+                            <p class="table__number">3</p>
+                        </div>
+                    </div>
+
+                    <div class="table__row">
+                        <div class="table__data">
+                            <p class="table__text">S общая</p>
+                        </div>
+                        <div class="table__data">
+                            <p class="table__number">77.5 м<sup>2</sup></p>
+                        </div>
+                    </div>
+
+                    <div class="table__row">
+                        <div class="table__data">
+                            <p class="table__text">S жилая</p>
+                        </div>
+                        <div class="table__data">
+                            <p class="table__number">37.6 м<sup>2</sup></p>
+                        </div>
+                    </div>
+
+                    <div class="table__row">
+                        <div class="table__data">
+                            <p class="table__text">S кухни</p>
+                        </div>
+                        <div class="table__data">
+                            <p class="table__number">17.7 м<sup>2</sup></p>
+                        </div>
+                    </div>
+
+                    <div class="table__row">
+                        <div class="table__data">
+                            <p class="table__text">S комнаты 1</p>
+                        </div>
+                        <div class="table__data">
+                            <p class="table__number">17.3 м<sup>2</sup></p>
+                        </div>
+                    </div>
+
+                    <div class="table__row">
+                        <div class="table__data">
+                            <p class="table__text">S комнаты 2</p>
+                        </div>
+                        <div class="table__data">
+                            <p class="table__number">20.3 м<sup>2</sup></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form class="form form-modal">
+                <p class="modal__subtitle">Оставить заявку</p>
+                <input type="text" class="form__input" placeholder="Имя">
+                <input type="tel" class="form__input" placeholder="Телефон">
+                <textarea class="form__textarea" placeholder="Комментарий"></textarea>
+                <button class="btn btn_primary btn_arrow" type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal modal-callback">
+    <p class="modal-callback__title">Наш менеджер свяжется с вами в течение 15 минут</p>
+    <form class="form form-modal">
+        <input type="text" class="form__input" placeholder="Имя">
+        <input type="tel" class="form__input" placeholder="Телефон">
+        <button class="btn btn_primary btn_arrow" type="submit">Отправить</button>
+    </form>
+</div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_KN38WFcmjBkbBmjdxukx5r8Q3wnm8ig&callback=initMap" async defer></script>
+<script src="js/libs/jquery/jquery.min.js"></script>
+<script src="js/libs/jquery.ui/jquery.ui.min.js"></script>
+<script src="js/libs/jquery.slick/slick.min.js"></script>
+<script src="js/libs/jquery.fullpage/jquery.fullpage.min.js"></script>
+<script src="js/libs/jquery.sticky/jquery.hc-sticky.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

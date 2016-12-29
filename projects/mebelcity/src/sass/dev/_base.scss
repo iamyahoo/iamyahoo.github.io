@@ -1,0 +1,90 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+  background-color: #fff;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font: $font-normal 14px/1.5 $font-family;
+  font-style: normal;
+  color: #000;
+  -webkit-font-smoothing: antialiased;
+}
+
+p {
+  max-width: 768px;
+  margin-bottom: 5px;
+
+  & > .link {
+    line-height: 1.5;
+  }
+}
+
+a {
+  transition: color, .3s;
+  
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 36px;
+  margin: 0;
+  margin-bottom: 30px;
+  font-weight: normal;
+  font-family: $font-family_light;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: normal;
+  font-family: $font-family_light;
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: $font-family_light;
+}
+
+h4 {
+  font-size: 16px;
+  line-height: 21px;
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: $font-family_bold;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+
+@media ( max-width: 640px ) {
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 21px;
+  }
+}

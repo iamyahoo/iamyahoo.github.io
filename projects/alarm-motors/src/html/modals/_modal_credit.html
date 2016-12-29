@@ -1,0 +1,197 @@
+<section class="modal modal_side modal_credit" id="modal_credit">
+    <div class="modal__backdrop"></div>
+    <div class="modal__body">
+        <div class="btn_close" onclick="hideModal('modal_credit')"></div>
+        <div class="modal__header">
+            <h1>Расчет кредита онлайн</h1>
+        </div>
+        <div class="modal__content">
+            <form id="form-credit" class="form-credit mar_b_50">
+                <fieldset class="form__fieldset">
+                    <h3>Ford Focus 2016</h3>
+                    <div class="form form-dropdown">
+                        <select name="" id="" class="dropdown-custom" title="Кузов">
+                            <option value="1">Седан</option>
+                            <option value="2">Хэтчбек</option>
+                        </select>
+
+                        <select name="" id="" class="dropdown-custom" title="Комплектация">
+                            <option value="1">Ambiente</option>
+                            <option value="2">Titanium</option>
+                            <option value="3">Trend</option>
+                        </select>
+
+                        <select name="" id="" class="dropdown-custom" title="Двигатель">
+                            <option value="1">Бензиновый 1.6, МТ</option>
+                            <option value="2">Бензиновый 1.6, АТ</option>
+                            <option value="3">Бензиновый 2.0, МТ</option>
+                            <option value="4">Бензиновый 2.0, АТ</option>
+                        </select>
+
+                        <select name="" id="" class="dropdown-custom" title="Трансмиссия">
+                            <option value="1">МКПП</option>
+                            <option value="2">АКПП</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <fieldset class="form__fieldset">
+                    <div class="form-credit__settings">
+                        <div class="form-credit__item">
+                            <p class="form__title">Первоначальный платеж</p>
+                            <div class="form-split">
+                                <div class="form-split__item">
+                                    <input type="number" class="form__input" title="Первоначальный взнос">
+                                </div>
+                                <div class="form-split__item">
+                                    <input type="number" class="form__input" title="Процентная ставка">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-credit__item">
+                            <p class="form__title">Срок кредита</p>
+                            <select name="" id="" class="dropdown-custom" title="Срок кредита">
+                                <option value="1">1 год</option>
+                                <option value="2">3 года</option>
+                                <option value="3">5 лет</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="form__fieldset mar_b_40">
+                    <p class="form__title">Банки, предоставляющие кредит</p>
+                    <div class="form-banks">
+                        <label class="form__checkbox form__checkbox_small form__checkbox_bank">
+                            <input class="form__checkbox_hidden" name="" id="" type="checkbox">
+                            <span class="form__checkbox_indicator"></span>
+                            <img src="img/content/bank_spb.png" alt="Банк Санкт-Петербург">
+                        </label>
+                        <label class="form__checkbox form__checkbox_small form__checkbox_bank">
+                            <input class="form__checkbox_hidden" name="" id="" type="checkbox" checked>
+                            <span class="form__checkbox_indicator"></span>
+                            <img src="img/content/bank_vtb.png" alt="Банк ВТБ24">
+                        </label>
+                        <label class="form__checkbox form__checkbox_small form__checkbox_bank">
+                            <input class="form__checkbox_hidden" name="" id="" type="checkbox">
+                            <span class="form__checkbox_indicator"></span>
+                            <img src="img/content/bank_metkombank.png" alt="Банк Меткомбанк">
+                        </label>
+                        <label class="form__checkbox form__checkbox_small form__checkbox_bank">
+                            <input class="form__checkbox_hidden" name="" id="" type="checkbox" checked>
+                            <span class="form__checkbox_indicator"></span>
+                            <img src="img/content/bank_unicredit.png" alt="Банк UniCredit">
+                        </label>
+                        <label class="form__checkbox form__checkbox_small form__checkbox_bank">
+                            <input class="form__checkbox_hidden" name="" id="" type="checkbox">
+                            <span class="form__checkbox_indicator"></span>
+                            <img src="img/content/bank_setelem.png" alt="Банк Сетелем">
+                        </label>
+                        <label class="form__checkbox form__checkbox_small form__checkbox_bank">
+                            <input class="form__checkbox_hidden" name="" id="" type="checkbox">
+                            <span class="form__checkbox_indicator"></span>
+                            <img src="img/content/bank_rusfinans.png" alt="Русфинанс Банк">
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label class="form__checkbox form__checkbox_small">
+                            <input class="form__checkbox_hidden" name="" id="" type="checkbox" checked>
+                            <span class="form__checkbox_indicator"></span>
+                            <span class="form__checkbox_text">По полному пакету документов</span>
+                        </label>
+                    </div>
+                    <div class="form-group mar_b_30">
+                        <label class="form__checkbox form__checkbox_small">
+                            <input class="form__checkbox_hidden" name="" id="" type="checkbox">
+                            <span class="form__checkbox_indicator"></span>
+                            <span class="form__checkbox_text">По двум документам</span>
+                        </label>
+                    </div>
+                    <button class="btn btn_action btn_xl">Получить предложения</button>
+                </fieldset>
+                <fieldset class="form__fieldset">
+                    <h3>Вам подходят следующие банковские программы:</h3>
+                    <div class="table-simple-wrapper">
+                        <table class="table-simple">
+                            <tr>
+                                <th>Банк, программа</th>
+                                <th>Минимальный первоначальный взнос</th>
+                                <th>Срок кредита</th>
+                                <th>Ставка</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="form__radio">
+                                        <input class="form__radio_hidden" name="test" id="" type="radio">
+                                        <span class="form__radio_indicator"></span>
+                                        <span class="form__radio_text">Банк Санкт-Петербург, Госпрограмма</span>
+                                    </label>
+                                </td>
+                                <td>20%</td>
+                                <td>0 – 3 года</td>
+                                <td>9,62%</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="form__radio">
+                                        <input class="form__radio_hidden" name="test" id="" type="radio">
+                                        <span class="form__radio_indicator"></span>
+                                        <span class="form__radio_text">ЮниКредит Банк, c государственной субсидией</span>
+                                    </label>
+                                </td>
+                                <td>20%</td>
+                                <td>0 – 3 года</td>
+                                <td>9,62%</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="form__radio">
+                                        <input class="form__radio_hidden" name="test" id="" type="radio">
+                                        <span class="form__radio_indicator"></span>
+                                        <span class="form__radio_text">Сетелем Банк, Ford Credit: Ford Options особое предложение (Классика)</span>
+                                    </label>
+                                </td>
+                                <td>20%</td>
+                                <td>0 – 3 года</td>
+                                <td>9,62%</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="form__radio">
+                                        <input class="form__radio_hidden" name="test" id="" type="radio">
+                                        <span class="form__radio_indicator"></span>
+                                        <span class="form__radio_text">Банк Санкт-Петербург, Госпрограмма</span>
+                                    </label>
+                                </td>
+                                <td>20%</td>
+                                <td>0 – 3 года</td>
+                                <td>9,62%</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p class="text_secondary mar_b_30">Онлайн расчет является предварительным и может измениться.</p>
+                    <div class="table-credit">
+                        <div class="table-credit__item">
+                            <p>Процентная ставка</p>
+                            <p class="table-credit__number">9,62%</p>
+                        </div>
+                        <div class="table-credit__item">
+                            <p>Ежемесячный платеж</p>
+                            <p class="table-credit__number">
+                                <span class="price">14 116 <span class="rouble">у</span></span>
+                            </p>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="form__fieldset">
+                    <p class="mar_b_20">Обратитесь сейчас в наш кредитный отдел, чтобы получить точный расчет.</p>
+                    <button class="btn btn_primary btn_l" type="submit">Запросить расчёт</button>
+                </fieldset>
+            </form>
+            <div class="modal__item">
+                <p>Подробности по телефону</p>
+                <a href="tel:+78127772777" class="link_phone">(812) 777-2-777</a>
+            </div>
+        </div>
+    </div>
+</section>

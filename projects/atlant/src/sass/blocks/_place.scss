@@ -1,0 +1,171 @@
+.place {
+  position: relative;
+}
+
+.place__content {
+  position: relative;
+  height: 100%;
+  z-index: 0;
+
+  & .place__slider {
+    z-index: 1;
+  }
+
+  & .slider__control {
+    z-index: 2;
+  }
+
+  & .main-item__text,
+  & .main-item__title {
+    position: relative;
+    z-index: 4;
+  }
+
+  & .place__img {
+    z-index: 2;
+  }
+
+  & .link_promo {
+    z-index: 2;
+  }
+
+  & .place__map {
+    z-index: 3;
+  }
+
+  & .main-item__btn {
+    display: none;
+  }
+}
+
+.place__img {
+  position: absolute;
+  //width: 492px;
+  //height: 570px;
+  max-width: 450px;
+  width: 25%;
+  top: 42%;
+  right: 17%;
+  //right: 12%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  user-select: none;
+
+  img {
+    width: 100%;
+    height: auto;
+    //animation: rotate-colors 5s linear infinite;
+  }
+}
+
+.place__slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.place__map {
+  position: absolute;
+  right: 4%;
+  bottom: 8%;
+  max-width: 350px;
+  width: 25%;
+  min-width: 180px;
+
+  & .map {
+    position: relative;
+    max-width: 350px;
+    height: 365px;
+    width: 100%;
+  }
+
+  & > .btn_action {
+    margin-top: -25px;
+  }
+}
+
+
+@media (max-width: 768px) and (max-height: 1024px) {
+
+  .place__map {
+    width: 22%;
+    bottom: 0;
+    right: 0;
+
+    & .map {
+      height: 250px;
+    }
+  }
+}
+
+
+@media (max-height: 900px) {
+
+  .place__map {
+    width: 22%;
+
+    & .map {
+      height: 250px;
+    }
+  }
+}
+
+@media (max-height: 800px) {
+
+  .place__map {
+    bottom: 5%;
+  }
+}
+
+@media (max-width: 1280px) {
+
+  .place__content {
+    background-image: url('../img/content/photo-place_1.jpg');
+  }
+
+  .place__slider {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+
+  .place__content {
+
+    & .main-item__text {
+      max-width: 400px;
+    }
+  }
+
+  .place__img {
+    display: none;
+  }
+
+  .place__map {
+
+    & .map {
+      height: 200px;
+    }
+  }
+}
+
+@media (max-width: 540px) {
+
+  .place__map {
+    display: none;
+  }
+
+  .place__content {
+
+    & .main-item__btn {
+      display: block;
+    }
+
+    & .main-item__text {
+      max-width: 500px;
+    }
+  }
+}

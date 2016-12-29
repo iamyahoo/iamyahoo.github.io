@@ -1,0 +1,42 @@
+.tumbler {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.tumbler__inner {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid $color-gray-30;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.tumbler__item {
+  display: block;
+  padding: 8px 15px;
+  min-width: 100px;
+  color: $color-gray-70;
+  text-align: center;
+  text-decoration: none;
+  border-right: 1px solid $color-gray-30;
+
+  &:hover {
+    color: #fff;
+    background-color: $color-gray-70;
+  }
+
+  &:last-child {
+    border-right: none;
+  }
+}
+
+.tumbler__item_active {
+  color: #fff;
+  background-color: $color-gray-70;
+}
+
+@media (max-width: 640px) {
+  .tumbler__item {
+    min-width: 80px;
+  }
+}

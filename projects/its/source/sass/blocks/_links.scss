@@ -1,0 +1,143 @@
+.link {
+  display: inline-block;
+  vertical-align: baseline;
+  text-decoration: none;
+  transition: color, .2s;
+  color: $color-gray-90;
+
+  &:hover {
+    color: $color-yellow-50;
+  }
+
+  &:focus,
+  &:active {
+    outline: 0;
+    text-decoration: none;
+  }
+}
+
+.link_active {
+  color: $color-yellow-50;
+}
+
+.link_light {
+  color: $color-gray-10;
+
+  &:hover {
+    color: $color-gray-50;
+  }
+}
+
+.link_dark {
+  color: $font-color_dark;
+
+  &:hover {
+    color: $color-gray-50;
+  }
+}
+
+.link_underlined {
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.link_promo {
+  color: $color-yellow-50;
+  
+  &:hover {
+    color: #000;
+  }
+}
+
+.link_blue {
+  color: $color-blue-50;
+
+  &:hover {
+    color: #000;
+  }
+}
+
+.link_lang {
+  padding: 15px 20px;
+  font-family: $font-family_medium;
+}
+
+.link_tel {
+  color: $color-yellow-50;
+  white-space: nowrap;
+}
+
+.link_email {
+  color: $color-yellow-50;
+  white-space: nowrap;
+}
+
+.link-anchor {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50px;
+  height: 50px;
+  
+  &:hover {
+    
+    span {
+      background-color: $color-yellow-50;
+    }
+  }
+
+  span {
+    display: block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #000;
+    transform: rotate(45deg);
+    transition: all .2s;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 8px;
+      height: 8px;
+      border-top: 2px solid #000;
+      border-left: 2px solid #000;
+      transform-origin: 0 0;
+      transition: all .2s;
+    }
+  }
+}
+
+.link_back {
+  position: relative;
+  padding-left: 30px;
+  border-bottom: 3px solid $color-yellow-50;
+  font-size: 24px;
+  white-space: nowrap;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: 2px;
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid $color-gray-90;
+    border-top: 2px solid $color-gray-90;
+    transform: rotate(-135deg);
+  }
+}
+
+@media (max-width: 480px) {
+
+  .link_back {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,421 @@
+.form {}
+
+.form_s {}
+
+.form_m {
+  width: 270px;
+  max-width: 270px;
+}
+
+.form_l {}
+
+.form_xl {}
+
+.form__input {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  max-width: 270px;
+  height: 50px;
+  line-height: 48px;
+  margin-bottom: 10px;
+  padding: 0 20px;
+  border: 2px solid $color-gray-50;
+  border-radius: 10px;
+  background-color: $color-white;
+  font-size: $font_default;
+  font-family: $font-family;
+  color: $font-color;
+  transition: all .2s;
+  
+  &:hover {
+    border-color: $color-red-50;
+  }
+  
+  &:focus {
+    outline: 0;
+    border-color: $color-red-50;
+  }
+
+  &[disabled] {
+    background-color: $color-gray-10;
+    cursor: default;
+  }
+
+  &:invalid {
+    //border-color: $color-peach;
+  }
+
+  &::-webkit-input-placeholder {color: $color-gray-50; font-size: 14px; transition: color .3s;}
+  &::-moz-placeholder          {color: $color-gray-50; font-size: 14px; transition: color .3s;}
+  &:focus::-webkit-input-placeholder {color: transparent;}
+  &:focus::-moz-placeholder          {color: transparent; }
+}
+
+.form__input_promo {
+  background-color: $color-red-70;
+  border-color: $color-red-30;
+  color: #fff;
+
+  &:hover,
+  &:focus {
+    border-color: #fff;
+  }
+
+  &::-webkit-input-placeholder {color: $color-red-30; transition: color .3s;}
+  &::-moz-placeholder          {color: $color-red-30; transition: color .3s;}
+  &:focus::-webkit-input-placeholder {color: white; transition: color .3s;}
+  &:focus::-moz-placeholder          {color: white; transition: color .3s;}
+}
+
+.form__input_date {
+  position: relative;
+
+  &:after {
+    display: none;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    content: url('../img/icons/icon-date.png');
+    width: 24px;
+    height: 20px;
+    z-index: 1;
+  }
+}
+
+.form__textarea {
+  min-height: 120px;
+  width: 100%;
+  max-width: 360px;
+  padding: 12px 20px;
+  border: 2px solid $color-gray-50;
+  border-radius: 10px;
+  box-shadow: none;
+  background-color: $color-white;
+  font-size: $font_default;
+  color: $font-color;
+  resize: none;
+  transition: all .2s;
+
+  &:focus {
+    outline: 0;
+    border-color: $color-red-50;
+  }
+
+  &:hover {
+    border-color: $color-red-50;
+  }
+
+  &[disabled] {
+    background-color: $color-gray-10;
+    cursor: default;
+  }
+
+  &:focus::-webkit-input-placeholder {color: transparent; transition: color .3s;}
+  &:focus::-moz-placeholder          {color: transparent; transition: color .3s;}
+  &:focus::-webkit-input-placeholder {color: white; transition: color .3s;}
+  &:focus::-moz-placeholder          {color: white; transition: color .3s;}
+}
+
+.form__textarea_promo {
+  background-color: $color-red-70;
+  border-color: $color-red-30;
+  color: #fff;
+
+  &:hover,
+  &:focus {
+    border-color: #fff;
+  }
+
+  &::-webkit-input-placeholder {color: $color-red-30; transition: color .3s;}
+  &::-moz-placeholder          {color: $color-red-30; transition: color .3s;}
+}
+
+.form__select_small {
+
+  & .simpleselect {
+    height: 32px;
+    font-size: 12px;
+  }
+
+  .simpleselect .placeholder,
+  .simpleselect .options .option,
+  .simpleselect .options .optgroup .optgroup-label {
+    height: 32px;
+    line-height: 28px;
+    padding: 0 20px;
+    cursor: pointer;
+    background-color: $color-red-50;
+  }
+}
+
+.form__select_simple {
+
+  .simpleselect {
+    color: $font-color_dark;
+  }
+
+
+  .simpleselect .options {
+    border-color: $color-red-50;
+  }
+
+  .simpleselect .placeholder,
+  .simpleselect .options .option,
+  .simpleselect .options .optgroup .optgroup-label {
+    padding: 0 20px;
+    cursor: pointer;
+    border-color: $color-red-50;
+    background-color: #fff;
+  }
+
+  .simpleselect .placeholder:after {
+    border-color: $color-red-50;
+  }
+}
+
+.form__fieldset {
+  border: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.form__legend {
+  margin-bottom: 20px;
+  font-family: $font-family_bold;
+}
+
+.form__item {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    margin-bottom: 3px;
+  }
+}
+
+.form__desc {
+  color: $color-gray-50;
+  margin-bottom: 5px;
+}
+
+.form__row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+
+  & .form__item {
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  & .form__input {
+    margin-bottom: 0;
+  }
+}
+
+
+.form-buy {
+  width: 100%;
+  max-width: 270px;
+}
+
+.form-choice {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 680px;
+
+  & .simpleselect {
+    max-width: 680px;
+  }
+
+  & .form__input {
+    margin-bottom: 20px;
+    max-width: 290px;
+  }
+
+  & .form__textarea {
+    height: 120px;
+    margin-bottom: 20px;
+  }
+
+  & .btn_standart {
+    color: $font-color_dark;
+    max-width: 290px;
+    width: 290px;
+
+    &:hover {
+      border-color: $color-red-70;
+      background-color: $color-red-70;
+    }
+  }
+}
+
+.form-choice__top {
+  width: 100%;
+  max-width: 680px;
+  margin-bottom: 20px;
+}
+
+.form-choice__start {
+  width: 100%;
+  max-width: 290px;
+  margin-right: 30px;
+}
+
+.form-choice__end {
+  width: 100%;
+  max-width: 360px;
+}
+
+.form-calc {
+
+  & .form__input {
+    margin-bottom: 20px;
+  }
+}
+
+.form-search {
+  position: relative;
+}
+
+.form-search__input {
+  padding-right: 50px;
+  background-color: $color-blue-90;
+  border-color: $color-blue-90;
+  color: $font-color_light;
+
+  &:hover,
+  &:focus {
+    border-color: $color-blue-90;
+  }
+}
+
+.form-search__btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  height: 50px;
+  width: 50px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  background-image: url('../img/icons/icon-search.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: all .2s;
+
+  &:hover {
+    opacity: .5;
+  }
+}
+
+.form-datetime {
+
+  & .form__item_name,
+  & .form__item_tel,
+  & .form__item_date {
+    max-width: 170px;
+  }
+
+  & .form__item_time {
+    max-width: 100px;
+  }
+
+  & .form__item_city {
+
+  }
+
+  & .form__item_adress {
+    width: 100%;
+
+    & .form__input {
+      max-width: 100%;
+    }
+  }
+
+  & .form__textarea {
+    max-width: 100%;
+  }
+
+  & .form__item_comment {
+    max-width: 100%;
+  }
+}
+
+
+@media (max-width: 640px) {
+
+  .form__input {
+    height: 40px;
+    line-height: 38px;
+  }
+
+  .form-choice {
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+
+    & .form-choice__start {
+      margin-right: 0;
+    }
+  }
+
+  .form-search__btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .form__row {
+    flex-wrap: wrap;
+
+    & .form__item {
+      width: 50%;
+      max-width: 220px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .form-datetime {
+
+    & .form__textarea {
+      max-width: 470px;
+    }
+
+    & .form__item_adress {
+      width: 100%;
+      max-width: 470px;
+    }
+  }
+}
+
+
+@media (max-width: 540px) {
+
+  .form__row {
+    flex-direction: column;
+
+    & .form__item {
+      width: 100%;
+      max-width: 470px;
+
+      & .form__input {
+        max-width: 100%;
+      }
+
+      &.form__item_date {
+        max-width: 200px;
+      }
+
+      &.form__item_time {
+        max-width: 100px;
+      }
+    }
+  }
+}

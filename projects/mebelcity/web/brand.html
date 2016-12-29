@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="js/libs/jquery.slick/slick.css">
+    <title>Мебель-Сити</title>
+</head>
+<body>
+<div class="page-container">
+    <header class="header">
+        <div class="header__inner">
+            <a href="index.html" class="logo"></a>
+            <div class="hamburger">
+                <div></div>
+            </div>
+            <nav class="nav-list">
+                <div class="nav-list__item">
+                    <a href="shops.html" class="link link_colored">Магазины и бренды</a>
+                    <a href="service.html" class="link link_colored">Сервис</a>
+                </div>
+                <div class="nav-list__item">
+                    <a href="promo.html" class="link link_colored">Акции и скидки</a>
+                    <a href="news.html" class="link link_colored">События</a>
+                </div>
+                <div class="nav-list__item">
+                    <a href="for-tenants.html" class="link link_colored">Арендаторам</a>
+                    <a href="for-designers.html" class="link link_colored">Дизайнерам</a>
+                </div>
+                <div class="nav-list__item">
+                    <a href="about.html" class="link link_colored">О компании</a>
+                    <a href="contacts.html" class="link link_colored">Контакты</a>
+                </div>
+            </nav>
+            <div class="dropdown">
+                <span class="dropdown-text">Санкт-Петербург</span>
+                <ul class="dropdown-list">
+                    <li class="dropdown-item" data-id="0">Санкт-Петербург</li>
+                    <li class="dropdown-item" data-id="1">Москва</li>
+                </ul>
+            </div>
+            <div class="mobile-menu">
+                <ul class="mobile-menu__list">
+                    <li><a href="shops.html" class="link link_light">Магазины и бренды</a></li>
+                    <li><a href="service.html" class="link link_light">Сервис</a></li>
+                    <li><a href="promo.html" class="link link_light">Акции и скидки</a></li>
+                    <li><a href="news.html" class="link link_light">События</a></li>
+                    <li><a href="for-tenants.html" class="link link_light">Арендаторам</a></li>
+                    <li><a href="for-designers.html" class="link link_light">Дизайнерам</a></li>
+                    <li><a href="about.html" class="link link_light">О компании</a></li>
+                    <li><a href="contacts.html" class="link link_light">Контакты</a></li>
+                </ul>
+                <div class="dropdown dropdown_light">
+                    <span class="dropdown-text">Санкт-Петербург</span>
+                    <ul class="dropdown-list">
+                        <li class="dropdown-item" data-id="0">Санкт-Петербург</li>
+                        <li class="dropdown-item" data-id="1">Москва</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="page page-shops">
+        <div class="page__inner">
+            <div class="breadcrumbs">
+                <ul class="breadcrumbs-list">
+                    <li><a href="#" class="link link_colored">Мебель-Сити</a></li>
+                    <li><a href="#" class="link link_colored">Магазины и бренды</a></li>
+                    <li><a href="#" class="link link_disabled">Estetica</a></li>
+                </ul>
+            </div>
+            <section class="content">
+                <div class="content__sidebar">
+                    <div class="content__logo">
+                        <img src="img/icon/logo1.png" alt="">
+                    </div>
+                    <h2 class="content__title">Где найти</h2>
+                    <div class="content__adress">
+                        <p class="text_bold">Мебель-Сити 1</p>
+                        <p>ул. Мебельная, 1</p>
+                        <a href="tel:+78123038168" class="link link_tel mar_b_20">(812) 303-81-68</a>
+                        <p>Посмотреть на схеме:</p>
+                        <p><a href="#" class="link link_colored">1 этаж стенд 3</a></p>
+                        <p><a href="#" class="link link_colored">2 этаж стенд 57</a></p>
+                    </div>
+                    <div class="content__adress">
+                        <p class="text_bold">Мебель-Сити 2</p>
+                        <p>ул. Кантемировская, 37</p>
+                        <a href="tel:+78123354422" class="link link_tel mar_b_20">(812) 335-44-22</a>
+                        <p>Посмотреть на схеме:</p>
+                        <p><a href="#" class="link link_colored">1 этаж стенд 1.30</a></p>
+                        <p><a href="#" class="link link_colored">3 этаж стенд 3.7</a></p>
+                    </div>
+                    <p>
+                        <a href="http://www.estetica.ru/" class="link link_colored" target="_blank">estetica.ru</a>
+                    </p>
+                </div>
+                <div class="content__main">
+                    <div class="content__item">
+                        <h1 class="content__title">Estetica</h1>
+                        <div class="content__desc">Мягкая мебель, Мебель для гостиной, Все для сна</div>
+                        <div class="slider" id="content-slider">
+                            <img src="img/content/photo1.png" alt="">
+                            <img src="img/content/36.jpg" alt="">
+                        </div>
+                        <div class="slider__control">
+                            <p class="slider__counter"><span class="text_bold">4</span> / <span>12</span></p>
+                        </div>
+                        <p class="content__text">Мебельная компания ESTETICA выпускает продукцию четырёх направлений. Интерьерные диваны создают мягкие группы различных комбинаций, а тщательный подбор материалов даёт возможность почувствовать комфорт и роскошь современных технологий. Диваны-кровати разработаны с учетом возможности использования изделия как стильного комфортного дивана, легко вписывающегося в интерьер, так и полноценной кровати с удобным современным механизмом раскладывания.</p>
+                    </div>
+                    <div class="content__item">
+                        <div class="promo-block">
+                            <div class="promo-block__img">
+                                <img src="img/content/banner2.png" alt="">
+                            </div>
+                            <div class="promo-block__desc">
+                                <h2 class="promo-block__title">Акция: Специальная цена -60%</h2>
+                                <p class="promo-block__subtitle">С 1 по 15 мая</p>
+                                <p class="promo-block__text">Только до конца мая устанавливаем специальную распродажную цену на нашу мягкую мебель! Коллекция Classic — 60% Коллекция Soul — 30% Коллекция Life — 10%. Количество товара ограничено.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content__item">
+                        <h1>Другие магазины</h1>
+                        <section class="tabs tabs_small">
+                            <div class="tabs__header">
+                                <ul class="tabs__caption">
+                                    <li class="active">Все</li>
+                                    <li class="">Мебель-Сити 1</li>
+                                    <li class="">Мебель-Сити 2</li>
+                                </ul>
+                            </div>
+
+                            <div class="tabs__content">
+                                <div class="tabs__item active">
+                                    <div class="brands">
+                                        <div class="brands__item brands__item_promo">
+                                            <a href="#" class="brands__link"></a>
+                                            <div class="brands__img">
+                                                <img src="img/icon/logo1.png" alt="Estetica">
+                                            </div>
+                                            <h3>Estetica</h3>
+                                            <p class="brands__text">Мягкая мебель, Мебель для гостиной, Все для сна</p>
+                                            <p class="brands__place">Мебель-Сити 1 и 2</p>
+                                        </div>
+                                        <div class="brands__item">
+                                            <a href="#" class="brands__link"></a>
+                                            <div class="brands__img">
+                                                <img src="img/icon/logo2.png" alt="Hilding Anders">
+                                            </div>
+                                            <h3>Hilding Anders</h3>
+                                            <p class="brands__text">Мягкая мебель, Мебель для гостиной, Все для сна, Аксессуары</p>
+                                            <p class="brands__place">Мебель-Сити 1 и 2</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tabs__item">
+                                    <div class="brands">
+                                        <div class="brands__item">
+                                            <a href="#" class="brands__link"></a>
+                                            <div class="brands__img">
+                                                <img src="img/icon/logo2.png" alt="Hilding Anders">
+                                            </div>
+                                            <h3>Hilding Anders</h3>
+                                            <p class="brands__text">Мягкая мебель, Мебель для гостиной, Все для сна, Аксессуары</p>
+                                            <p class="brands__place">Мебель-Сити 1 и 2</p>
+                                        </div>
+                                        <div class="brands__item brands__item_promo">
+                                            <a href="#" class="brands__link"></a>
+                                            <div class="brands__img">
+                                                <img src="img/icon/logo1.png" alt="Estetica">
+                                            </div>
+                                            <h3>Estetica</h3>
+                                            <p class="brands__text">Мягкая мебель, Мебель для гостиной, Все для сна</p>
+                                            <p class="brands__place">Мебель-Сити 1 и 2</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tabs__item">
+                                    <div class="brands">
+                                        <div class="brands__item brands__item_promo">
+                                            <a href="#" class="brands__link"></a>
+                                            <div class="brands__img">
+                                                <img src="img/icon/logo1.png" alt="Estetica">
+                                            </div>
+                                            <h3>Estetica</h3>
+                                            <p class="brands__text">Мягкая мебель, Мебель для гостиной, Все для сна</p>
+                                            <p class="brands__place">Мебель-Сити 1 и 2</p>
+                                        </div>
+                                        <div class="brands__item">
+                                            <a href="#" class="brands__link"></a>
+                                            <div class="brands__img">
+                                                <img src="img/icon/logo3.png" alt="Parra">
+                                            </div>
+                                            <h3>Parra</h3>
+                                            <p class="brands__text">Системы хранения, Все для сна, Столовые группы, Мягкая мебель, Мебель для гостиной, Мебель…</p>
+                                            <p class="brands__place">Мебель-Сити 1</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__nav">
+                <div class="nav-list">
+                    <div class="nav-list__item footer__dev">
+                        <p class="nav-list__text text_gray nowrap">© 2016 Мебель-Сити</p>
+                        <a href="http://its.agency/" class="link link_gray" target="_blank">Сделано в ITS</a>
+                    </div>
+                    <div class="nav-list__item">
+                        <a href="shops.html" class="link link_light">Магазины и бренды</a>
+                        <a href="service.html" class="link link_light">Сервис</a>
+                    </div>
+                    <div class="nav-list__item">
+                        <a href="promo.html" class="link link_light">Акции и скидки</a>
+                        <a href="news.html" class="link link_light">События</a>
+                    </div>
+                    <div class="nav-list__item">
+                        <a href="for-tenants.html" class="link link_light">Арендаторам</a>
+                        <a href="for-designers.html" class="link link_light">Дизайнерам</a>
+                    </div>
+                    <div class="nav-list__item">
+                        <a href="about.html" class="link link_light">О компании</a>
+                        <a href="contacts.html" class="link link_light">Контакты</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-adress">
+                <div class="footer-adress__item footer-adress__item_map">
+                    <a href="#" class="link link_light">Мебель-Сити 1</a>
+                    <p>м. Старая деревня</p>
+                </div>
+                <div class="footer-adress__item footer-adress__item_map">
+                    <a href="#" class="link link_light">Мебель-Сити 2</a>
+                    <p>м. Лесная</p>
+                </div>
+                <div class="footer-adress__item footer-adress__item_time">
+                    <p>Время работы</p>
+                    <p>11:00 — 21:00</p>
+                </div>
+            </div>
+            <div class="footer__panel">
+                <a href="#" class="logo logo_dark"></a>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/mebelcity_spb/" class="footer-social__link footer-social__link_instagram" target="_blank"></a>
+                    <a href="https://www.facebook.com/%D0%9C%D0%B5%D0%B1%D0%B5%D0%BB%D1%8C-%D0%A1%D0%B8%D1%82%D0%B8-857120067730604/" class="footer-social__link footer-social__link_fb" target="_blank"></a>
+                    <a href="https://vk.com/mebelcity" class="footer-social__link footer-social__link_vk" target="_blank"></a>
+                </div>
+                <div class="footer-search form-search">
+                    <input type="text" class="form__input form-search__input" placeholder="Поиск">
+                    <button class="form-search__btn"></button>
+                </div>
+            </div>
+            <div class="footer__info">
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/mebelcity_spb/" class="footer-social__link footer-social__link_instagram" target="_blank"></a>
+                    <a href="https://www.facebook.com/%D0%9C%D0%B5%D0%B1%D0%B5%D0%BB%D1%8C-%D0%A1%D0%B8%D1%82%D0%B8-857120067730604/" class="footer-social__link footer-social__link_fb" target="_blank"></a>
+                    <a href="https://vk.com/mebelcity" class="footer-social__link footer-social__link_vk" target="_blank"></a>
+                </div>
+                <div class="footer__dev">
+                    <p class="text_gray nowrap">© 2016 Мебель-Сити</p>
+                    <a href="http://its.agency/" class="link link_gray" target="_blank">Сделано в ITS</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="js/libs/jquery/jquery.min.js"></script>
+<script src="js/libs/jquery.slick/slick.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrcvGLGYg6QnbLkP-XBLzE8MgIsfgD4j4&callback=initMap" async defer></script>
+<script src="js/main.js"></script>
+</body>
+</html>

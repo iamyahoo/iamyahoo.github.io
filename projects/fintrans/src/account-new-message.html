@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    //= html/_head.html
+    <title>Транспортная компания ФинТранс - доставка грузов из Финляндии.</title>
+</head>
+<body>
+<div class="page-container">
+    <div class="page-wrapper">
+        //= html/_header.html
+        <main class="page">
+            <div class="page__inner">
+                <div class="account">
+                    //= html/_account-sidebar.html
+                    <div class="account__inner">
+                        <div class="account-content">
+                            <div class="account-content__header">
+                                <h2>Новое сообщение</h2>
+                            </div>
+                            <div class="account-content__body">
+                                <form class="form form-account">
+                                    <label class="form-label">
+                                        <span class="form-label__text">Тема обращения</span>
+                                        <select class="form__select form__select_search">
+                                            <option value="0">Качество обслуживания</option>
+                                            <option value="1">Количество</option>
+                                            <option value="2">Стоимость услуг</option>
+                                        </select>
+                                    </label>
+                                    <label class="form-label">
+                                        <span class="form-label__text">E-mail или телефон</span>
+                                        <input type="text" class="form__input">
+                                    </label>
+                                    <label class="form-label">
+                                        <span class="form-label__text">Сообщение</span>
+                                        <textarea class="form__textarea"></textarea>
+                                    </label>
+                                    <a href="account-messages.html" class="btn-close" onclick="formReset()"></a>
+                                    <button class="btn btn_primary btn_next" type="submit">Отправить</button>
+                                    <a href="#" class="btn btn_secondary btn_attach">Прикрепить файл <input type="file"></a>
+                                    <p class="form-filename">
+                                        <span class="form-filename__text">Название_файла.pdf</span>
+                                        <button class="btn-delete" type="button"></button>
+                                    </p>
+                                </form>
+                            </div>
+                            <div class="account-inbox">
+                                <a href="account-conversation.html" class="account-inbox__message">
+                                    <span class="account-inbox__cell account-inbox__name">Николай Погребняк</span>
+                                    <span class="account-inbox__cell account-inbox__theme">Дистрибуция по ЮФО. Варианты сотрудничества</span>
+                                    <div class="account-inbox__cell account-inbox__status">В работе</div>
+                                    <span class="account-inbox__cell account-inbox__date">14.02.2016</span>
+                                </a>
+
+                                <a href="account-conversation.html" class="account-inbox__message">
+                                    <span class="account-inbox__cell account-inbox__name">Валентин Сидорчук</span>
+                                    <span class="account-inbox__cell account-inbox__theme">Перевозки со спиртзавода</span>
+                                    <div class="account-inbox__cell account-inbox__status">Новый</div>
+                                    <span class="account-inbox__cell account-inbox__date">14.02.2016</span>
+                                </a>
+
+                                <a href="account-conversation.html" class="account-inbox__message">
+                                    <span class="account-inbox__cell account-inbox__name">Константин Константинопольский</span>
+                                    <span class="account-inbox__cell account-inbox__theme">Дистрибуция по СФО. Варианты сотрудничества</span>
+                                    <div class="account-inbox__cell account-inbox__status">Завершен</div>
+                                    <span class="account-inbox__cell account-inbox__date">14.02.2016</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        //= html/_menu-mobile.html
+        //= html/_menu-bottom.html
+        //= html/_footer.html
+    </div>
+</div>
+//= html/_scripts.html
+</body>
+</html>

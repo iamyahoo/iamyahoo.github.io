@@ -1,0 +1,113 @@
+.hidden_select_container {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.simpleselect,
+.simpleselect * {
+  box-sizing: border-box;
+}
+
+.simpleselect {
+  position: relative;
+  width: 100%;
+  max-width: 270px;
+  min-width: 200px;
+  height: 50px;
+  font-size: $font_default;
+  font-family: $font-family;
+  color: $font-color_light;
+  font-weight: normal;
+}
+
+.simpleselect .options {
+  width: 100%;
+}
+
+.simpleselect .placeholder,
+.simpleselect .options .option,
+.simpleselect .options .optgroup .optgroup-label {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  cursor: pointer;
+  background-color: $color-red-50;
+}
+
+.simpleselect .options .optgroup .optgroup-label {
+  cursor: default;
+}
+
+.simpleselect .options .optgroup .option {
+  padding-left: 20px;
+}
+
+.simpleselect .placeholder,
+.simpleselect .options {
+}
+
+.simpleselect .placeholder {
+  position: relative;
+  background-color: $color-red-50;
+  border: 2px solid #fff;
+  border-radius: 10px;
+}
+
+.simpleselect .placeholder:after {
+  content: "";
+  position: absolute;
+  top: 45%;
+  right: 15px;
+  width: 8px;
+  height: 8px;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  background-color: transparent;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.simpleselect .placeholder:hover {
+  //background: #fafafa;
+}
+
+.simpleselect .options {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  border: 2px solid #fff;
+  border-radius: 10px;
+}
+
+.simpleselect .option {
+  border-bottom: 2px solid #fff;
+
+  &:first-child {
+    border-radius: 10px 10px 0 0;
+  }
+
+  &:last-child {
+    border-radius: 0 0 10px 10px;
+    border-bottom: none;
+  }
+}
+
+.simpleselect .options .option.active {
+  background: $color-red-70;
+  color: #fff;
+}
+
+.simpleselect.disabled .placeholder,
+.simpleselect.disabled .placeholder:hover {
+  background: #fafafa;
+  color: #aaa;
+  border-color: #eee;
+  cursor: default;
+}
+
+.simpleselect.disabled .placeholder:after {
+  opacity: .5;
+}

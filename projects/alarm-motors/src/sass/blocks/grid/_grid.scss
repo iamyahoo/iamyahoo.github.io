@@ -1,0 +1,266 @@
+.grid {
+  @extend .clearfix;
+  max-width: 1560px;
+  min-width: 320px;
+  width: 100%;
+  height: auto !important;
+  margin-bottom: 50px;
+  border-top: 1px solid $color-gray-10;
+}
+
+.grid__sizer {
+  width: 25%;
+}
+
+.grid__item {
+  position: relative;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid $color-gray-10;
+  border-right: 1px solid $color-gray-10;
+  padding: 25px 15px 10px;
+  color: $color-gray-70;
+  text-decoration: none;
+  height: 200px;
+  width: 25%;
+  min-width: 250px;
+
+  &:hover {
+    color: $color-red-50;
+  }
+
+  & img {
+    max-width: 210px;
+    max-height: 120px;
+  }
+}
+
+.grid__item_width2 {
+  width: 50%;
+
+  &.grid__item_double {
+    flex-direction: row;
+  }
+}
+
+.grid__item_width2.grid__item_double {
+  display: flex;
+  flex-direction: row;
+
+  & .grid__item {
+    width: 50%;
+  }
+}
+
+.grid__item_height2 {
+  height: 400px;
+}
+
+.grid__item_height2.grid__item_double {
+  display: flex;
+  flex-direction: column;
+
+  & .grid__item {
+    width: 100%;
+  }
+}
+
+.grid__item_double {
+  display: flex;
+}
+
+.grid__item_double.grid__item {
+  padding: 0;
+}
+
+.grid__item_promo {
+  color: #fff;
+  overflow: hidden;
+  background-color: $color-gray-50;
+
+  & .grid__title {
+    position: relative;
+    z-index: 1;
+  }
+
+  & .grid__info {
+    position: relative;
+  }
+
+  & .grid__img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      max-height: 300%;
+    }
+  }
+}
+
+.grid__auto-of-year {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 130px;
+  height: 33px;
+  background-image: url('../img/content/autogoda-logo-png-2016.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.grid__trade-in {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 140px;
+  height: 33px;
+  line-height: 33px;
+  text-align: center;
+  background-color: $color-blue-50;
+  z-index: 2;
+  color: #fff;
+}
+
+
+.grid__img {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  & img {
+    @extend .responsive-img;
+    vertical-align: top;
+  }
+}
+
+.grid__title {
+  @extend .nowrap;
+  font-family: $font-family_bold;
+  margin-top: auto;
+  margin-bottom: 5px;
+}
+
+.grid__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.grid__price {
+  font-family: $font-family_bold;
+  font-size: 18px;
+}
+
+.grid__number {
+  line-height: 32px;
+}
+
+.grid__special {
+  position: relative;
+  background: $color-red-50;
+  text-align: center;
+  color: #fff;
+  border-color: $color-red-50;
+
+  &:hover {
+    background: $color-red-70;
+    color: #ffffff;
+  }
+
+  & .grid__title {
+    margin-bottom: auto;
+  }
+}
+
+.grid__special_left {
+
+  &:after {
+    position: absolute;
+    content: '▲';
+    font-size: 16px;
+    color: $color-red-50;
+    transform: rotate(270deg) scaleX(1.6) translateX(50%) translateY(-50%);
+    left: -2px;
+    top: 50%;
+    z-index: 10;
+  }
+}
+
+.grid__special_top {
+
+  &:after {
+    position: absolute;
+    content: '▲';
+    font-size: 16px;
+    color: $color-red-50;
+    transform: rotate(0deg) scaleX(1.6) translateX(0%) translateY(0%);
+    left: 50%;
+    top: -18px;
+    z-index: 10;
+  }
+}
+
+@media (max-width: 1060px) {
+
+  .grid__item {
+    width: 50%;
+  }
+
+  .grid__item_width2.grid__item_double {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 960px) {
+  .grid__item_width2 {
+    width: 100%;
+  }
+
+  .grid__item_height2.grid__item_double {
+    flex-direction: row;
+    width: 100%;
+    height: 200px;
+
+    & .grid__item {
+      width: 50%;
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .grid__item {
+    width: 100%;
+  }
+
+  .grid__item_width2.grid__item_double {
+    flex-direction: column;
+    height: 400px;
+
+    & .grid__item {
+      width: 100%;
+    }
+  }
+
+  .grid__item_height2.grid__item_double {
+    flex-direction: column;
+    width: 100%;
+    height: 400px;
+
+    & .grid__item {
+      width: 100%;
+    }
+  }
+}

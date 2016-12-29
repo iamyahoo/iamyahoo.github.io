@@ -1,0 +1,18 @@
+.list_counter {
+  counter-reset: number;
+
+  li {
+    counter-increment: number;
+    padding: 5px 0 5px 30px;
+  }
+
+  li:before {
+    content: "0" counter(number);
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    color: $font-color;
+    font-family: $font-family;
+  }
+}

@@ -1,0 +1,188 @@
+.mosaic {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  min-height: 100%;
+}
+
+.mosaic_project {
+
+  & .mosaic__item {
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: 0;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      transition: all .2s;
+      background-color: transparent;
+    }
+
+    &:hover:after {
+      //background-color: rgba(51, 54, 80, .8);
+    }
+  }
+}
+
+.mosaic_timeline {
+
+  & .mosaic__item {
+    height: 330px;
+    padding: 150px 50px 50px;
+    cursor: pointer;
+
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: 0;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      transition: all .2s;
+      background-color: transparent;
+    }
+
+    &:hover:after {
+      background-color: rgba(51, 54, 80, .8);
+    }
+
+    &.mosaic__item_progress {
+      padding: 130px 50px 50px;
+
+      &:after {
+        display: none;
+      }
+    }
+  }
+}
+
+.mosaic__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  width: 33.3333%;
+  max-width: 700px;
+  min-width: 300px;
+  height: 500px;
+  overflow: hidden;
+  color: #ffffff;
+  padding: 200px 50px 50px;
+
+  & > * {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.mosaic__img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+
+  & > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.mosaic__item_medium {
+  width: 66.6666%;
+  max-width: 1300px;
+}
+
+.mosaic__item_parking {
+  background-color: $color-blue-60;
+}
+
+.mosaic__item_ecology {
+  background-color: $color-green-50;
+}
+
+.mosaic__item_school {
+  background-color: $color-gold;
+  color: $font-color;
+}
+
+.mosaic__item_progress {
+  background-color: $color-blue-60;
+}
+
+.mosaic__btn {
+  margin-bottom: 30px;
+}
+
+.mosaic__title {
+  position: relative;
+  z-index: 1;
+  font-size: 24px;
+  font-family: $font-family_1_medium;
+  font-weight: normal;
+  max-width: 450px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.mosaic__icon {
+  margin-top: -60px;
+  margin-bottom: 30px;
+}
+
+.mosaic__date-month {
+  font-size: 48px;
+  line-height: 50px;
+}
+
+.mosaic__progress {
+  text-align: center;
+}
+
+.mosaic__progress-number {
+  font-size: 48px;
+  line-height: 48px;
+}
+
+.modal-timeline__header {
+  margin-bottom: 30px;
+}
+
+
+@media (max-width: 1400px) {
+
+  .mosaic__item {
+    width: 50%;
+  }
+
+  .mosaic__item_medium {
+    width: 100%;
+    max-width: 1400px;
+  }
+}
+
+
+@media (max-width: 640px) {
+
+  .mosaic {
+    flex-direction: column;
+  }
+
+  .mosaic__item {
+    width: 100%;
+  }
+}

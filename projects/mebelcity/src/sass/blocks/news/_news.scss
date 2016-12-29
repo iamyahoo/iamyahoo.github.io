@@ -1,0 +1,19 @@
+.news {
+  max-width: 700px;
+}
+
+.news__date {
+  font-size: 12px;
+}
+
+.news__item {
+  margin-bottom: 25px;
+}
+
+.news__title {
+  @extend .link;
+  font-size: 16px;
+  font-family: $font-family_bold;
+  border: none;
+  line-height: 1.5;
+}

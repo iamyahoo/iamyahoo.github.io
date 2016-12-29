@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" type="text/css" href="js/libs/jquery.slick/slick.css">
+    <title>Атлант — клубный дом</title>
+</head>
+<body>
+<div class="page-container page-main">
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__start">
+                <button class="hamburger">
+                    <i></i>
+                    <span class="hamburger__text">Меню</span>
+                </button>
+            </div>
+            <div class="header__center">
+                <a href="tel:+78129001535" class="link link_tel">+7 (812) 900-15-35</a>
+                <a href="#" class="logo logo_color"></a>
+                <a href="tel:+78123476720" class="link link_tel">+7 (812) 347-67-20</a>
+            </div>
+            <div class="header__end">
+                <a href="#modal-connect" rel="modal:open" class="link link_promo">Связаться с менеджером</a>
+            </div>
+        </div>
+    </header>
+    <main class="page">
+        <div class="page__inner">
+            <div id="fullpage-slider" class="main-slider fullpage-slider fullpage_enabled">
+                <section id="section0" class="section main-item promo" data-anchor="fp-promo">
+                    <div class="main-item__content">
+                        <div class="promo__content promo__content_hidden promo__content_day"></div>
+                        <div class="promo__content promo__content_night"></div>
+                        <a href="#" class="main-item__btn btn btn_action">Выбрать квартиру</a>
+                        <div class="promo__desc">
+                            <p class="promo__number">57</p>
+                            <p class="promo__text promo__text_top">Клубный дом на</p>
+                            <p class="promo__text promo__text_center">квартир</p>
+                            <p class="promo__text promo__text_bottom">Мира 36</p>
+                        </div>
+                    </div>
+                    <div class="promo-switcher promo-switcher_night">
+                        <div class="promo-switcher__btns">
+                            <button class="promo-switcher__btn promo-switcher__btn_day" type="button"></button>
+                            <button class="promo-switcher__btn promo-switcher__btn_night" type="button"></button>
+                        </div>
+                        <div class="promo-switcher__line"></div>
+                    </div>
+                </section>
+
+                <section id="section1" class="section main-item place" data-anchor="fp-place">
+                    <div class="main-item__content place__content">
+                        <a href="#" class="main-item__btn btn btn_action">Открыть на карте</a>
+                        <h1 class="main-item__title">Местоположение</h1>
+                        <div class="main-item__text">
+                            <p>Дом расположен в <span class="text_cyan">исторической</span> части Петроградского района.</p>
+                            <p>До станции метро <span class="text_blue">Горьковская</span> 880 метров, до крейсера <span class="text_green">«Аврора»</span> один километр. В пешей доступности Каменноостровский проспект, <span class="text_cyan">Петропавловская крепость</span> и станция метро <span class="text_blue">Петроградская</span>.</p>
+                        </div>
+                        <a href="#" class="link link_promo link_light">Подробнее</a>
+                        <div class="place__img">
+                            <img src="img/content/petr1.png" alt="">
+                        </div>
+                        <div class="place__slider">
+                            <div class="slider-wrapper">
+                                <div id="slider-place" class="slider slider-place">
+                                    <div class="slider__item">
+                                        <img src="img/content/photo-place_1.jpg" alt="">
+                                    </div>
+                                    <div class="slider__item">
+                                        <img src="img/content/photo-place_2.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="slider__control"></div>
+                            </div>
+                        </div>
+                        <div class="place__map">
+                            <div class="map" id="map-main"></div>
+                            <a href="#" class="btn btn_action btn_l">Открыть на карте</a>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="section2" class="section main-item architecture" data-anchor="fp-architecture">
+                    <div class="main-item__content architecture__content">
+                        <h1 class="main-item__title">Архитектура</h1>
+                        <div class="main-item__text">
+                            <p>Дом состоит из двух корпусов, выполненных в разных архитектурных стилях.</p>
+                            <p>Первый корпус воссоздает исторический фасад дома в стиле петербургского модерна начала двадцатого века.</p>
+                            <p>Второй корпус — это современная архитектурная концепция с многоуровневым фасадом и террасами от 15 до 80 м² на седьмом и восьмом этажах.</p>
+                            <p>Проект ЖК «Атлант» награжден Серебряным дипломом Санкт-Петербургского Смотра-конкурса «Архитектон — 2013».</p>
+                        </div>
+                        <a href="#" class="link link_promo link_light">Подробнее</a>
+                    </div>
+                </section>
+
+                <section id="section3" class="section main-item interior" data-anchor="fp-interior">
+                    <div class="main-item__content interior__content">
+                        <h1 class="main-item__title">Интерьеры</h1>
+                        <div class="main-item__text">
+                            <p>Для дома разработан эксклюзивный дизайн проект общественных пространств. Входные группы, лестницы и лифтовые холлы будут оформлены природными и внешне привлекательными материалами: деревянные стеновые панели, мрамор, керамический гранит, панели с декоративной штукатуркой.</p>
+                        </div>
+                        <a href="#" class="link link_promo link_light">Подробнее</a>
+                    </div>
+                </section>
+
+                <section id="section4" class="section main-item terrace" data-anchor="fp-terrace">
+                    <div class="main-item__content terrace__content">
+                        <a href="#" class="main-item__btn btn btn_action">Выбрать квартиру с террасой</a>
+                        <h1 class="terrace__title">Терраса</h1>
+                        <a href="#" class="link link_promo link_light">Подробнее</a>
+                    </div>
+                </section>
+
+                <section id="section5" class="section main-item comfort" data-anchor="fp-comfort">
+                    <div class="main-item__content comfort__content">
+                        <a href="#" class="main-item__btn btn btn_action">Выбрать место на парковке</a>
+                        <h1 class="main-item__title">Комфорт <br>и безопасность</h1>
+                        <div class="main-item__text">
+                            <p>Внутренний двор дома закрыт от посторонних, здесь можно спокойно гулять с детьми.</p>
+                            <p>Территория охраняется, работает система видеонаблюдения и служба консьержей. Для машин есть подземный отапливаемый паркинг.</p>
+                        </div>
+                        <a href="#" class="link link_promo link_light">Подробнее</a>
+                        <div class="comfort__img">
+                            <img src="img/content/camera.png" alt="">
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__start">
+                <p class="footer__copyright">© ЖК «Атлант» 2014–2016</p>
+            </div>
+            <div class="footer__center">
+                <div class="icon-scroll">
+                    <div></div>
+                </div>
+                <a href="mailto:info@k55.ru" class="footer__email link link_email">info@k55.ru</a>
+            </div>
+            <div class="footer__end">
+                <a href="http://its.agency/" class="link footer__dev" target="_blank">Сделано в ITS</a>
+            </div>
+        </div>
+    </footer>
+    <div class="menu-mobile">
+        <div class="menu-mobile__inner">
+            <nav class="nav-mobile">
+                <a href="project.html" class="menu-mobile__link link link_border">О комплексе</a>
+                <a href="timeline.html" class="menu-mobile__link link link_border">Ход строительства</a>
+                <a href="plans.html" class="menu-mobile__link link link_border">Планировки</a>
+                <a href="sales.html" class="menu-mobile__link link link_border">Офис продаж</a>
+                <a href="hypothec.html" class="menu-mobile__link link link_border">Ипотека</a>
+            </nav>
+            <a href="#modal-connect" rel="modal:open" class="menu-mobile__link menu-mobile__link_connect link link_border">Связаться с менеджером</a>
+        </div>
+    </div>
+    <section class="modal modal_simple" id="modal-connect">
+        <div class="modal__inner">
+            <h1 class="modal__title">Связь с менеджером</h1>
+            <div class="modal__form">
+                <form action="" class="form form-modal">
+                    <div class="form__row">
+                        <input type="text" class="form__input" placeholder="Имя">
+                        <input type="tel" class="form__input" placeholder="Телефон">
+                        <input type="text" class="form__input" placeholder="Email">
+                    </div>
+                    <textarea class="form__textarea" placeholder="Ваш вопрос"></textarea>
+                    <a href="#" class="btn btn_action">Выбрать квартиру</a>
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="preloader"></div>
+</div>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjMhIqD3thW2WCaoOgFBP_jNKHOZVhTO0&callback=initMap"
+        type="text/javascript"></script>
+<script src="js/libs/jquery/jquery.min.js"></script>
+<script src="js/libs/jquery.fullpage/jquery.fullpage.min.js"></script>
+<script src="js/libs/jquery.slick/slick.min.js"></script>
+<script src="js/libs/jquery.modal/jquery.modal.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

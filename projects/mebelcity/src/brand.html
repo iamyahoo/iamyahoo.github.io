@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    //= html/_head.html
+    <link rel="stylesheet" type="text/css" href="js/libs/jquery.slick/slick.css">
+    <title>Мебель-Сити</title>
+</head>
+<body>
+<div class="page-container">
+    //= html/_header.html
+    <main class="page page-shops">
+        <div class="page__inner">
+            <div class="breadcrumbs">
+                <ul class="breadcrumbs-list">
+                    <li><a href="#" class="link link_colored">Мебель-Сити</a></li>
+                    <li><a href="#" class="link link_colored">Магазины и бренды</a></li>
+                    <li><a href="#" class="link link_disabled">Estetica</a></li>
+                </ul>
+            </div>
+            <section class="content">
+                <div class="content__sidebar">
+                    <div class="content__logo">
+                        <img src="img/icon/logo1.png" alt="">
+                    </div>
+                    <h2 class="content__title">Где найти</h2>
+                    <div class="content__adress">
+                        <p class="text_bold">Мебель-Сити 1</p>
+                        <p>ул. Мебельная, 1</p>
+                        <a href="tel:+78123038168" class="link link_tel mar_b_20">(812) 303-81-68</a>
+                        <p>Посмотреть на схеме:</p>
+                        <p><a href="#" class="link link_colored">1 этаж стенд 3</a></p>
+                        <p><a href="#" class="link link_colored">2 этаж стенд 57</a></p>
+                    </div>
+                    <div class="content__adress">
+                        <p class="text_bold">Мебель-Сити 2</p>
+                        <p>ул. Кантемировская, 37</p>
+                        <a href="tel:+78123354422" class="link link_tel mar_b_20">(812) 335-44-22</a>
+                        <p>Посмотреть на схеме:</p>
+                        <p><a href="#" class="link link_colored">1 этаж стенд 1.30</a></p>
+                        <p><a href="#" class="link link_colored">3 этаж стенд 3.7</a></p>
+                    </div>
+                    <p>
+                        <a href="http://www.estetica.ru/" class="link link_colored" target="_blank">estetica.ru</a>
+                    </p>
+                </div>
+                <div class="content__main">
+                    <div class="content__item">
+                        <h1 class="content__title">Estetica</h1>
+                        <div class="content__desc">Мягкая мебель, Мебель для гостиной, Все для сна</div>
+                        <div class="slider" id="content-slider">
+                            <img src="img/content/photo1.png" alt="">
+                            <img src="img/content/36.jpg" alt="">
+                        </div>
+                        <div class="slider__control">
+                            <p class="slider__counter"><span class="text_bold">4</span> / <span>12</span></p>
+                        </div>
+                        <p class="content__text">Мебельная компания ESTETICA выпускает продукцию четырёх направлений. Интерьерные диваны создают мягкие группы различных комбинаций, а тщательный подбор материалов даёт возможность почувствовать комфорт и роскошь современных технологий. Диваны-кровати разработаны с учетом возможности использования изделия как стильного комфортного дивана, легко вписывающегося в интерьер, так и полноценной кровати с удобным современным механизмом раскладывания.</p>
+                    </div>
+                    <div class="content__item">
+                        <div class="promo-block">
+                            <div class="promo-block__img">
+                                <img src="img/content/banner2.png" alt="">
+                            </div>
+                            <div class="promo-block__desc">
+                                <h2 class="promo-block__title">Акция: Специальная цена -60%</h2>
+                                <p class="promo-block__subtitle">С 1 по 15 мая</p>
+                                <p class="promo-block__text">Только до конца мая устанавливаем специальную распродажную цену на нашу мягкую мебель! Коллекция Classic - 60%  Коллекция Soul - 30%  Коллекция Life - 10%. Количество товара ограничено.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content__item">
+                        <h1>Другие магазины</h1>
+                        <section class="tabs tabs_small">
+                            <div class="tabs__header">
+                                <ul class="tabs__caption">
+                                    <li class="active">Все</li>
+                                    <li class="">Мебель-Сити 1</li>
+                                    <li class="">Мебель-Сити 2</li>
+                                </ul>
+                            </div>
+
+                            <div class="tabs__content">
+                                <div class="tabs__item active">
+                                    <div class="brands">
+                                        <div class="brands__item brands__item_promo">
+                                            <a href="#" class="brands__link"></a>
+                                            <div class="brands__img">
+                                                <img src="img/icon/logo1.png" alt="Estetica">
+                                            </div>
+                                            <h3>Estetica</h3>
+                                            <p class="brands__text">Мягкая мебель, Мебель для гостиной, Все для сна</p>
+                                            <p class="brands__place">Мебель-Сити 1 и 2</p>
+                                        </div>
+                                        <div class="brands__item">
+                                            <a href="#" class="brands__link"></a>
+                                            <div class="brands__img">
+                                                <img src="img/icon/logo2.png" alt="Hilding Anders">
+                                            </div>
+                                            <h3>Hilding Anders</h3>
+                                            <p class="brands__text">Мягкая мебель, Мебель для гостиной, Все для сна, Аксессуары</p>
+                                            <p class="brands__place">Мебель-Сити 1 и 2</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tabs__item">
+                                    <div class="brands">
+                                        <div class="brands__item">
+                                            <a href="#" class="brands__link"></a>
+                                            <div class="brands__img">
+                                                <img src="img/icon/logo2.png" alt="Hilding Anders">
+                                            </div>
+                                            <h3>Hilding Anders</h3>
+                                            <p class="brands__text">Мягкая мебель, Мебель для гостиной, Все для сна, Аксессуары</p>
+                                            <p class="brands__place">Мебель-Сити 1 и 2</p>
+                                        </div>
+                                        <div class="brands__item brands__item_promo">
+                                            <a href="#" class="brands__link"></a>
+                                            <div class="brands__img">
+                                                <img src="img/icon/logo1.png" alt="Estetica">
+                                            </div>
+                                            <h3>Estetica</h3>
+                                            <p class="brands__text">Мягкая мебель, Мебель для гостиной, Все для сна</p>
+                                            <p class="brands__place">Мебель-Сити 1 и 2</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tabs__item">
+                                    <div class="brands">
+                                        <div class="brands__item brands__item_promo">
+                                            <a href="#" class="brands__link"></a>
+                                            <div class="brands__img">
+                                                <img src="img/icon/logo1.png" alt="Estetica">
+                                            </div>
+                                            <h3>Estetica</h3>
+                                            <p class="brands__text">Мягкая мебель, Мебель для гостиной, Все для сна</p>
+                                            <p class="brands__place">Мебель-Сити 1 и 2</p>
+                                        </div>
+                                        <div class="brands__item">
+                                            <a href="#" class="brands__link"></a>
+                                            <div class="brands__img">
+                                                <img src="img/icon/logo3.png" alt="Parra">
+                                            </div>
+                                            <h3>Parra</h3>
+                                            <p class="brands__text">Системы хранения, Все для сна, Столовые группы, Мягкая мебель, Мебель для гостиной, Мебель ...</p>
+                                            <p class="brands__place">Мебель-Сити 1</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    //= html/_footer.html
+</div>
+//= html/_scripts.html
+</body>
+</html>

@@ -1,0 +1,50 @@
+.nav__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  & li {
+    flex: 0 1 auto;
+  }
+
+  & li:first-child .nav__link {
+    padding-left: 0;
+  }
+
+  & li:last-child .nav__link {
+    padding-right: 0;
+  }
+}
+
+.nav__link {
+  @extend .link;
+  padding: 15px;
+  text-decoration: none;
+  font-family: $font-family_bold;
+}
+
+.nav__tel {
+  @extend .link;
+  margin-left: auto;
+  text-decoration: none;
+  font-family: $font-family_bold;
+}
+
+.nav_header {
+
+  & .nav__link {
+    text-transform: uppercase;
+    color: $color-gray-60;
+    font-size: $font_nano;
+  }
+}
+
+.nav_footer {
+
+  & .nav__link {
+    color: $color-blue-10;
+  }
+}

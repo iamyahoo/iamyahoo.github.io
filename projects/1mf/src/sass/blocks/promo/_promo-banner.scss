@@ -1,0 +1,11 @@
+.promo-banner {
+  height: auto;
+  max-height: 590px;
+  overflow: hidden;
+}
+
+.promo-banner__img {
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+}

@@ -1,0 +1,75 @@
+.link {
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  transition: color, .3s;
+  color: #000;
+
+  &:hover {
+    color: $color-red-50;
+  }
+
+  &:focus,
+  &:active {
+    outline: 0;
+    text-decoration: none;
+  }
+}
+
+.link_light {
+  @extend .link;
+  color: #fff;
+}
+
+.link_dark {
+  @extend .link;
+  color: #000;
+}
+
+.link_dark_underlined {
+  @extend .link;
+  color: #000;
+  border-bottom: 1px solid $color-gray-30;
+
+  &:hover {
+    border-bottom: 1px solid $color-red-50;
+  }
+}
+
+.link_gray {
+  @extend .link;
+  @extend .link_underlined;
+  color: $color-gray-50;
+}
+
+.link_active {
+  color: $color-red-50;
+}
+
+.link_underlined {
+  border-bottom: 1px solid $color-gray-30;
+
+  &:hover {
+    border-bottom: 1px solid $color-red-50;
+  }
+}
+
+.link_icon {
+  position: relative;
+  padding: 5px 0 5px 30px;
+  font-size: 14px;
+
+  & > svg {
+    position: absolute;
+    top: 3px;
+    left: 0;
+  }
+}
+
+.link_phone {
+  @extend .link;
+  font-size: 21px;
+  color: #000;
+  font-family: $font-family_bold;
+  text-decoration: none;
+}

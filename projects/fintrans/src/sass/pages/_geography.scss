@@ -1,0 +1,185 @@
+.geography {
+  background-color: #fff;
+}
+
+.geography-filters {
+  @extend .layout-padding;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  & .btn {
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.geography-filters_mobile {
+  opacity: 0;
+  visibility: hidden;
+  padding: 0 20px;
+  background-color: $color-gray-10;
+}
+
+.geography-counter {
+  margin-right: auto;
+
+  span {
+    font-family: $font-family_bold;
+  }
+}
+
+.geography-map-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.geography-sidebar {
+  width: 20%;
+  background-color: $color-gray-10;
+  max-width: 350px;
+  min-width: 340px;
+  overflow-y: auto;
+}
+
+.geography-sidebar__item {
+  border-bottom: 1px solid $color-gray-20;
+
+  p {
+    margin-bottom: 20px;
+  }
+
+  .link_email {
+    font-size: 14px;
+  }
+}
+
+.geography-sidebar__content {
+  padding: 20px;
+}
+
+.geography-sidebar__btn {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.geography-sidebar__title {
+  display: block;
+  font-family: $font-family_bold;
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-decoration: none;
+  color: $font-color;
+}
+
+.geography__icons {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+
+  .geography__icon {
+    margin-right: 10px;
+  }
+}
+
+.geography__icon {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: $color-gray-30;
+  border-radius: 50%;
+  line-height: 32px;
+  text-align: center;
+
+  img {
+    width: 18px;
+  }
+}
+
+.geography_services {
+
+  & .geography-map-wrapper {
+    height: 520px;
+  }
+
+  & .geography-map {
+    width: 100%;
+  }
+}
+
+.geography_branches {
+
+  & .geography-map-wrapper {
+    height: 720px;
+  }
+
+  & .geography-map {
+    width: 80%;
+  }
+}
+
+@media (max-width: 640px) {
+
+  .geography-filters {
+    display: none;
+  }
+
+  .geography-filters_mobile {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .geography_services {
+
+    & .geography-map-wrapper {
+      height: 320px;
+    }
+  }
+
+  .geography_branches {
+
+    & .geography-map-wrapper {
+      flex-direction: column;
+      height: auto;
+    }
+
+    & .geography-map {
+      width: 100%;
+      height: 260px;
+    }
+  }
+
+  .geography-sidebar {
+    width: 100%;
+    max-width: 640px;
+    min-width: 280px;
+  }
+
+  .geography-sidebar__item {
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid #d5d5d5;
+    margin-bottom: 3px;
+  }
+
+  .geography-sidebar__btn {
+    height: auto;
+    width: 50px;
+    margin-left: auto;
+    margin-bottom: 0;
+    text-indent: -9000px;
+    text-transform: capitalize;
+    border-radius: 0;
+
+    &:after {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+  }
+}

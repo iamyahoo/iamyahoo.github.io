@@ -1,0 +1,138 @@
+/* btn */
+.btn {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  height: 70px;
+  line-height: 68px;
+  padding: 0 60px;
+  background-color: $color-red-50;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  color: $font-color;
+  text-align: center;
+  transition: all .2s;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+  outline: 0;
+  box-shadow: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    outline: 0;
+    text-decoration: none;
+  }
+}
+
+/* btn sizes */
+.btn_s {}
+
+.btn_m {}
+
+.btn_l {
+  width: 100%;
+}
+
+
+/* btn types */
+.btn_action {
+  border-color: $color-red-50;
+  background-color: $color-red-50;
+  color: $font-color_light;
+  font-family: $font-family;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+
+  &:hover,
+  &:focus {
+    background-color: darken($color-red-50, 5%);
+  }
+
+  &:active {
+    background-color: darken($color-red-50, 10%);
+  }
+}
+
+.btn_primary {
+  //border-color: $color-red-50;
+  //background-color: $color-red-50;
+  //text-transform: uppercase;
+  //font-family: $font-family_bold;
+  //font-size: $font_small;
+  //
+  //&:hover,
+  //&:focus {
+  //  border-color: darken($color-red-50, 5%);
+  //  background-color: darken($color-red-50, 5%);
+  //  color: $font-color;
+  //}
+  //
+  //&:active {
+  //  border-color: darken($color-red-50, 10%);
+  //  background-color: darken($color-red-50, 10%);
+  //  color: $font-color;
+  //}
+}
+
+
+.btn_secondary {
+  //border-color: $color-blue-50;
+  //background-color: $color-white;
+  //text-transform: uppercase;
+  //font-family: $font-family_bold;
+  //font-size: $font_small;
+  //
+  //&:hover,
+  //&:focus {
+  //  border-color: $color-blue-50;
+  //  background-color: $color-blue-50;
+  //  color: $color-white;
+  //}
+  //
+  //&:active {
+  //  border-color: darken($color-blue-50, 5%);
+  //  background-color: darken($color-blue-50, 5%);
+  //}
+}
+
+.btn_attach {
+  overflow: hidden;
+
+  & > input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  &.btn_disabled > input[type=file] {
+    display: none;
+  }
+}
+
+@media (max-height: 900px) {
+
+  .btn {
+    height: 50px;
+    line-height: 48px;
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 640px) {
+
+  .btn {
+    height: 50px;
+    line-height: 48px;
+    padding: 0 30px;
+  }
+}

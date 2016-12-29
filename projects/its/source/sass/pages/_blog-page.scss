@@ -1,0 +1,17 @@
+.page-blog {
+
+  & .page__inner {
+    padding: 115px 0 85px;
+  }
+}
+
+
+@media (max-width: 790px) {
+
+  .page-blog {
+
+    & .page__inner {
+      padding: 60px 0 85px;
+    }
+  }
+}

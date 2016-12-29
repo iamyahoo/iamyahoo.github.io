@@ -1,0 +1,88 @@
+.switcher {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 950px;
+}
+
+.switcher__header {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+}
+
+.switcher__title {
+  margin-bottom: 0;
+  margin-right: 30px;
+}
+
+.switcher__buttons {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: block;
+    height: 40px;
+    width: 40px;
+    margin-right: 25px;
+    border: 1px solid $color-blue-30;
+    border-radius: 50%;
+    font-size: 24px;
+    line-height: 36px;
+    font-family: $font-family_light;
+    text-align: center;
+    cursor: pointer;
+    transition: all .2s;
+    color: $color-blue-30;
+
+    &:hover {
+      color: $color-blue-50;
+      border-color: $color-blue-50;
+    }
+  }
+
+  li.active {
+    font-family: $font-family_bold;
+    border-color: transparent;
+    color: #000;
+  }
+}
+
+.switcher__content {
+  flex-grow: 1;
+  width: 75%;
+
+  & .brands {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  & .brands__item {
+    margin-right: 12px;
+    margin-bottom: 12px;
+  }
+}
+
+.switcher__item {
+  display: none;
+  min-width: 80px;
+  color: $color-gray-70;
+  text-decoration: none;
+
+  &:last-child {
+    border-right: none;
+  }
+}
+
+.switcher__item.active {
+  display: block; /* по умолчанию показываем нужный блок */
+}
+
+@media (max-width: 799px) {
+    .switcher__content {
+      width: 100%;
+    }
+}

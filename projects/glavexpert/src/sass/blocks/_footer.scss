@@ -1,0 +1,45 @@
+.footer {
+  min-width: 100%;
+  background-color: $color-blue-80;
+
+  p {
+    color: $color-blue-10;
+  }
+}
+
+.footer__inner {
+  @extend .container;
+  padding: 40px 25px 0;
+}
+
+.footer__part_top,
+.footer__part_bottom {
+  @extend .clearfix
+}
+
+.footer__part_top {
+  margin-bottom: 70px;
+}
+
+.footer__part_bottom {
+  padding-bottom: 50px;
+}
+
+.footer__part_top_left,
+.footer__part_bottom_left {
+  float: left;
+}
+
+.footer__part_top_right,
+.footer__part_bottom_right {
+  float: right;
+}
+
+.footer__part_top_left {
+  padding-top: 15px;
+}
+
+.footer__link {
+  @extend .link;
+  @extend .link_light;
+}

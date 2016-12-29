@@ -1,0 +1,46 @@
+.files__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.files__item {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+
+  & .btn_delete {
+    flex-basis: 20px;
+    margin-left: auto;
+  }
+}
+
+.files__info {
+
+}
+
+.files__link {
+  @extend .link_blue;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  max-width: 175px;
+  padding-left: 20px;
+  font-family: $font-family_bold;
+  margin-bottom: 5px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+  &:before {
+    position: absolute;
+    left: 0px;
+    content: '\f016';
+    font-family: 'FontAwesome';
+    font-size: 14px;
+    margin-right: 8px;
+  }
+}
+
+.files__text {
+  padding-left: 20px;
+}

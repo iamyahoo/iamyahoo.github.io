@@ -1,0 +1,25 @@
+//some styles
+
+.logo {
+  display: block;
+  width: 157px;
+  height: 28px;
+}
+
+.logo-small {
+  height: 28px;
+  width: 28px;
+}
+
+.map {
+  width: 100%;
+}
+
+@media (max-width: 640px) {
+
+  .logo {
+    display: block;
+    width: 114px;
+    height: 20px;
+  }
+}

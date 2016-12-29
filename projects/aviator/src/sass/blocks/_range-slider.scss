@@ -1,0 +1,41 @@
+.range-slider {
+  max-width: 350px;
+}
+
+.range-slider__desc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.ui-slider {
+  position: relative;
+  height: 2px;
+  background-color: $color-gray-30;
+  border: none;
+}
+
+.ui-slider-range {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  border: none;
+  height: 2px;
+  background-color: $color-blue-50;
+}
+
+.ui-slider-handle {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: $color-blue-50;
+  outline: 0;
+  border: none;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+  touch-action: none;
+}

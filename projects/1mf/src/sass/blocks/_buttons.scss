@@ -1,0 +1,99 @@
+.btn {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  height: 50px;
+  line-height: 48px;
+  padding: 0 20px;
+  border-radius: 10px;
+  border-width: 2px;
+  border-style: solid;
+  font-family: $font-family;
+  font-size: $font_default;
+  text-align: center;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+  outline: 0;
+  box-shadow: none;
+  transition: all .2s;
+
+  &:hover,
+  &:active,
+  &:focus {
+    outline: 0;
+    text-decoration: none;
+  }
+}
+
+/* button sizes */
+.btn_s {}
+.btn_m {
+  width: 270px;
+  max-width: 270px;
+}
+.btn_l {}
+.btn_xl { width: 100%; }
+
+
+/* button types */
+.btn_disabled {
+  border-color: $color-gray-30;
+  background-color: $color-gray-10;
+  color: $color-gray-50;
+  cursor: default;
+
+  &:hover,
+  &:active,
+  &:focus {
+    border-color: $color-gray-30;
+    background-color: $color-gray-10;
+    color: $color-gray-50;
+  }
+}
+
+.btn_standart {
+  border-color: $color-red-50;
+  background-color: $color-white;
+  color: $font-color;
+
+  &:hover,
+  &:focus {    
+    background-color: $color-red-50;
+    color: $font-color_light;
+  }
+
+  &.btn_active {
+    background-color: $color-red-50;
+    color: $font-color_light;
+  }
+}
+
+.btn_primary {
+  border-color: $color-red-50;
+  background-color: $color-red-50;
+  color: #fff;
+
+  &:hover,
+  &:focus {
+    border-color: darken($color-red-50, 8%);
+    background-color: darken($color-red-50, 8%);
+    color: #fff;
+  }
+
+  &.btn_active {
+    border-color: darken($color-red-50, 15%);
+    background-color: darken($color-red-50, 15%);
+  }
+}
+
+.btn_secondary {}
+
+
+@media (max-width: 640px) {
+
+  .btn {
+    height: 40px;
+    line-height: 38px;
+  }
+}

@@ -1,0 +1,44 @@
+.choice {
+  background-color: $color-red-50;
+  overflow: hidden;
+  min-height: 580px;
+  color: #fff;
+}
+
+.choice__inner {
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 90px;
+}
+
+.choice__title {
+  color: #fff;
+}
+
+.choice__desc {
+  max-width: 450px;
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+
+.choice__sign {
+  position: absolute;
+  top: 220px;
+  right: -180px;
+  font-family: $font-family_bold;
+  font-size: 1000px;
+  line-height: 630px;
+  color: $color-red-70;
+}
+
+
+@media (max-width: 640px) {
+
+  .choice__inner {
+    padding-top: 50px;
+  }
+
+  .choice__sign {
+    display: none;
+  }
+}

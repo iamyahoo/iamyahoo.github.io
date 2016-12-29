@@ -1,0 +1,69 @@
+//стили radiobutton (label>radio+span)
+
+.form__radio_hidden {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  margin: 0;
+}
+
+.form__radio  {
+  position: relative;
+  padding-left: 45px;
+  margin-bottom: 20px;
+  line-height: 30px;
+  display: block;
+  cursor: pointer;
+  font-size: $font_default;
+}
+
+.form__radio_indicator {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 2px solid $color-red-50;
+  border-radius: 50%;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    background: $color-red-50;
+    border-radius: 50%;
+    transition: all .2s;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.form__checkbox_text {
+  color: $font-color_dark;
+}
+
+//стили отмеченной кнопки
+.form__radio_hidden:checked + .form__radio_indicator {
+
+  &:after {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+//стили неотмеченной кнопки
+.form__radio_hidden:not(checked) + .form__radio_indicator {
+
+  &:after {
+    transform: translate(-50%, -50%) scale(0);
+  }
+}
+
+//стили отключенной кнопки
+.form__radio_hidden:disabled + .form__radio_indicator {
+  border: 2px solid $color-gray-30;
+}

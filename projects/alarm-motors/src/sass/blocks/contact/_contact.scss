@@ -1,0 +1,39 @@
+.contact-page {
+
+  & .map {
+
+    & .map-contacts {
+      display: none;
+    }
+  }
+}
+
+.contact-info {}
+
+.contact-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-top: 1px solid $color-gray-10;
+  border-left: 1px solid $color-gray-10;
+  padding: 0;
+  margin: 0;
+
+  &.list_numbers {
+
+    & li:before {
+      top: 32px;
+      left: 70px;
+    }
+  }
+}
+
+.contact-list__item {
+  width: 50%;
+  border-right: 1px solid $color-gray-10;
+  border-bottom: 1px solid $color-gray-10;
+}
+
+.contact__item {
+  padding: 30px 70px;
+}

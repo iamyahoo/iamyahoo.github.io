@@ -1,0 +1,27 @@
+.layout-inner {
+  width: 100%; /*fallback to old browsers*/
+  width: 100vw;
+  max-width: 1220px;
+  min-width: 1220px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.layout-padding {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+
+@media (min-width: 320px) and (max-width: 1279px) {
+
+  /**
+    * size on tablet
+    */
+
+  .layout-inner {
+    min-width: 1220px;
+    width: 1220px;
+    max-width: 1220px;
+  }
+}

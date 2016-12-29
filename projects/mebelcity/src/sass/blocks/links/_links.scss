@@ -1,0 +1,113 @@
+.link {
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  transition: color, .3s;
+  color: #000;
+  border-bottom: 1px solid #000;
+  line-height: 1.2;
+
+  &:hover {
+    color: $color-blue-50;
+    border-color: $color-blue-50;
+  }
+
+  &:focus,
+  &:active {
+    outline: 0;
+    text-decoration: none;
+  }
+}
+
+.link_light {
+  @extend .link;
+  color: #fff;
+  border-bottom: 1px solid $color-gray-30;
+
+  &:hover {
+    color: $color-gray-30;
+    border-color: $color-gray-30;
+  }
+}
+
+.link_dark {
+  @extend .link;
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+
+.link_colored {
+  color: $color-blue-30;
+  border-color: $color-blue-10;
+}
+
+.link_gray {
+  @extend .link;
+  color: $color-gray-30;
+  border-bottom: 1px solid $color-gray-30;
+
+  &:hover {
+    color: $color-gray-50;
+    border-color: $color-gray-50;
+  }
+}
+
+.link_active {
+  color: #000;
+  font-family: $font-family_bold;
+  border-color: transparent;
+  text-decoration: none;
+
+  &:hover {
+    color: #000;
+    font-family: $font-family_bold;
+    border-color: transparent;
+    text-decoration: none;
+  }
+}
+
+.link_disabled {
+  color: $color-gray-30;
+  border-color: transparent;
+  pointer-events: none;
+  cursor: default;
+
+  &:hover {
+    color: $color-gray-30;
+    border-color: transparent;
+  }
+}
+
+.link_tel {
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.link_dashed {
+  border-bottom: 1px dashed #000;
+}
+
+.link_arrow {
+  position: relative;
+  margin-right: 60px;
+  font-size: 30px;
+  font-family: $font-family_light;
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: -50px;
+    top: 55%;
+    transform: translateY(-50%);
+    height: 34px;
+    width: 34px;
+    background: url(../img/icon/arrow.png) no-repeat center center;
+  }
+}
+
+@media (max-width: 640px) {
+  .link_arrow {
+    font-size: 18px;
+  }
+}

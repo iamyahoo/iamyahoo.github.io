@@ -1,0 +1,28 @@
+.content-text {
+  
+  a {
+    
+    &:hover {
+      color: $color-yellow-50;
+    }
+  }
+
+  p {
+    margin-bottom: 30px;
+  }
+
+  img {}
+
+  span {}
+
+  i, em {}
+
+  b, strong {}
+
+  p + h2 {
+    margin-top: 80px;
+  }
+  p + h3 {
+    margin-top: 80px;
+  }
+}

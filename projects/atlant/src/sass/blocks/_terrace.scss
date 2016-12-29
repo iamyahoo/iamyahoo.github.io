@@ -1,0 +1,45 @@
+.terrace {}
+
+.terrace__content {
+  background-image: url('../img/content/photo-terrace.jpg');
+}
+
+.terrace__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  user-select: none;
+  font-size: 220px;
+  line-height: 200px;
+  font-family: $font-family_heavy;
+  color: $color-red-70;
+  text-transform: uppercase;
+  letter-spacing: 30px;
+  opacity: .7;
+
+  /* animations set in fullpage styles */
+  //animation-name: anim-opacity;
+  //animation-duration: 7s;
+  //animation-iteration-count: infinite;
+  //animation-delay: .5s;
+}
+
+
+@media (max-width: 640px) {
+
+  .terrace__title {
+    font-size: 90px;
+    line-height: 90px;
+    letter-spacing: 20px;
+  }
+}
+
+@media (max-width: 520px) {
+
+  .terrace__title {
+    font-size: 64px;
+    line-height: 76px;
+    letter-spacing: 10px;
+  }
+}

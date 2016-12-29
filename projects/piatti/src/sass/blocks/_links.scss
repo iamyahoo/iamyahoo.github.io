@@ -1,0 +1,75 @@
+.link {
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  transition: color, .2s;
+  color: $font-color;
+
+  &:hover {
+    color: $color-red-50;
+  }
+
+  &:focus,
+  &:active {
+    color: $color-red-50;
+    outline: 0;
+    text-decoration: none;
+  }
+}
+
+
+.link_active {
+  color: $color-red-50;
+}
+
+
+.link_light {
+  color: $color-gray-10;
+
+  &:hover {
+    color: $color-red-50;
+  }
+}
+
+
+.link_dark {
+  color: $font-color;
+
+  &:hover {
+    color: $color-red-50;
+  }
+}
+
+
+.link_underlined {
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+
+.link_tel {
+  white-space: nowrap;
+
+  &:hover {
+    color: $color-red-50;
+  }
+}
+
+
+.link_email {
+  white-space: nowrap;
+
+  &:hover {
+    color: $color-red-50;
+  }
+}
+
+.link_dev {
+
+  &:hover {
+    color: #ffc700;
+  }
+}

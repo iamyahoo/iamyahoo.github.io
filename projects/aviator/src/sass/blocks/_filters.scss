@@ -1,0 +1,171 @@
+.filters {
+  position: relative;
+  max-width: 1080px;
+  width: 100%;
+  will-change: height;
+}
+
+.filters__inner {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.filters_vertical {
+  flex-direction: column;
+  max-width: 42px;
+
+  & .filters__buttons {
+    flex-direction: column;
+  }
+
+  & .filters__btn {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+  
+  & .filters__title {
+    margin-bottom: 20px;
+    color: $color-gray-50;
+  }
+}
+
+.filters__item {
+  width: 30%;
+
+  & .range-slider {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.filters__title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.filters__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.filters__btn {
+  background-color: transparent;
+  outline: 0;
+  height: 42px;
+  line-height: 42px;
+  min-width: 42px;
+  border: 1px solid $color-blue-50;
+  border-radius: 21px;
+  text-align: center;
+  padding: 0 15px;
+  transition: all .2s;
+  margin-right: 20px;
+  text-decoration: none;
+  color: $font-color;
+
+  &:hover {
+    background-color: $color-blue-50;
+    color: #fff;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.filters__btn_active {
+  background-color: $color-blue-50;
+  color: #fff;
+}
+
+.filters__btn-open {
+  position: relative;
+  display: none;
+  background-color: transparent;
+  outline: 0;
+  height: 42px;
+  line-height: 42px;
+  min-width: 42px;
+  border: 1px solid $color-blue-50;
+  border-radius: 21px;
+  text-align: center;
+  padding: 0 25px 0 50px;
+  transition: all .2s;
+  text-decoration: none;
+  color: $font-color;
+  margin: 20px 0 30px;
+
+  &:active {
+    background-color: $color-blue-50;
+    color: #fff;
+  }
+
+  &:active:before {
+    filter: brightness(0) invert(1);
+  }
+
+  &:before {
+    position: absolute;
+    top: 50%;
+    left: 14px;
+    display: block;
+    width: 24px;
+    height: 32px;
+    content: url(../img/icons/svg-filters.svg);
+    transform: translateY(-50%);
+  }
+}
+
+.filters__btn-submit {
+  display: none;
+  margin: 10px;
+}
+
+.filters__btn-reset {
+  display: none;
+  text-decoration: none;
+  transition: color, .2s;
+  color: $color-blue-50;
+  margin: 10px 0;
+  border: none;
+  background-color: transparent;
+
+  &:hover {
+    color: $color-blue-70;
+  }
+
+  &:focus,
+  &:active {
+    outline: 0;
+    text-decoration: none;
+    color: $color-blue-70;
+  }
+}
+
+
+@media (max-width: 640px) {
+
+  .filters {
+    display: none;
+  }
+
+  .filters__inner {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .filters__item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .filters__btn-open,
+  .filters__btn-submit,
+  .filters__btn-reset {
+    display: block;
+  }
+}

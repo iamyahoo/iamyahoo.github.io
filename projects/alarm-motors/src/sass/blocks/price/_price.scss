@@ -1,0 +1,33 @@
+.price-list {
+  white-space: nowrap;
+}
+
+.price {
+  white-space: nowrap;
+}
+
+.price + .price_old {
+  margin-left: 10px;
+}
+
+.price_old {
+  white-space: nowrap;
+  position: relative;
+  color: $color-red-50;
+
+  &:before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -55%;
+    transform: translateY(-50%) translateX(-50%) rotate(-5deg);
+    width: 105%;
+    height: 1px;
+    background: $color-red-50;
+  }
+}
+
+.price_old_big {
+  font-size: 20px;
+}

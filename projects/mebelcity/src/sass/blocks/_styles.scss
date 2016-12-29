@@ -1,0 +1,15 @@
+//some styles
+
+.logo {
+  display: block;
+  min-width: 160px;
+  max-width: 160px;
+  min-height: 60px;
+  max-height: 60px;
+  margin-right: 10%;
+  background: url(../img/svg/logo.svg) no-repeat center;
+}
+
+.logo_dark {
+  background: url(../img/svg/logo_dark.svg) no-repeat center;
+}

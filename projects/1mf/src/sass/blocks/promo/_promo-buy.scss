@@ -1,0 +1,74 @@
+.promo-buy {
+  border-bottom: 1px solid $color-gray-30;
+}
+
+.promo-buy__inner {
+  display: flex;
+  flex-direction: row;
+  padding: 50px 0;
+}
+
+.promo-buy__content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 70%;
+}
+
+.promo-buy__form {
+  width: 30%;
+  min-width: 280px;
+  max-width: 300px;
+}
+
+.promo-buy__title {
+  font-size: 48px;
+  line-height: 56px;
+  width: 100%;
+}
+
+.promo-buy__phone {
+  margin-right: 90px;
+
+  & .link_phone {
+    font-family: $font-family_bold;
+  }
+}
+
+.promo-buy__text {
+  max-width: 290px;
+}
+
+
+@media (max-width: 640px) {
+  .promo-buy__inner {
+    flex-direction: column;
+  }
+
+  .promo-buy__content {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .promo-buy__title {
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 30px;
+  }
+
+  .promo-buy__phone {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .promo-buy__inner {
+    align-items: center;
+  }
+
+  .promo-buy__content {
+    width: 100%;
+  }
+}

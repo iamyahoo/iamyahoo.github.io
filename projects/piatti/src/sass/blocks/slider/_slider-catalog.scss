@@ -1,0 +1,90 @@
+$slider-catalog-small-height: 116px;
+
+/* slider main styling */
+.slider-catalog {
+
+  & .slider-small {
+
+    & .slider__item {
+      margin-right: 10px;
+      text-align: center;
+    }
+
+    & .slider__img {
+      height: $slider-catalog-small-height;
+      border: 3px solid transparent;
+      margin-bottom: 15px;
+      transition: all .2s;
+
+      img {
+        max-height: $slider-catalog-small-height;
+        height: 100%;
+        width: auto;
+      }
+    }
+    
+    & .slider__link {
+      color: #fff;
+      opacity: .7;
+    }
+    
+    & .slick-current {
+      overflow: visible;
+
+      & .slider__img {
+        box-shadow: 0px 25px 50px 0px rgba(0,0,0,0.10);
+        border-color: #fff;
+      }
+    }
+
+    & .slider__link {
+      opacity: 1;
+    }
+
+    & .slider__arrow {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  & .slider-big {
+    width: 100%;
+
+    & .slider__img {
+      height: 550px;
+
+      img {
+        width: 100%;
+        transform: translateY(-25%);
+      }
+    }
+  }
+}
+
+.slider-top {
+  padding: 25px 0 15px;
+}
+
+.slider-top_color_antara {
+  background-color: #634735;
+}
+
+.slider-top_color_eterno {
+  background-color: #414042;
+}
+
+.slider-top_color_primo {
+  background-color: #fbb040;
+}
+
+.slider-top_color_serena {
+  background-color: #961a30;
+}
+
+.slider-top_color_star {
+  background-color: #c49a6c;
+}
+
+.slider-top_color_strada {
+  background-color: #b0472a;
+}

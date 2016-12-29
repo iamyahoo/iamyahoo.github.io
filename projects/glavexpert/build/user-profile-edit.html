@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="js/libs/lightbox/css/jquery.lightbox.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Главэкспертиза - Отредактировать профиль</title>
+</head>
+<body>
+<div class="page-container">
+    <header class="header">
+        <div class="header__inner">
+            <a href="index.html" class="header__logo">
+                <img src="img/logo_small.png" alt="Главэкспертиза">
+            </a>
+            <nav class="nav nav_header" role="navigation">
+                <ul class="nav__list">
+                    <li><a href="#" class="nav__link">Деятельность</a></li>
+                    <li><a href="#" class="nav__link">Новости</a></li>
+                    <li><a href="experts-public.html" class="nav__link">Эксперты</a></li>
+                    <li><a href="#" class="nav__link">Реестр</a></li>
+                    <li><a href="contacts.html" class="nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+            <a href="tel:+78124323242" class="nav__tel">(812) 432-32-42</a>
+            <div class="profile profile_logout">
+                <div class="dropdown-light profile-menu">
+                    <span class="dropdown-light__text profile__account">Мой кабинет</span>
+                    <div class="dropdown-light__menu">
+                        <ul class="dropdown-light__list">
+                            <li><span class="profile-menu__link">Константин Недашковский</span></li>
+                            <li><a href="admin-profile.html" class="dropdown-light__link">Профиль</a></li>
+                            <li><a href="#" class="dropdown-light__link">Выйти</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="page page_colored">
+        <div class="submenu">
+            <div class="submenu__inner">
+                <div class="submenu-back"></div>
+                <ul class="submenu__list">
+                    <li><a href="user-objects-list.html" class="submenu__link">Объекты</a></li>
+                    <li><a href="user-experts-list.html" class="submenu__link">Эксперты</a></li>
+                    <li><a href="user-profile.html" class="submenu__link">Профиль</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="page__inner">
+            <section>
+                <div class="page-header">
+                    <div class="profile__info">
+                        <div class="profile-photo">
+                            <svg class="profile-photo__img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90"><style>.st0{fill:#D7DBE0;}</style><path class="st0" d="M45 .5C20.5.5.5 20.5.5 45s20 44.5 44.5 44.5 44.5-20 44.5-44.5S69.5.5 45 .5zm0 85.6C22.4 86.1 3.9 67.6 3.9 45S22.4 3.9 45 3.9 86.1 22.4 86.1 45 67.6 86.1 45 86.1z"/><path class="st0" d="M52.4 49.6c2.1-2.2 3.5-4.8 3.9-6.4.3-1 .5-2.1.6-2.9.9-.4 1.6-1.1 1.9-2 .5-1.3.8-4.1.8-4.2.2-2.2-.6-3.5-.6-3.6.9-9-2-10.8-3.9-11.2-.7-.1-1.7-.4-2.2-.9-1.1-1.2-1.6-2.5-3.4-2.4-.7 0-1.6-.2-2.2-.6-.7-.6-1.7-1.3-2.4-1.3s-1.6.7-2.3 1.3c-.5.5-1.4.7-2.1.7-1.9-.1-2.3 1.2-3.4 2.4-.5.5-1.5.8-2.2.9-1.9.3-4.8 2.1-3.9 11.2-.1.1-.8 1.4-.6 3.6 0 .1.3 2.9.8 4.2.4.9 1 1.6 1.9 2 .1.8.3 1.9.6 2.9.4 1.6 1.9 4.3 4 6.5-.2 10.6-18.9 7.4-21.5 19.4C23 77.4 33.4 82.6 45 82.6s22-5.3 28.9-13.5c-2.7-12.1-21.2-9-21.5-19.5z"/></svg>
+                            <label class="profile-btn_upload btn_upload"><input type="file"></label>
+                        </div>
+                        <div class="profile__name">
+                            <h1>Левинсон Михаил Генадьевич</h1>
+                            <p>Пользователь</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form id="form-profile-edit">
+                    <h2 class="h2_small">Контактные данные</h2>
+                    <table class="profile-table">
+                        <tbody>
+                        <tr class="profile-table__row">
+                            <td class="profile-table__data">Телефон</a></td>
+                            <td class="profile-table__data"><input type="tel" class="form__item"></td>
+                        </tr>
+                        <tr class="profile-table__row">
+                            <td class="profile-table__data">Email</a></td>
+                            <td class="profile-table__data"><input type="text" class="form__item"></td>
+                        </tr>
+                        <tr class="profile-table__row">
+                            <td class="profile-table__data">Facebook</td>
+                            <td class="profile-table__data"><input type="text" class="form__item"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <h2 class="h2_small">Новый пароль</h2>
+                    <table class="profile-table">
+                        <tbody>
+                        <tr class="profile-table__row">
+                            <td class="profile-table__data">Старый пароль</a></td>
+                            <td class="profile-table__data">
+                                <div class="form-password">
+                                    <input class="form__item" type="password">
+                                    <button class="form-password__btn"></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="profile-table__row">
+                            <td class="profile-table__data">Новый пароль</a></td>
+                            <td class="profile-table__data">
+                                <div class="form-password">
+                                    <input class="form__item" type="password">
+                                    <button class="form-password__btn"></button>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <button class="btn btn_standart btn_big mar_r_40" type="submit">Сохранить</button>
+                    <button class="btn btn_cancel">Отмена</button>
+                </form>
+
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__part_top">
+                <div class="footer__part_top_left">
+                    <p class="mar_b_10">Санкт-Петербург, пл. Конституции, д. 7</p>
+                    <a class="footer__link mar_b_10" href="tel:+78126022921">8 (812) 602-29-21</a><br>
+                    <a class="footer__link mar_b_10" href="mailto:info@glavexpert.spb.ru">info@glavexpert.spb.ru</a>
+                </div>
+                <div class="footer__part_top_right">
+                    <nav class="nav nav_footer">
+                        <ul class="nav__list">
+                            <li><a href="#" class="nav__link">Деятельность</a></li>
+                            <li><a href="#" class="nav__link">Новости</a></li>
+                            <li><a href="experts-public.html" class="nav__link">Эксперты</a></li>
+                            <li><a href="#" class="nav__link">Документы</a></li>
+                            <li><a href="#" class="nav__link">Реестр</a></li>
+                            <li><a href="#" class="nav__link">Кабинет</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer__part_bottom">
+                <div class="footer__part_bottom_left">
+                    <p>&copy; ООО «Главная Негосударственная Экспертиза», 2016</p>
+                </div>
+                <div class="footer__part_bottom_right">
+                    <a href="http://itstudio.ru/" class="link_development" target="_blank">Сделано в ITS</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="js/libs/jquery/jquery.min.js"></script>
+<script src="js/libs/lightbox/js/jquery.lightbox.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

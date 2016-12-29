@@ -1,0 +1,30 @@
+.design-project {
+  padding: 100px 0;
+  border-bottom: 1px solid $color-gray-30;
+  background: url('../img/svg/svg-design-project.svg') no-repeat 75% center;
+  background-size: 533px 333px;
+}
+
+.design__title {
+  max-width: 600px;
+  font-size: 48px;
+  line-height: 48px;
+}
+
+.design__text {
+  max-width: 500px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 640px) {
+
+  .design-project {
+    background: none;
+  }
+
+  .design__title {
+    max-width: 600px;
+    font-size: 32px;
+    line-height: 38px;
+  }
+}

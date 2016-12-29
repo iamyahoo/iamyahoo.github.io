@@ -1,0 +1,14 @@
+.schema {
+  width: 100%;
+
+  & img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .schema {
+    padding: 0 15px;
+  }
+}

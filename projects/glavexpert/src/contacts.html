@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    //= html/_head.html
+    <title>Главэкспертиза - Список объектов</title>
+</head>
+<body>
+<div class="page-container">
+    //= html/_header.html
+    <main class="page no-submenu">
+        <div class="page__inner">
+            <section>
+                <h1>Контакты</h1>
+                <div class="page-contacts">
+                    <div class="page-contacts_column">
+                        <p class="page-contacts__title">Адрес</p>
+                        <p>196191, г. Санкт-Петербург, пл. Конституции, д. 7, оф. 721</p>
+                        <p class="page-contacts__title">Телефон / Факс</p>
+                        <p><a href="tel:+78126022921" class="link_blue">(812) 602-29-21</a></p>
+                        <p class="page-contacts__title">Электронная почта</p>
+                        <p><a href="mailto:info@glavexpert.spb.ru" class="link_blue">info@glavexpert.spb.ru</a></p>
+                        <p class="page-contacts__title">Часы работы</p>
+                        <p>С понедельника по пятницу, с 10:00 до 18:00</p>
+                    </div>
+                    <div class="page-contacts_column">
+                        <p class="page-contacts__title">Генеральный директор</p>
+                        <p>Тиунов Сергей Юрьевич</p>
+                        <p class="page-contacts__title">Главный бухгалтер</p>
+                        <p>Зубкова Ирина Анатольевна</p>
+                    </div>
+                </div>
+                <div id="map" class="map"></div>
+            </section>
+        </div>
+    </main>
+
+    //= html/_footer.html
+</div>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRWC6iPb0vW0bTK_79bLxU4vrg_fEG1SU&callback=initMap">
+</script>
+//= html/_scripts.html
+</body>
+</html>

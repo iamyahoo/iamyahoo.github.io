@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    //= html/_head.html
+    <title>Первая мебельная фабрика – купить кухню со скидкой</title>
+</head>
+<body>
+<div class="page-container page-main">
+    //= html/_header.html
+    <main class="page">
+        //= html/_nav.html
+
+        <section class="promo-banner">
+            <img src="img/content/banner.png" alt="" class="promo-banner__img">
+        </section>
+
+        <!--
+        <section class="promo-buy">
+            <div class="page__inner">
+                <div class="promo-buy__inner">
+                    <div class="promo-buy__content">
+                        <h1 class="promo-buy__title title title_promo">Купить кухню со скидкой</h1>
+                        <div class="promo-buy__phone">
+                            <p>Звоните нам по телефону</p>
+                            <a href="tel:+78123856423" class="link link_phone">+7 (812) 385-64-23</a>
+                        </div>
+                        <p class="promo-buy__text">или оставьте заявку на получение скидки через форму</p>
+                    </div>
+                    <div class="promo-buy__form">
+                        <form class="form form-buy">
+                            <input type="text" class="form__input" placeholder="Имя">
+                            <input type="tel" class="form__input" placeholder="Телефон">
+                            <button class="btn btn_primary" type="submit">Получить скидку на кухню</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        -->
+
+        <section class="design-project">
+            <div class="page__inner">
+                <h1 class="design__title title title_promo">Бесплатный расчет и дизайн-проект кухни</h1>
+                <p class="design__text">Выберите кухню и наш дизайнер-конструктор бесплатно разработает для вас дизайн-проект и расчитает стоимость кухни по вашим параметрам</p>
+                <a href="#modal-catalog" rel="modal:open" class="btn btn_primary btn_m">Заказать расчет кухни</a>
+            </div>
+        </section>
+
+        <section class="advantages">
+            <div class="page__inner">
+                <div class="advantages__inner">
+                    <div class="advantages__item">
+                        <svg class="advantages__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 262.2 375"><path d="M262.2 131.1C262.2 58.8 203.4 0 131.1 0S0 58.8 0 131.1c0 44.5 22.3 83.8 56.2 107.5V375l74.9-50 74.9 50V238.6c34-23.8 56.2-63 56.2-107.5zm-224.8 0c0-51.6 42-93.7 93.7-93.7 51.6 0 93.7 42 93.7 93.7 0 51.6-42 93.7-93.7 93.7-51.6 0-93.7-42-93.7-93.7zM168.6 305l-37.5-25-37.5 25v-48.3c11.9 3.5 24.4 5.5 37.4 5.5s25.6-2 37.5-5.5V305h.1z"/><path d="M190.5 116.6L164 90.1l-42.5 42.4-24.2-24.2-26.5 26.5 50.7 50.7z"/></svg>
+                        <p class="advantages__title">Повышенная износоустойчивость</p>
+                    </div>
+                    <div class="advantages__item">
+                        <svg class="advantages__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 95.4 72.5"><path d="M95.4 59.5v-5.6c0-2.2-1.7-4.2-3.9-4.4V38.1c0-4.3-3.5-7.8-7.8-7.8l-5-.9-9.2-13.9c-.2-.1-.3-.4-.4-.5-1.4-1.9-3.7-3.2-6.3-3.2H35.2l.7.7c1.4 1.3 1.6 3.4.6 5-.1.3-.3.5-.5.7l-4.7 4.7-10.7 10.7c-.7.8-1.7 1.2-2.8 1.2-1 0-2-.4-2.8-1.2l-5-5v21c-2 .5-3.4 2.3-3.4 4.3v5.6c0 2.5 2 4.4 4.4 4.4h6.3c1.4 5 6 8.6 11.5 8.6s10.1-3.7 11.5-8.6h22.2c1.4 5 6 8.6 11.5 8.6s10.1-3.7 11.5-8.6H91c2.5 0 4.4-2 4.4-4.4zm-60.6 1.1c0 3.2-2.6 6-6 6s-6-2.8-6-6 2.8-6 6-6c3.4 0 6 2.8 6 6zm45.2 0c0 3.2-2.8 6-6 6-3.4 0-6-2.8-6-6s2.8-6 6-6c3.3 0 6 2.8 6 6zM28.5 20.1L17.7 30.8l-5.2-5.2 6.5-6.5H0v-7.4h19l-1.8-1.8-4.7-4.7L17.7 0l4.7 4.7 5.5 5.5 3.9 3.9 1.3 1.3-4.6 4.7z"/></svg>
+                        <p class="advantages__title">Доставка <br>бесплатно</p>
+                    </div>
+                    <div class="advantages__item">
+                        <svg class="advantages__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89.9 84.8"><path d="M54.8 0l-6.9 6.9 9.3 9.2L2.6 70.9l9.5 9.5 54.7-54.9 9.4 9.3 13.7-13.7L68.5 0z"/><path d="M8.6 34.8l13.8-1.4 6.7 6.7 9.5-9.5-6.4-6.4L33.4 10l-6.9-6.9-11.8-1.5-3.5 3.5 10 10-7.6 7.6-10-10L0 16.3l1.7 11.6zM80 73.7l3.6-3.6-1.7-11.6-6.9-6.9-13.8 1.3-8.8-8.7-9.5 9.5 8.5 8.4-1.2 14.3 6.9 6.9 11.8 1.5 3.5-3.6-10-10 7.6-7.5z"/></svg>
+                        <p class="advantages__title">Полная сборка изделия на предприятии</p>
+                    </div>
+                    <div class="advantages__item">
+                        <svg class="advantages__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98.4 65.6"><path d="M0 32.8C0 15.7 9.2.2 28.1.2 47 .2 56.2 15.7 56.2 32.9c0 17.2-9.2 32.7-28.1 32.7C9.2 65.6 0 50 0 32.8zm36.9 0c0-10.7-2.8-15.8-8.8-15.8s-8.8 5-8.8 15.8 2.8 15.9 8.8 15.9 8.8-5.1 8.8-15.9zM58.2 9.3C58.2 4.1 62 0 67.8 0c5.9 0 9.7 4.1 9.7 9.3 0 5.2-3.8 9.2-9.7 9.2-5.8 0-9.6-4-9.6-9.2zm13.4 0c0-2.8-1.7-4.2-3.8-4.2-2.1 0-3.7 1.4-3.7 4.2 0 2.7 1.6 4.1 3.7 4.1 2.2 0 3.8-1.4 3.8-4.1zm-7.4 28.2L87.8.6h4.8L68.9 37.5h-4.7zM79.1 29c0-5.2 3.8-9.3 9.6-9.3 5.9 0 9.7 4.1 9.7 9.3 0 5.2-3.8 9.2-9.7 9.2-5.8 0-9.6-4.1-9.6-9.2zm13.4 0c0-2.8-1.7-4.2-3.8-4.2S85 26.2 85 29c0 2.7 1.6 4.1 3.7 4.1s3.8-1.4 3.8-4.1z"/></svg>
+                        <p class="advantages__title">Рассрочка <br>без переплат</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="nav-kitchens" class="cards">
+            <div class="page__inner cards__inner">
+                <h1 class="cards__title">Наши кухни</h1>
+                <div class="tabs tabs-cards">
+                    <ul class="tabs__buttons">
+                        <li class="tabs__btn active">Современные кухни</li>
+                        <li class="tabs__btn">Классические кухни</li>
+                    </ul>
+
+                    <div class="tabs__content">
+                        <div class="tabs__item active">
+                            //= html/tabs/_tabs-cards__tab_1.html
+                        </div>
+                        <div class="tabs__item">
+                            //= html/tabs/_tabs-cards__tab_2.html
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn btn_primary btn_m">Ещё</a>
+            </div>
+        </section>
+
+        <section class="actions">
+            <div class="page__inner actions__inner">
+                <div class="actions__items">
+                    <div class="actions__item">
+                        <div class="actions__desc">
+                            <img src="img/icons/icon-calc.png" class="actions__icon">
+                            <p class="actions__text">Выбрать кухню и рассчитать ее стоимость по вашим параметрам</p>
+                        </div>
+                        <a href="#modal-catalog" rel="modal:open" class="btn btn_primary btn_xl">Выбрать и рассчитать</a>
+                    </div>
+                    <div class="actions__item">
+                        <div class="actions__desc">
+                            <img src="img/icons/icon-clock.png" class="actions__icon actions__icon_clock">
+                            <p class="actions__text">Чтобы вызвать замерщика, <br>выберите удобное для вас время</p>
+                        </div>
+                        <a href="#modal-datetime" rel="modal:open" class="btn btn_primary btn_xl">Вызвать</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="nav-factory" class="about">
+            <div class="page__inner about__inner">
+                <h1 class="about__title">О фабрике</h1>
+                <div class="about__desc">
+                    <div class="about__video">
+                        <img src="img/content/video.jpg" alt="">
+                    </div>
+                    <div class="about__text text-content">
+                        <p>Первая мебельная фабрика выпускает классическую и современную мебель на заказ, предоставляя возможность купить кухни в СПб, Москве и других городах России. Осуществляя свою деятельность в этой сфере уже не один десяток лет, мы постоянно развиваемся, чтобы предлагать вам качественную кухонную мебель в разнообразных исполнениях.</p>
+                        <p>Наша фабрика обладает многочисленными наградами и дипломами, которые подтверждают высокий статус передового изготовителя кухонных гарнитуров.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="nav-reasons" class="reasons">
+            <div class="advantages-promo">
+                <div class="page__inner advantages-promo__inner">
+                    <h1 class="advantages-promo__title">Почему мы</h1>
+                    <div class="advantages-promo__items">
+                        <div class="advantages-promo__item">
+                            <svg class="advantages-promo__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 486.8 397.5"><path d="M0 4.1s30.3 384 401 310.2c0 0-39.7-151.3-236.5-225.1 0 0 247.8 30.3 306.5 308.3 0 .1 149.5-444.4-471-393.4z"/></svg>
+                            <p class="advantages-promo__text">Экологичность</p>
+                        </div>
+                        <div class="advantages-promo__item">
+                            <svg class="advantages-promo__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 85.4 78.2"><path fill="#FFF" d="M78.1 16c-.6-1-1.3-2-2-2.9l2.1-3.8L78 9c-1.8-2-3.9-3.6-6.1-5l-.3-.2-3.1 2.9c-1.7-.9-3.5-1.6-5.3-2L62.6.4l-.3-.1C59.6 0 57-.1 54.4.1H54l-.8 4.2c-1.9.3-3.8.8-5.7 1.6l-2.9-3.1-.3.2c-.6.3-1.1.6-1.7.9-1.7 1-3.3 2.2-4.7 3.5l-.3.2 1.8 3.9c-1.4 1.4-2.6 3-3.5 4.7l-4.2-.8-.2.3c-1.2 2.3-2 4.8-2.5 7.4l-.1.4 3.8 2.1c-.2 1.8-.2 3.7 0 5.6L29 33l.1.4c.4 2.6 1.3 5.1 2.5 7.5l.2.3 4.3-.6c0 .1.1.1.1.2.9 1.5 1.9 2.8 2.9 4l-2 3.7.3.3c2 1.9 4.2 3.5 6.5 4.8l.3.2 3.2-3c1.4.6 2.9 1.1 4.5 1.5l.5 4.2.4.1c2.7.4 5.5.5 8.2.1h.3l.8-4.2c1.4-.3 2.9-.7 4.3-1.3l2.9 3.1.3-.2c.7-.3 1.3-.7 2-1.1 1.8-1 3.4-2.2 4.8-3.6l.3-.2-1.8-3.9c1-1.1 2-2.3 2.8-3.5l4.2.8.2-.3c1.3-2.4 2.3-5 2.9-7.7l.1-.4-3.7-2c.2-1.6.3-3.2.3-4.8l3.9-1.9v-.4c-.3-2.6-1-5.3-2.1-7.8l-.4-.3-4.2.5c-.2-.5-.5-1-.8-1.5zm-9.3 5.5c3.8 6.5 1.7 14.8-4.8 18.7-6.5 3.8-14.8 1.7-18.7-4.8-3.8-6.5-1.7-14.8 4.8-18.7 6.5-3.8 14.9-1.7 18.7 4.8z"/><path fill="#FFF" d="M39.1 53.1l-.1-.3h-2.9c-.4-1.2-1-2.4-1.6-3.5l1.8-2.4-.3-.3c-1.1-1.5-2.3-2.8-3.8-3.9l-.2-.2-2.4 1.7c-1.1-.8-2.3-1.4-3.6-1.9v-3l-.3-.1c-.4-.1-.9-.2-1.3-.4-1.3-.3-2.7-.5-4-.5h-.3l-.9 2.8c-1.3.1-2.7.3-4 .6l-1.7-2.4-.3.1c-1.7.6-3.3 1.5-4.8 2.5l-.3.2.9 3c-1 .8-1.9 1.7-2.6 2.7l-2.8-.9-.2.3c-1 1.5-1.8 3.2-2.4 5l-.1.3 2.4 1.8v.1c-.3 1.1-.4 2.3-.4 3.4l-2.9.8v.4c.1 1.9.4 3.8 1 5.6l.1.3h3c.4 1 .9 1.9 1.5 2.8L3.9 70l.1.3c1.2 1.5 2.5 2.9 4.1 4l.3.2 2.4-1.7c.8.5 1.7 1 2.7 1.4v3l.3.1c.5.2 1 .3 1.5.4 1.4.3 2.8.5 4.1.5h.3l.9-2.8c1 0 2-.2 3-.4l1.8 2.4.3-.1c1.8-.6 3.6-1.4 5.2-2.5l.3-.2-.9-2.8c.9-.7 1.6-1.4 2.4-2.2l2.9.9.2-.3c1.1-1.5 2.1-3.1 2.7-4.9l.1-.3-2.4-1.7c.1-.4.2-.7.3-1.1.2-.8.3-1.6.4-2.4l2.9-.9v-.6c0-1.8-.2-3.5-.7-5.2zM25 58.3c0 .4 0 .8-.1 1.2-.6 2.4-2.7 3.9-5 3.9-.4 0-.8 0-1.2-.1-2.4-.5-3.9-2.7-3.9-5 0-.4 0-.8.1-1.2.6-2.4 2.7-3.9 5-3.9.4 0 .8 0 1.2.1 2.3.5 3.9 2.7 3.9 5zm30.2-20.7c-.5 0-1-.2-1.4-.6-.8-.8-.8-2.1 0-2.8l5.7-5.7-5.7-5.7c-.8-.8-.8-2.1 0-2.8.8-.8 2.1-.8 2.8 0l8.6 8.6-8.6 8.4c-.4.4-.9.6-1.4.6z"/></svg>
+                            <p class="advantages-promo__text">Швейцарские <br>технологии</p>
+                        </div>
+                        <div class="advantages-promo__item">
+                            <svg class="advantages-promo__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90"><path d="M89 13.6L76.4 1c-1.4-1.4-3.6-1.4-5 0L47.7 24.7 24.4 1.5c-2-2-5.2-2-7.2 0L1.5 17.2c-2 2-2 5.2 0 7.2L4 26.9l11.5-11.5c.4-.4 1.2-.4 1.6 0 .4.4.4 1.2 0 1.6L5.6 28.5l4.8 4.8 7.5-7.5c.4-.4 1.2-.4 1.6 0 .4.4.4 1.2 0 1.6L12 34.9l4.8 4.8 7.5-7.5c.4-.4 1.2-.4 1.6 0 .4.4.4 1.2 0 1.6l-7.5 7.5 4.8 4.8 11.5-11.5c.4-.4 1.2-.4 1.6 0 .4.4.4 1 .1 1.5L2.5 69.9C1.1 71.3 0 74 0 75.9V90h14c1.9 0 4.7-1.1 6-2.5l69-68.9c1.3-1.4 1.3-3.6 0-5zM66.8 43.9l-.9.9-22 22 4.8 4.8 7.5-7.5c.4-.4 1.2-.4 1.6 0 .4.4.4 1.2 0 1.6l-7.5 7.5 4.8 4.8 7.5-7.5c.4-.4 1.2-.4 1.6 0 .4.4.4 1.2 0 1.6l-7.5 7.5 4.8 4.8L73 72.8c.4-.4 1.2-.4 1.6 0 .4.4.4 1.2 0 1.6L63.1 85.9l2.5 2.5c2 2 5.2 2 7.2 0l15.7-15.7c2-2 2-5.2 0-7.2L66.8 43.9z" fill="#FFF"/></svg>
+                            <p class="advantages-promo__text">Функциональный <br>дизайн</p>
+                        </div>
+                        <div class="advantages-promo__item">
+                            <svg class="advantages-promo__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84 72"><path fill="#FFF" d="M4 .038c-2.2 0-4 1.8-4 4v50c0 2.2 1.8 4 4 4h76c2.2 0 4-1.8 4-4v-50c0-2.2-1.8-4-4-4H4zm46 10c2.2 0 4 1.8 4 4s-1.8 4-4 4c-1.5 0-2.7-.8-3.4-2H42v11h4.6c.7-1.2 2-2 3.4-2 2.2 0 4 1.8 4 4s-1.8 4-4 4c-1.5 0-2.7-.8-3.4-2H42v11h4.6c.7-1.2 2-2 3.4-2 2.2 0 4 1.8 4 4s-1.8 4-4 4c-1.5 0-2.7-.8-3.4-2H38v-15h-4.6c-.7 1.2-2 2-3.4 2-2.2 0-4-1.8-4-4s1.8-4 4-4c1.5 0 2.7.8 3.4 2H38v-15h8.6c.7-1.2 1.9-2 3.4-2zm-15 50v6h14v-6H35zm-5 8c-1.1 0-2 .9-2 2s.9 2 2 2h24c1.1 0 2-.9 2-2s-.9-2-2-2H30z"/></svg>
+                            <p class="advantages-promo__text">Удобный <br>процесс покупки</p>
+                        </div>
+                        <div class="advantages-promo__item">
+                            <svg class="advantages-promo__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67.7 95.2"><path d="M67.2 4.4c-.4-.4-.9-.6-1.4-.6h-6.2c0-.9.1-1.9.1-2.9 0-.5-.4-.9-.9-.9H9.1c-.5 0-.9.4-.9.9 0 1 0 1.9.1 2.9H2c-.5 0-1 .2-1.4.6-.4.4-.6.9-.6 1.4 0 .4.1 9.9 6.1 15.1 4.8 4.2 11.6 6.5 11.9 6.6.2.1 12.2 8.2 12.3 8.3v4.9c-1.2.8-2.7 2.4-5.3 5l-.5 2.8-3.5 2.1c-.5.4-.7 3.8-.7 3.8h27s-.2-3.4-.7-3.8l-3.2-2.1-.5-2.8c-2.7-2.5-4.3-4.1-5.4-5v-4.9s.1-.1.2-.1c4.2-2.5 8.3-5 11.8-8.3 1.2-.4 7.4-2.7 12-6.5 6.2-5.2 6.3-14.7 6.3-15.1-.1-.5-.3-1-.6-1.4zM8.8 17.9c-3.2-2.7-4.2-7.4-4.5-10h4.4c.7 5.3 2.2 9.4 4.2 12.9-1.5-.9-2.9-1.8-4.1-2.9zm50.1-.1c-1.1 1-2.4 1.8-3.7 2.5 1.9-3.4 3.3-7.4 4-12.5h4.4c-.4 2.7-1.5 7.3-4.7 10zm-7 71.5h-36c-1.6 0-2.9 1.3-2.9 2.9s1.3 2.9 2.9 2.9h36c1.6 0 2.9-1.3 2.9-2.9s-1.3-2.9-2.9-2.9zm-1.8-2.7c.6 0 1.1-.5 1.1-1.1v-27c0-.6-.5-1.1-1.1-1.1H17.7c-.6 0-1.1.5-1.1 1.1v27c0 .6.5 1.1 1.1 1.1h32.4zM27.3 69.2h4.9l1.5-4.7c0-.1.3-.1.3 0l1.5 4.7h4.9c.1 0 .1 0 .2.1 0 .1 0 .1-.1.2l-4 2.9 1.5 4.7c0 .1 0 .1-.1.2h-.2l-4-2.9-4 2.9h-.2c-.1 0-.1-.1-.1-.2l1.5-4.7-4-2.9c-.1 0-.1-.1-.1-.2s.4-.1.5-.1z" fill="#FFF"/></svg>
+                            <p class="advantages-promo__text">Опыт в отрасли <br>70 лет</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="actions">
+            <div class="page__inner actions__inner">
+                <div class="actions__items">
+                    <div class="actions__item">
+                        <div class="actions__desc">
+                            <img src="img/icons/icon-calc.png" class="actions__icon">
+                            <p class="actions__text">Выбрать кухню и рассчитать ее стоимость по вашим параметрам</p>
+                        </div>
+                        <a href="#modal-catalog" rel="modal:open" class="btn btn_primary btn_xl">Выбрать и рассчитать</a>
+                    </div>
+                    <div class="actions__item">
+                        <div class="actions__desc">
+                            <img src="img/icons/icon-clock.png" class="actions__icon actions__icon_clock">
+                            <p class="actions__text">Чтобы вызвать замерщика, <br>выберите удобное для вас время</p>
+                        </div>
+                        <a href="#modal-datetime" rel="modal:open" class="btn btn_primary btn_xl">Вызвать</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="nav-review" class="review">
+            <div class="page__inner review__inner">
+                <div class="review__header">
+                    <h1 class="review__title">Нам доверяют</h1>
+                    <div class="review__buttons"></div>
+                </div>
+                <div class="review-slider">
+                    <div class="review-slider__container">
+                        <div class="review-slider__item">
+                            <div class="review-slider__content">
+                                <div class="review-slider__img">
+                                    <img src="img/content/review-photo1.jpg" alt="">
+                                </div>
+                                <p class="review-slider__text">Широта дает центральный болид. Очевидно, что радиант иллюстрирует центральный надир, при этом плотность Вселенной в 3 * 10 в 18-й степени раз меньше, с учетом некоторой неизвестной добавки скрытой массы. Эфемерида колеблет первоначальный реликтовый ледник.</p>
+                            </div>
+                        </div>
+
+                        <div class="review-slider__item">
+                            <div class="review-slider__content">
+                                <div class="review-slider__img">
+                                    <img src="img/content/review-photo2.jpg" alt="">
+                                </div>
+                                <p class="review-slider__text">Природа гамма-всплексов на следующий год, когда было лунное затмение и сгорел древний храм Афины в Афинах (при эфоре Питии и афинском архонте Каллии), дает поперечник. Юпитер притягивает Юпитер. Пpотопланетное облако отражает непреложный Ганимед.</p>
+                            </div>
+                        </div>
+
+                        <div class="review-slider__item">
+                            <div class="review-slider__content">
+                                <div class="review-slider__img">
+                                    <img src="img/content/review-photo1.jpg" alt="">
+                                </div>
+                                <p class="review-slider__text">Широта дает центральный болид. Очевидно, что радиант иллюстрирует центральный надир, при этом плотность Вселенной в 3 * 10 в 18-й степени раз меньше, с учетом некоторой неизвестной добавки скрытой массы. Эфемерида колеблет первоначальный реликтовый ледник.</p>
+                            </div>
+                        </div>
+
+                        <div class="review-slider__item">
+                            <div class="review-slider__content">
+                                <div class="review-slider__img">
+                                    <img src="img/content/review-photo2.jpg" alt="">
+                                </div>
+                                <p class="review-slider__text">Природа гамма-всплексов на следующий год, когда было лунное затмение и сгорел древний храм Афины в Афинах (при эфоре Питии и афинском архонте Каллии), дает поперечник. Юпитер притягивает Юпитер. Пpотопланетное облако отражает непреложный Ганимед.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="partners">
+                    <div class="partners__item">
+                        <img src="img/icons/svyazbank.png" alt="">
+                    </div>
+                    <div class="partners__item">
+                        <img src="img/icons/mariinskiy.png" alt="">
+                    </div>
+                    <div class="partners__item">
+                        <img src="img/icons/sochi2014.png" alt="">
+                    </div>
+                    <div class="partners__item">
+                        <img src="img/icons/ran.png" alt="">
+                    </div>
+                    <div class="partners__item">
+                        <img src="img/icons/baltiyskiy.png" alt="">
+                    </div>
+                    <div class="partners__item">
+                        <img src="img/icons/lenenergo.png" alt="">
+                    </div>
+                    <div class="partners__item">
+                        <img src="img/icons/parkinn.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="nav-place" class="place">
+            <div class="page__inner place__inner">
+                <h1 class="place__title">Как нас найти</h1>
+                <div class="place-desc">
+                    <div class="place-search">
+                        <form class="form">
+                            <div class="place-search__input">
+                                <input type="text" class="form__input">
+                            </div>
+                            <div class="place-search__results scrollbar-custom">
+                                <div class="place-search__item">
+                                    <span class="place-search__number">1.</span>
+                                    <div class="place-search__content">
+                                        <p class="place-search__title">Московский пр., 79</p>
+                                        <p class="place-search__subway">Фрунзенская</p>
+                                        <p class="place-search__schedule">пн - пн: 10:00 - 20:00</p>
+                                        <p class="place-search__schedule">сб - вс: 10:00 - 19:00</p>
+                                    </div>
+                                </div>
+
+                                <div class="place-search__item">
+                                    <span class="place-search__number">2.</span>
+                                    <div class="place-search__content">
+                                        <p class="place-search__title"> В.О. Уральская ул. 17</p>
+                                        <p class="place-search__subway">Приморская</p>
+                                        <p class="place-search__schedule">пн - пн: 10:00 - 20:00</p>
+                                        <p class="place-search__schedule">сб - вс: 10:00 - 19:00</p>
+                                    </div>
+                                </div>
+
+                                <div class="place-search__item">
+                                    <span class="place-search__number">3.</span>
+                                    <div class="place-search__content">
+                                        <p class="place-search__title">Куйбышева 22</p>
+                                        <p class="place-search__subway">Горьковская</p>
+                                        <p class="place-search__schedule">пн - пн: 10:00 - 20:00</p>
+                                        <p class="place-search__schedule">сб - вс: 10:00 - 19:00</p>
+                                    </div>
+                                </div>
+
+                                <div class="place-search__item">
+                                    <span class="place-search__number">4.</span>
+                                    <div class="place-search__content">
+                                        <p class="place-search__title">Московский пр., 79</p>
+                                        <p class="place-search__subway">Фрунзенская</p>
+                                        <p class="place-search__schedule">пн - пн: 10:00 - 20:00</p>
+                                        <p class="place-search__schedule">сб - вс: 10:00 - 19:00</p>
+                                    </div>
+                                </div>
+
+                                <div class="place-search__item">
+                                    <span class="place-search__number">5.</span>
+                                    <div class="place-search__content">
+                                        <p class="place-search__title"> В.О. Уральская ул. 17</p>
+                                        <p class="place-search__subway">Приморская</p>
+                                        <p class="place-search__schedule">пн - пн: 10:00 - 20:00</p>
+                                        <p class="place-search__schedule">сб - вс: 10:00 - 19:00</p>
+                                    </div>
+                                </div>
+
+                                <div class="place-search__item">
+                                    <span class="place-search__number">6.</span>
+                                    <div class="place-search__content">
+                                        <p class="place-search__title">Куйбышева 22</p>
+                                        <p class="place-search__subway">Горьковская</p>
+                                        <p class="place-search__schedule">пн - пн: 10:00 - 20:00</p>
+                                        <p class="place-search__schedule">сб - вс: 10:00 - 19:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="place-map" id="map-main"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="choice">
+            <div class="page__inner choice__inner">
+                <h1 class="choice__title">Сомневаетесь в выборе?</h1>
+                <p class="choice__desc">Оставьте заявку на звонок и наши менеджеры помогут вам подобрать нужный вариант</p>
+
+                <form class="form form-choice">
+                    <div class="form-choice__top">
+                        <div class="form__select-wrapper">
+                            <select class="form__select">
+                                <option value="0" selected disabled>Выберие салон</option>
+                                <option value="1">Московский пр., 79</option>
+                                <option value="2"> В.О. Уральская ул. 17</option>
+                                <option value="3">Куйбышева 22</option>
+                                <option value="4">Олимпийский проспект 29 строение 1</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-choice__start">
+                        <input type="text" class="form__input form__input_promo" placeholder="Имя">
+                        <input type="text" class="form__input form__input_promo" placeholder="Телефон">
+                    </div>
+                    <div class="form-choice__end">
+                        <textarea class="form__textarea form__textarea_promo" placeholder="Комментарий"></textarea>
+                    </div>
+                    <div class="form-choice__bottom">
+                        <a href="#modal-thanks" rel="modal:open" class="btn btn_standart btn_m">Заказать звонок</a>
+                    </div>
+                    <!--<button class="btn btn_standart btn_m">Заказать звонок</button>-->
+                </form>
+                <p class="choice__sign">?</p>
+            </div>
+        </section>
+    </main>
+    //= html/_footer.html
+    //= html/modals/_modal-calc.html
+    //= html/modals/_modal-callback.html
+    //= html/modals/_modal-catalog.html
+    //= html/modals/_modal-product-card.html
+    //= html/modals/_modal-thanks.html
+    //= html/modals/_modal-datetime.html
+</div>
+//= html/_scripts.html
+</body>
+</html>

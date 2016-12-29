@@ -1,0 +1,429 @@
+.case {
+  width: 100%;
+}
+
+.case__header {
+  @extend .layout-padding;
+  position: relative;
+  min-height: 620px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-bottom: 40px;
+}
+
+.case__header-inner {
+  position: relative;
+  z-index: 2;
+}
+
+.case__content {
+  @extend .layout-padding;
+  width: 100%;
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+
+  h2 {
+    max-width: 600px;
+  }
+
+  p {
+    font-family: $font-family_medium;
+    max-width: 600px;
+  }
+}
+
+.case__desc {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.case__info {
+  max-width: 1080px;
+  width: 100%;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.case__type {
+  margin-bottom: 0;
+}
+
+.case__adress {
+  width: 100%;
+  max-width: 1240px;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.case__adress-link {
+  font-family: "Gilroy-Medium", "Arial", serif;
+  font-size: 18px;
+}
+
+.case__title {
+  max-width: 580px;
+  margin-bottom: 10px;
+  font-family: "Gilroy-Regular", "Arial", serif;
+}
+
+.case__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  box-shadow: 0 60px 120px 0 rgba(0,0,0,.15);
+  max-width: 1080px;
+  max-height: 620px;
+  overflow: hidden;
+  pointer-events: none;
+
+  img {
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+  }
+}
+
+.case__external-link {
+  display: block;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.case-devices {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.case-device {
+  margin-right: 30px;
+  margin-bottom: 50px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.case-device_laptop {
+  //width: 540px;
+  //min-width: 540px;
+  max-width: 540px;
+
+  & .case-device__img {
+    padding: 70px 30px;
+  }
+}
+
+.case-device_phone {
+  //width: 390px;
+  //min-width: 390px;
+  max-width: 390px;
+
+  & .case-device__img {
+    padding: 50px 50px;
+  }
+}
+
+.case-device__img {
+  max-height: 400px;
+  height: 100%;
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 40px;
+  background-color: #fff;
+  box-shadow: 0 60px 120px 0 rgba(0,0,0,.15);
+
+  img {
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+  }
+}
+
+.case-device__text {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.case-main-page {
+  margin-bottom: 120px;
+}
+
+.case__title-main {
+  text-align: center;
+  font-size: 200px;
+  line-height: 200px;
+}
+
+.case__img-main {
+  max-width: 1240px;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 60px 120px 0 rgba(0,0,0,.15);
+  margin-bottom: 60px;
+
+  img {
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+  }
+}
+
+.case__img-desc {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.case-columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1240px;
+  margin-top: 120px;
+}
+
+.case-column {
+  width: 49%;
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.case-pages__img {
+  margin-bottom: 40px;
+  box-shadow: 0 60px 120px 0 rgba(0,0,0,.15);
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+  }
+}
+
+.case-pages__top {
+  display: flex;
+  flex-direction: row;
+}
+
+.case-pages__title-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.case-pages__title {
+  max-width: 420px;
+  margin-top: auto;
+  font-size: 120px;
+  line-height: 60px;
+  padding-top: 100px;
+  margin-bottom: 50px;
+
+  & span {
+    font-size: 60px;
+    padding-left: 250px;
+  }
+}
+
+.case-pages__top-img {
+  width: 50%;
+  margin-left: auto;
+
+  img {
+    width: 100%;
+    height: auto;
+    margin-left: 50px;
+    margin-bottom: -100px;
+  }
+}
+
+@media (max-width: 1170px) {
+
+  .case__title-main {
+    font-size: 120px;
+    line-height: 120px;
+  }
+}
+
+@media (max-width: 1020px) {
+
+  .case-devices {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .case-device {
+    margin-right: 0;
+  }
+
+  .case-device__img {
+    max-height: 280px;
+  }
+
+  .case-pages__top-img {
+
+    img {
+      margin-left: 0;
+    }
+  }
+
+  .case-pages__title {
+    font-size: 80px;
+    line-height: 50px;
+
+    & span {
+      padding-left: 160px;
+      font-size: 52px;
+    }
+  }
+}
+
+@media (max-width: 860px) {
+
+  .case__header {
+    min-height: 580px;
+  }
+}
+
+@media (max-width: 760px) {
+
+  .case__header {
+    display: flex;
+    flex-direction: column;
+    min-height: 480px;
+    padding: 0 !important;
+  }
+
+  .case__img {
+    position: relative;
+    top: initial;
+    left: initial;
+    order: 1;
+    margin-bottom: 40px;
+  }
+
+  .case__header-inner {
+    order: 2;
+    margin-bottom: 100px;
+  }
+
+  .case-pages__top {
+    flex-direction: column;
+  }
+
+  .case-pages__title-wrapper {
+    width: 100%;
+  }
+
+  .case-pages__title {
+    text-align: center;
+
+    span {
+      padding-left: 0;
+      font-size: 80px;
+    }
+
+    br {
+      display: none;
+    }
+  }
+
+  .case-pages__top-img {
+    width: 100%;
+  }
+
+  .case__external-link_behance {
+    background-color: $color-blue-50;
+
+    & .link_blue {
+      color: #fff;
+    }
+  }
+}
+
+@media (max-width: 720px) {
+
+  .case__title-main {
+    font-size: 80px;
+    line-height: 80px;
+  }
+
+  .case-columns {
+    flex-direction: column;
+  }
+
+  .case-column {
+    width: 100%;
+  }
+}
+
+@media (max-width: 580px) {
+
+  .case__header {
+    min-height: 420px;
+  }
+
+  .case__info {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .case__title-main {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .case-pages__title {
+    font-size: 60px;
+    line-height: 60px;
+
+    span {
+      font-size: 60px;
+    }
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  .case__info {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .case__title-main {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .case-pages__title {
+    font-size: 40px;
+    line-height: 40px;
+
+    span {
+      font-size: 40px;
+    }
+  }
+
+  .case__external-link {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}

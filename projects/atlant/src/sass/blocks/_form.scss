@@ -1,0 +1,146 @@
+.form {}
+
+.form__input {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  height: 70px;
+  line-height: 68px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid $color-red-50;
+  background-color: transparent;
+  font-size: $font_default;
+  color: #fff;
+  transition: all .15s;
+  
+  &:focus {
+    outline: 0;
+    border-color: $color-red-50;
+  }
+
+  &[disabled] {
+    background-color: $color-red-50;
+    cursor: default;
+  }
+
+  &:invalid {
+
+  }
+
+  &::-webkit-input-placeholder {color: $color-red-50; transition: color .3s;}
+  &::-moz-placeholder          {color: $color-red-50; transition: color .3s;}
+  &:focus::-webkit-input-placeholder {color: transparent; transition: color .3s;}
+  &:focus::-moz-placeholder          {color: transparent; transition: color .3s;}
+}
+
+
+.form__textarea {
+  display: inline-block;
+  vertical-align: top;
+  min-height: 140px;
+  margin-bottom: 20px;
+  border: 1px solid $color-red-50;
+  background-color: transparent;
+  width: 100%;
+  padding: 20px 30px;
+  font-size: $font_default;
+  color: $font-color;
+  resize: none;
+
+  &:focus {
+    outline: 0;
+    border-color: $color-red-50;
+  }
+
+  &[disabled] {
+    background-color: $color-red-50;
+    cursor: default;
+  }
+
+  &::-webkit-input-placeholder {color: $color-red-50; transition: color .3s;}
+  &::-moz-placeholder          {color: $color-red-50; transition: color .3s;}
+  &:focus::-webkit-input-placeholder {color: transparent; transition: color .3s;}
+  &:focus::-moz-placeholder          {color: transparent; transition: color .3s;}
+}
+
+.form__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  .form__input {
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+
+.form-modal {
+  width: 100%;
+  max-width: 640px;
+  padding: 0 20px;
+
+  & .form__input {
+    border-color: $color-gray-50;
+    color: $color-gray-30;
+
+    &::-webkit-input-placeholder {color: $color-gray-30; transition: color .3s;}
+    &::-moz-placeholder          {color: $color-gray-30; transition: color .3s;}
+    &:focus::-webkit-input-placeholder {color: transparent; transition: color .3s;}
+    &:focus::-moz-placeholder          {color: transparent; transition: color .3s;}
+  }
+
+  & .form__textarea {
+    border-color: $color-gray-50;
+    color: $color-gray-30;
+    margin-bottom: 40px;
+
+    &::-webkit-input-placeholder {color: $color-gray-30; transition: color .3s;}
+    &::-moz-placeholder          {color: $color-gray-30; transition: color .3s;}
+    &:focus::-webkit-input-placeholder {color: transparent; transition: color .3s;}
+    &:focus::-moz-placeholder          {color: transparent; transition: color .3s;}
+  }
+}
+
+
+@media (max-height: 900px) {
+
+  .form__input {
+    height: 60px;
+    line-height: 58px;
+  }
+
+  .form__textarea {
+    min-height: 140px;
+  }
+}
+
+@media (max-width: 640px) {
+
+  .form__row {
+    display: flex;
+    flex-direction: column;
+
+    .form__input {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+
+  .form-modal {
+    padding: 0;
+
+    & .form__textarea {
+      margin-bottom: 20px;
+    }
+
+    & .btn_action {
+      width: 100%;
+    }
+  }
+}

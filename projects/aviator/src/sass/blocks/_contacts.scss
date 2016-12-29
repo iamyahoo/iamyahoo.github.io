@@ -1,0 +1,57 @@
+.contacts {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  width: 100%;
+  border: 1px solid $color-gray-20;
+}
+
+.contacts__part {
+  display: flex;
+  width: 50%;
+}
+
+.contacts-sale,
+.contacts-form {
+  flex-grow: 1;
+  padding: 70px 15% 100px;
+}
+
+.contacts-form {
+  background-color: $color-violet-50;
+  color: #fff;
+}
+
+.contacts__header {
+  margin-bottom: 30px;
+}
+
+.contacts__title {
+  margin-bottom: 10px;
+}
+
+.contacts__subtitle {
+  font-size: 16px;
+}
+
+.contacts__tel {
+  font-size: 21px;
+  margin-right: 30px;
+}
+
+
+@media (max-width: 640px) {
+
+  .contacts {
+    flex-direction: column;
+  }
+
+  .contacts__part {
+    width: 100%;
+  }
+
+  .contacts-sale,
+  .contacts-form {
+    padding: 50px 20px 70px;
+  }
+}

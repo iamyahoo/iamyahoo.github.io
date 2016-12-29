@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    //= html/_head.html
+    //= html/_style-fancybox.html
+    <link rel="stylesheet" href="js/libs/jquery.slick/slick.css">
+    <title>Аларм-Моторс – официальный дилер Ford, KIA, Peugeot, SsangYong, Fiat Professional. Мы предлагаем новые автомобили, автомобили с пробегом, официальный сервис и продажу запчастей.</title>
+</head>
+<body>
+<div class="page-container">
+    //= html/_nav.html
+    //= html/_brands.html
+
+    <div class="page-wrapper">
+        //= html/_breadcrumbs.html
+        //= html/_mobile-menu.html
+
+        <main class="page">
+            <section class="page-item page-item_colored page-item_no-border">
+                <div class="page-item__header_wide">
+                    <h1>Ford
+                        <div class="dropdown-menu">
+                            <div class="dropdown-menu__text">Fiesta</div>
+                            <ul class="dropdown-menu__list">
+                                <li class="dropdown-menu__item" data-id="0">
+                                    <div class="dropdown-menu__img">
+                                        <img src="img/content/ford/fiesta/1.png" alt="">
+                                    </div>
+                                    <div class="dropdown-menu__desc">
+                                        <p class="dropdown-menu__title">Focus</p>
+                                        <div class="dropdown-menu__info">
+                                            <p class="dropdown-menu__price">от 1 524 900 <span class="rouble">у</span></p>
+                                            <p class="dropdown-menu__number">24 в наличии</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="dropdown-menu__item" data-id="1">
+                                    <div class="dropdown-menu__img">
+                                        <img src="img/content/ford/fiesta/2.png" alt="">
+                                    </div>
+                                    <div class="dropdown-menu__desc">
+                                        <p class="dropdown-menu__title">Fiesta new</p>
+                                        <div class="dropdown-menu__info">
+                                            <p class="dropdown-menu__price">от 1 524 900 <span class="rouble">у</span></p>
+                                            <p class="dropdown-menu__number">24 в наличии</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="dropdown-menu__item" data-id="2">
+                                    <div class="dropdown-menu__img">
+                                        <img src="img/content/ford/kuga/1.png" alt="">
+                                    </div>
+                                    <div class="dropdown-menu__desc">
+                                        <p class="dropdown-menu__title">Kuga</p>
+                                        <div class="dropdown-menu__info">
+                                            <p class="dropdown-menu__price">от 1 524 900 <span class="rouble">у</span></p>
+                                            <p class="dropdown-menu__number">24 в наличии</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="dropdown-menu__item" data-id="3">
+                                    <div class="dropdown-menu__img">
+                                        <img src="img/content/ford/mondeo/1.png" alt="">
+                                    </div>
+                                    <div class="dropdown-menu__desc">
+                                        <p class="dropdown-menu__title">Mondeo new</p>
+                                        <div class="dropdown-menu__info">
+                                            <p class="dropdown-menu__price">от 1 524 900 <span class="rouble">у</span></p>
+                                            <p class="dropdown-menu__number">24 в наличии</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="dropdown-menu__item" data-id="4">
+                                    <div class="dropdown-menu__img">
+                                        <img src="img/content/ford/fiesta/1.png" alt="">
+                                    </div>
+                                    <div class="dropdown-menu__desc">
+                                        <p class="dropdown-menu__title">Focus</p>
+                                        <div class="dropdown-menu__info">
+                                            <p class="dropdown-menu__price">от 1 524 900 <span class="rouble">у</span></p>
+                                            <p class="dropdown-menu__number">24 в наличии</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </h1>
+                    <a href="#" class="btn btn_primary btn_s" type="button" onclick="showModal('modal_special')">Спецпредложения</a>
+                </div>
+                <div class="submenu page-submenu">
+                    <ul class="submenu-list">
+                        <li><a href="auto-info.html" class="submenu-list__link">Описание модели</a></li>
+                        <li><a href="auto-in-stock.html" class="submenu-list__link">72 автомобиля в наличии</a></li>
+                        <li><a href="#" class="submenu-list__link" onclick="showModal('modal_test-drive')">Тест-драйв</a></li>
+                        <li><a href="#" class="submenu-list__link" onclick="showModal('modal_credit')">Рассчёт кредита</a></li>
+                    </ul>
+                </div>
+                <section class="auto-preview">
+                    <div class="auto-preview__menu">
+                        <div class="tumbler">
+                            <div class="tumbler__inner">
+                                <a href="#" class="tumbler__item tumbler__item_active">Хэтчбек</a>
+                                <a href="#" class="tumbler__item">Седан</a>
+                            </div>
+                        </div>
+                        <a href="#" class="link link_dark">2015</a>
+                        <a href="#" class="link link_dark link_active">2016</a>
+                    </div>
+                    <div class="auto-preview__img">
+                        <img src="img/content/ford/fiesta/1.png" alt="Ford Fiesta">
+                    </div>
+                    <div class="auto-preview__info">
+                        <h2>от <span class="price">628 000 <span class="rouble">у</span></span></h2>
+                        <p class="mar_b_20">В кредит от <span class="price">5 525 <span class="rouble">у</span> / мес.</span></p>
+                        <button class="btn btn_action btn_xxl" type="button">Заказать</button>
+                        <button class="btn btn_xxl" type="button">Бонус за трейд-ин <span class="price">628 000 <span class="rouble">у</span></span></button>
+                    </div>
+                    <div class="auto-preview__colors">
+                        <div class="auto-preview__colors-wrapper">
+                            <a href="#" class="auto-preview__color color_blue" title="Синий"></a>
+                            <a href="#" class="auto-preview__color color_navy" title="Темно-синий"></a>
+                            <a href="#" class="auto-preview__color color_brown" title="Коричневый"></a>
+                            <a href="#" class="auto-preview__color color_gray" title="Серый"></a>
+                            <a href="#" class="auto-preview__color color_red" title="Красный"></a>
+                            <a href="#" class="auto-preview__color color_silver" title="Серебристый"></a>
+                            <a href="#" class="auto-preview__color color_orange" title="Оранжевый"></a>
+                        </div>
+                    </div>
+                </section>
+                <section class="auto-slider-wrapper">
+                    <div class="auto-slider">
+                        <a href="img/content/slider-1_big.png" class="auto-slider__item" rel="auto-slider" title="Три 3-точечных задних ремня безопасности"><img src="img/content/slider-1_big.png" alt=""></a>
+                        <a href="img/content/slider-2_big.png" class="auto-slider__item" rel="auto-slider" title="Ford Fiesta" ><img src="img/content/slider-2_big.png" alt=""></a>
+                        <a href="img/content/slider-3_big.png" class="auto-slider__item" rel="auto-slider" title="Шестиступенчатая механическая коробка передач"><img src="img/content/slider-3_big.png" alt=""></a>
+                        <a href="img/content/slider-1_big.png" class="auto-slider__item" rel="auto-slider" title="Три 3-точечных задних ремня безопасности"><img src="img/content/slider-1_big.png" alt=""></a>
+                        <a href="img/content/slider-2_big.png" class="auto-slider__item" rel="auto-slider" title="Ford Fiesta"><img src="img/content/slider-2_big.png" alt=""></a>
+                        <a href="img/content/slider-3_big.png" class="auto-slider__item" rel="auto-slider" title="Шестиступенчатая механическая коробка передач"><img src="img/content/slider-3_big.png" alt=""></a>
+                    </div>
+                </section>
+            </section>
+
+            <section class="page-item page-item_no-border">
+                <form class="form-calculator">
+                    <div class="form-calculator__table">
+                        <div class="accordion">
+                            <ul class="accordion__list">
+                                <li class="accordion__item accordion__item_open">
+                                    <div class="accordion__link">
+                                        <p class="accordion__text">Безопасность</p>
+                                    </div>
+                                    <div class="accordion__content accordion-table-wrapper">
+                                        <table class="accordion-table">
+                                            <tbody>
+                                            <tr>
+                                                <td>Подушки безопасности боковые</td>
+                                                <td>
+                                                    <label class="accordion__checkbox accordion__checkbox_included">
+                                                        <input class="accordion__checkbox_hidden" name="" id="" type="checkbox" disabled>
+                                                        <span class="accordion__checkbox_text" data-title="Опция включена">
+                                                            <span class="accordion__checkbox_indicator"></span>
+                                                            <span class="accordion__checkbox_delete"></span>
+                                                        </span>
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>ABS (антиблокировочная система)</td>
+                                                <td>
+                                                    <label class="accordion__checkbox accordion__checkbox_included">
+                                                        <input class="accordion__checkbox_hidden" name="" id="" type="checkbox" disabled>
+                                                        <span class="accordion__checkbox_text" data-title="Опция включена">
+                                                            <span class="accordion__checkbox_indicator"></span>
+                                                            <span class="accordion__checkbox_delete"></span>
+                                                        </span>
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Центральная блокировка дверей</td>
+                                                <td>
+                                                    <label class="accordion__checkbox accordion__checkbox_included">
+                                                        <input class="accordion__checkbox_hidden" name="" id="" type="checkbox" disabled>
+                                                        <span class="accordion__checkbox_text" data-title="Опция включена">
+                                                            <span class="accordion__checkbox_indicator"></span>
+                                                            <span class="accordion__checkbox_delete"></span>
+                                                        </span>
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Световая индикация об экстренном торможении</td>
+                                                <td>
+                                                    <label class="accordion__checkbox accordion__checkbox_included">
+                                                        <input class="accordion__checkbox_hidden" name="" id="" type="checkbox" disabled>
+                                                        <span class="accordion__checkbox_text" data-title="Опция включена">
+                                                            <span class="accordion__checkbox_indicator"></span>
+                                                            <span class="accordion__checkbox_delete"></span>
+                                                        </span>
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>ESP (система курсовой устойчивости)</td>
+                                                <td>
+                                                    <label class="accordion__checkbox accordion__checkbox_available">
+                                                        <input class="accordion__checkbox_hidden" name="" id="" type="checkbox">
+                                                        <span class="accordion__checkbox_text" data-title="Добавить опцию">
+                                                            <span class="accordion__checkbox_plus">+</span>
+                                                            <span class="price">3 800 <span class="rouble">у</span></span>
+                                                            <span class="accordion__checkbox_delete"></span>
+                                                        </span>
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Isofix / LATCH (крепления для детских сидений)</td>
+                                                <td>
+                                                    <label class="accordion__checkbox accordion__checkbox_available">
+                                                        <input class="accordion__checkbox_hidden" name="" id="" type="checkbox">
+                                                        <span class="accordion__checkbox_text" data-title="Добавить опцию">
+                                                            <span class="accordion__checkbox_plus">+</span>
+                                                            <span class="price">2 800 <span class="rouble">у</span></span>
+                                                            <span class="accordion__checkbox_delete"></span>
+                                                        </span>
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Регулируемые по высоте 3-точечные ремни безопасности водителя и переднего пассажира  с преднатяжителями и ограничителем нагрузки</td>
+                                                <td>
+                                                    <label class="accordion__checkbox accordion__checkbox_available">
+                                                        <input class="accordion__checkbox_hidden" name="" id="" type="checkbox">
+                                                        <span class="accordion__checkbox_text" data-title="Добавить опцию">
+                                                            <span class="accordion__checkbox_plus">+</span>
+                                                            <span class="price">5 800 <span class="rouble">у</span></span>
+                                                            <span class="accordion__checkbox_delete"></span>
+                                                        </span>
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Три 3-точечных задних ремня безопасности</td>
+                                                <td>
+                                                    <label class="accordion__checkbox accordion__checkbox_available">
+                                                        <input class="accordion__checkbox_hidden" name="" id="" type="checkbox">
+                                                        <span class="accordion__checkbox_text" data-title="Добавить опцию">
+                                                            <span class="accordion__checkbox_plus">+</span>
+                                                            <span class="price">2 800 <span class="rouble">у</span></span>
+                                                            <span class="accordion__checkbox_delete"></span>
+                                                        </span>
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>HSA (Система помощи при трогании на подъеме)</td>
+                                                <td>
+                                                    <label class="accordion__checkbox accordion__checkbox_unavailable">
+                                                        <input class="accordion__checkbox_hidden" name="" id="" type="checkbox" disabled>
+                                                        <span class="accordion__checkbox_text" data-title="Опция недоступна">–</span>
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Фронтальные подушки безопасности</td>
+                                                <td>
+                                                    <label class="accordion__checkbox accordion__checkbox_unavailable">
+                                                        <input class="accordion__checkbox_hidden" name="" id="" type="checkbox" disabled>
+                                                        <span class="accordion__checkbox_text" data-title="Опция недоступна">–</span>
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Задние дисковые тормоза</td>
+                                                <td>
+                                                    <label class="accordion__checkbox accordion__checkbox_unavailable">
+                                                        <input class="accordion__checkbox_hidden" name="" id="" type="checkbox" disabled>
+                                                        <span class="accordion__checkbox_text" data-title="Опция недоступна">–</span>
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </li>
+                                <li class="accordion__item">
+                                    <div class="accordion__link">
+                                        <p class="accordion__text">Комфорт</p>
+                                    </div>
+                                    <div class="accordion__content accordion-table-wrapper">
+                                        <table class="accordion-table">
+                                            <tbody>
+                                            <tr>
+                                                <td>Кондиционер</td>
+                                                <td>
+                                                    <label class="accordion__checkbox accordion__checkbox_available">
+                                                        <input class="accordion__checkbox_hidden" name="" id="" type="checkbox">
+                                                        <span class="accordion__checkbox_text" data-title="Добавить опцию">
+                                                            <span class="accordion__checkbox_plus">+</span>
+                                                            <span class="price">3 800 <span class="rouble">у</span></span>
+                                                            <span class="accordion__checkbox_delete"></span>
+                                                        </span>
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Боковые зеркала с обогревом</td>
+                                                <td>
+                                                    <label class="accordion__checkbox accordion__checkbox_unavailable">
+                                                        <input class="accordion__checkbox_hidden" name="" id="" type="checkbox" disabled>
+                                                        <span class="accordion__checkbox_text" data-title="Опция недоступна">–</span>
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Регулировка переднего пассажирского сидения</td>
+                                                <td>
+                                                    <label class="accordion__checkbox accordion__checkbox_unavailable">
+                                                        <input class="accordion__checkbox_hidden" name="" id="" type="checkbox" disabled>
+                                                        <span class="accordion__checkbox_text" data-title="Опция недоступна">–</span>
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Регулировка руля по вылету</td>
+                                                <td>
+                                                    <label class="accordion__checkbox accordion__checkbox_unavailable">
+                                                        <input class="accordion__checkbox_hidden" name="" id="" type="checkbox" disabled>
+                                                        <span class="accordion__checkbox_text" data-title="Опция недоступна">–</span>
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </li>
+                                <li class="accordion__item">
+                                    <div class="accordion__link">
+                                        <p class="accordion__text">Мультимедиа</p>
+                                    </div>
+                                    <div class="accordion__content accordion-table-wrapper">
+                                        <table class="accordion-table">
+                                            <tbody>
+                                            <tr>
+                                                <td>Аудиосистема</td>
+                                                <td>
+                                                    <label class="accordion__checkbox accordion__checkbox_included">
+                                                        <input class="accordion__checkbox_hidden" name="" id="" type="checkbox" disabled>
+                                                        <span class="accordion__checkbox_text" data-title="Опция включена">
+                                                            <span class="accordion__checkbox_indicator"></span>
+                                                            <span class="accordion__checkbox_delete"></span>
+                                                        </span>
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>DVD player</td>
+                                                <td>
+                                                    <label class="accordion__checkbox accordion__checkbox_available">
+                                                        <input class="accordion__checkbox_hidden" name="" id="" type="checkbox">
+                                                        <span class="accordion__checkbox_text" data-title="Добавить опцию">
+                                                            <span class="accordion__checkbox_plus">+</span>
+                                                            <span class="price">2 800 <span class="rouble">у</span></span>
+                                                            <span class="accordion__checkbox_delete"></span>
+                                                        </span>
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>GPS</td>
+                                                <td>
+                                                    <label class="accordion__checkbox accordion__checkbox_available">
+                                                        <input class="accordion__checkbox_hidden" name="" id="" type="checkbox">
+                                                        <span class="accordion__checkbox_text" data-title="Добавить опцию">
+                                                            <span class="accordion__checkbox_plus">+</span>
+                                                            <span class="price">5 200 <span class="rouble">у</span></span>
+                                                            <span class="accordion__checkbox_delete"></span>
+                                                        </span>
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </li>
+                                <li class="accordion__item">
+                                    <div class="accordion__link">
+                                        <p class="accordion__text">Элементы экстерьера</p>
+                                    </div>
+                                    <div class="accordion__content accordion-table-wrapper">
+                                        <table class="accordion-table">
+                                            <tbody>
+                                            <tr>
+                                                <td>Задний спойлер</td>
+                                                <td>
+                                                    <label class="accordion__checkbox accordion__checkbox_unavailable">
+                                                        <input class="accordion__checkbox_hidden" name="" id="" type="checkbox" disabled>
+                                                        <span class="accordion__checkbox_text" data-title="Опция недоступна">–</span>
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Передняя решетка</td>
+                                                <td>
+                                                    <label class="accordion__checkbox accordion__checkbox_unavailable">
+                                                        <input class="accordion__checkbox_hidden" name="" id="" type="checkbox" disabled>
+                                                        <span class="accordion__checkbox_text" data-title="Опция недоступна">–</span>
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="form-calculator__info">
+                        <div class="sticky">
+                            <div class="table-info">
+                                <div class="table-info__top">
+                                    <h3>New Ford Fiesta</h3>
+                                    <select name="" id="" class="dropdown-custom" title="Модификация">
+                                        <option value="1">Бензиновый 1.6, МТ</option>
+                                        <option value="2">Бензиновый 1.6, АТ</option>
+                                        <option value="3">Бензиновый 2.0, МТ</option>
+                                        <option value="4">Бензиновый 2.0, АТ</option>
+                                    </select>
+                                    <select name="" id="" class="dropdown-custom" title="Комплектация">
+                                        <option value="1">Ambiente</option>
+                                        <option value="2">Trend</option>
+                                        <option value="3">Titanium</option>
+                                    </select>
+                                    <p class="table-info__price"><span class="price">628 000 <span class="rouble">у</span></span></p>
+                                    <a href="#" class="table-info__link link link_dark_underlined ">В кредит от <span class="price">628 000 <span class="rouble">у</span> / мес.</span></a>
+                                </div>
+                                <div class="table-info__bottom">
+                                    <div class="item-callback">
+                                        <div class="item-callback__left">
+                                            <img src="img/content/mechanic.png" alt="">
+                                        </div>
+                                        <div class="item-callback__right">
+                                            <p class="item-callback__text">Михаил, менеджер по продажам</p>
+                                            <p class="item-quote__text">Буду рад рассказать детали</p>
+                                        </div>
+                                        <a href="#" class="btn btn_action btn_xxl">Заказать звонок</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="auto-items-wrapper">
+                    <h3>2 автомобиля в наличии соответствуют выбранным параметрам</h3>
+                    <div class="auto-items">
+                        <div class="auto-item">
+                            <div class="auto-item__top">
+                                <a href="#" class="auto-preview__color color_blue" title="Синий"></a>
+                                <div class="auto-item__img">
+                                    <img src="img/content/ford/fiesta/1.png" alt="Ford Fiesta">
+                                </div>
+                                <div class="auto-item__price">
+                                    <p class="auto-item__price-old"><span class="price_old">789 000 <span class="rouble">у</span></span></p>
+                                    <p class="auto-item__price-new">Выгода <span class="price">100 000 <span class="rouble">у</span></span></p>
+                                    <p class="auto-item__price-small">от <span class="price">263 <span class="rouble">у</span> / день</span></p>
+                                </div>
+                            </div>
+                            <div class="auto-item__bottom">
+                                <table class="auto-item__table">
+                                    <tr>
+                                        <td>Хэтчбек 5 дверей</td>
+                                        <td>АКПП</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ambiente</td>
+                                        <td>1.6 Бензин, 85 л. с.</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="auto-item">
+                            <div class="auto-item__top">
+                                <a href="#" class="auto-preview__color color_blue" title="Синий"></a>
+                                <div class="auto-item__img">
+                                    <img src="img/content/ford/fiesta/1.png" alt="Ford Fiesta">
+                                </div>
+                                <div class="auto-item__price">
+                                    <p class="auto-item__price-old"><span class="price_old">789 000 <span class="rouble">у</span></span></p>
+                                    <p class="auto-item__price-new">Выгода <span class="price">100 000 <span class="rouble">у</span></span></p>
+                                    <p class="auto-item__price-small">от <span class="price">263 <span class="rouble">у</span> / день</span></p>
+                                </div>
+                            </div>
+                            <div class="auto-item__bottom">
+                                <table class="auto-item__table">
+                                    <tr>
+                                        <td>Хэтчбек 5 дверей</td>
+                                        <td>АКПП</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ambiente</td>
+                                        <td>1.6 Бензин, 85 л. с.</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn_primary btn_xl mar_b_">Все автомобили в наличии</a>
+                </div>
+
+                <div class="accordion">
+                    <ul class="accordion__list">
+                        <li class="accordion__item">
+                            <div class="accordion__link">
+                                <p class="accordion__text">Описание</p>
+                            </div>
+                            <div class="accordion__content">
+                                <h4>Ford Fiesta</h4>
+                                <p>Стоимость ТО складывается из стоимости работ и запчастей. Работы делятся на две группы: работы, которые производятся каждое ТО, и работы, которые производятся реже. Чтобы посчитать полную стоимость, отметьте нужные дополнительные работы.</p>
+                                <h4>Обслуживание</h4>
+                                <ul class="list list_numbers">
+                                    <li>Работы, которые производятся каждое ТО</li>
+                                    <li>Работы, которые производятся реже в две строки</li>
+                                    <li>Работы, которые производятся каждое ТО</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="accordion__item">
+                            <div class="accordion__link">
+                                <p class="accordion__text">Характеристики</p>
+                            </div>
+                            <div class="accordion__content">
+                                <p>Стоимость ТО складывается из стоимости работ и запчастей. Работы делятся на две группы: работы, которые производятся каждое ТО, и работы, которые производятся реже. Чтобы посчитать полную стоимость, отметьте нужные дополнительные работы.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="page-item">
+                <h2>Акции</h2>
+                <div class="banner-wrapper">
+                    <div class="banner">
+                        <div class="banner__img">
+                            <div class="banner__mask"></div>
+                            <img src="img/content/item-banner-1.png" alt="Сезонное предложение на подготовку к зиме">
+                            <p class="banner__price"><span class="content-price">4 600</span></p>
+                        </div>
+                        <div class="banner__desc">
+                            <a href="#"></a>
+                            <p class="banner__title">Для автомобилей любого возраста</p>
+                            <h3>Сезонное предложение на подготовку к зиме</h3>
+                        </div>
+                    </div>
+
+                    <div class="banner">
+                        <div class="banner__img">
+                            <img src="img/content/item-banner-2.png" alt="Сезонное предложение на подготовку к зиме">
+                            <p class="banner__price">
+                                <span class="content-price">999</span>
+                                <span class="content-price_old">2000</span>
+                            </p>
+                        </div>
+                        <div class="banner__desc">
+                            <a href="#"></a>
+                            <p class="banner__title">Для автомобилей старше 3 лет</p>
+                            <h3>Техосмотр в 2 раза дешевле! Максимальное количество строк в заголовке акции — две</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            //= html/_map.html
+            //= html/_feedback.html
+        </main>
+
+        //= html/_footer.html
+    </div>
+
+    //= html/modals/_modal_special.html
+    //= html/modals/_modal_details.html
+    //= html/modals/_modal_credit.html
+    //= html/modals/_modal_test-drive.html
+    //= html/alerts/_alert_geolocation.html
+    //= html/alerts/_alert_callback.html
+</div>
+
+//= html/_scripts.html
+
+</body>
+</html>

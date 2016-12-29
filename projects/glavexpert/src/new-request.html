@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    //= html/_head.html
+    <title>Главэкспертиза - Экспертиза</title>
+</head>
+<body>
+<div class="page-container">
+    //= html/_header.html
+    <main class="page page_colored no-submenu">
+        <div class="page__inner">
+            <section>
+                <h1>Заявление на проведение экспертизы </h1>
+                <div class="page-status">
+                    <button class="btn_file mar_r_10">Шаблон заявления</button>
+                    <button class="btn_file mar_r_10">Шаблон договора</button>
+                </div>
+
+                <div class="content-wrapper">
+                    <section class="content_small">
+                        <form id="form-request" class="form-request">
+                            <input class="form__item" type="text" placeholder="Назовите ваш проект">
+                            <h2 class="h2_small">Прошу провести негосударственную экспертизу <br>(первичную / повторную):</h2>
+                            <table class="table-request">
+                                <tbody>
+                                <tr class="table-request__row">
+                                    <td class="table-request__data">
+                                        <label class="form__checkbox">
+                                            <input class="form__checkbox_hidden" name="checkbox" id="checkbox_1" type="checkbox">
+                                            <span class="form__checkbox_indicator"></span>
+                                        </label>
+                                    </td>
+                                    <td class="table-request__data">
+                                        <label for="checkbox_1" class="form__label">Результатов инженерных изысканий</label>
+                                    </td>
+                                </tr>
+                                <tr class="table-request__row">
+                                    <td class="table-request__data">
+                                        <label class="form__checkbox">
+                                            <input class="form__checkbox_hidden" name="checkbox" id="checkbox_2" type="checkbox">
+                                            <span class="form__checkbox_indicator"></span>
+                                        </label>
+                                    </td>
+                                    <td class="table-request__data">
+                                        <label for="checkbox_2" class="form__label">Проектной документации без сметы</label>
+                                    </td>
+                                </tr>
+                                <tr class="table-request__row">
+                                    <td class="table-request__data">
+                                        <label class="form__checkbox">
+                                            <input class="form__checkbox_hidden" name="checkbox" id="checkbox_3" type="checkbox">
+                                            <span class="form__checkbox_indicator"></span>
+                                        </label>
+                                    </td>
+                                    <td class="table-request__data">
+                                        <label for="checkbox_3" class="form__label">Проектой документации, включая смету</label>
+                                    </td>
+                                </tr>
+                                <tr class="table-request__row">
+                                    <td class="table-request__data">
+                                        <label class="form__checkbox">
+                                            <input class="form__checkbox_hidden" name="checkbox" id="checkbox_4" type="checkbox">
+                                            <span class="form__checkbox_indicator"></span>
+                                        </label>
+                                    </td>
+                                    <td class="table-request__data">
+                                        <label for="checkbox_4" class="form__label">Проектной документации без сметы и результаты инженерных изысканий</label>
+                                    </td>
+                                </tr>
+                                <tr class="table-request__row">
+                                    <td class="table-request__data">
+                                        <label class="form__checkbox">
+                                            <input class="form__checkbox_hidden" name="checkbox" id="checkbox_5" type="checkbox">
+                                            <span class="form__checkbox_indicator"></span>
+                                        </label>
+                                    </td>
+                                    <td class="table-request__data">
+                                        <label for="checkbox_5" class="form__label">Проектной документации, включая смету, и результаты инженерных изысканий</label>
+                                    </td>
+                                </tr>
+                                <tr class="table-request__row">
+                                    <td class="table-request__data">
+                                        <label class="form__checkbox">
+                                            <input class="form__checkbox_hidden" name="checkbox" id="checkbox_6" type="checkbox">
+                                            <span class="form__checkbox_indicator"></span>
+                                        </label>
+                                    </td>
+                                    <td class="table-request__data">
+                                        <label for="checkbox_6" class="form__label">Раздела -(ов) проектной документации</label>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <h2 class="h2_small">На предмет</h2>
+                            <table class="table-request">
+                                <tbody>
+                                <tr class="table-request__row">
+                                    <td class="table-request__data">
+                                        <label class="form__checkbox">
+                                            <input class="form__checkbox_hidden" name="checkbox" id="checkbox_7" type="checkbox">
+                                            <span class="form__checkbox_indicator"></span>
+                                        </label>
+                                    </td>
+                                    <td class="table-request__data">
+                                        <label for="checkbox_7" class="form__label">Оценки соответствия техническим регламентам и (или) результатов
+                                            инженерных изысканий</label>
+                                    </td>
+                                </tr>
+                                <tr class="table-request__row">
+                                    <td class="table-request__data">
+                                        <label class="form__checkbox">
+                                            <input class="form__checkbox_hidden" name="checkbox" id="checkbox_8" type="checkbox">
+                                            <span class="form__checkbox_indicator"></span>
+                                        </label>
+                                    </td>
+                                    <td class="table-request__data">
+                                        <label for="checkbox_8" class="form__label">Оценки соответствия сметный нормативам</label>
+                                    </td>
+                                </tr>
+                                <tr class="table-request__row">
+                                    <td class="table-request__data">
+                                        <label class="form__checkbox">
+                                            <input class="form__checkbox_hidden" name="checkbox" id="checkbox_9" type="checkbox">
+                                            <span class="form__checkbox_indicator"></span>
+                                        </label>
+                                    </td>
+                                    <td class="table-request__data">
+                                        <label for="checkbox_9" class="form__label">Оценка соответствия техническим реглмаентам и (или) результатам инженерных изысканий и сметным нормативам</label>
+                                    </td>
+                                </tr>
+                                <tr class="table-request__row">
+                                    <td class="table-request__data">
+                                        <label class="form__checkbox">
+                                            <input class="form__checkbox_hidden" name="checkbox" id="checkbox_10" type="checkbox">
+                                            <span class="form__checkbox_indicator"></span>
+                                        </label>
+                                    </td>
+                                    <td class="table-request__data">
+                                        <label for="checkbox_10" class="form__label">Оценка соответствия иным документам</label>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <h2 class="h2_small">Вид строительства</h2>
+                            <table class="table-request">
+                                <tbody>
+                                <tr class="table-request__row">
+                                    <td class="table-request__data">
+                                        <label class="form__checkbox">
+                                            <input class="form__checkbox_hidden" name="checkbox" id="checkbox_11" type="checkbox">
+                                            <span class="form__checkbox_indicator"></span>
+                                        </label>
+                                    </td>
+                                    <td class="table-request__data">
+                                        <label for="checkbox_11" class="form__label">Новое строительство</label>
+                                    </td>
+                                </tr>
+                                <tr class="table-request__row">
+                                    <td class="table-request__data">
+                                        <label class="form__checkbox">
+                                            <input class="form__checkbox_hidden" name="checkbox" id="checkbox_12" type="checkbox">
+                                            <span class="form__checkbox_indicator"></span>
+                                        </label>
+                                    </td>
+                                    <td class="table-request__data">
+                                        <label for="checkbox_12" class="form__label">Реконструкция</label>
+                                    </td>
+                                </tr>
+                                <tr class="table-request__row">
+                                    <td class="table-request__data">
+                                        <label class="form__checkbox">
+                                            <input class="form__checkbox_hidden" name="checkbox" id="checkbox_13" type="checkbox">
+                                            <span class="form__checkbox_indicator"></span>
+                                        </label>
+                                    </td>
+                                    <td class="table-request__data">
+                                        <label for="checkbox_13" class="form__label">Капитальный ремонт</label>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <h2 class="h2_small">Основные технико-экономические показатели</h2>
+                            <textarea class="form__textarea mar_b_30" name="table-request__textarea" id="table-request__textarea"></textarea>
+
+                            <h2 class="h2_small">К заявлению прилагаются следующие документы</h2>
+
+                            <!--<ul class="content-files__list mar_b_10">
+                                <li><span class="content-files__name">Заключение БТИ исправлено.doc</span><button class="btn_remove"></button></li>
+                                <li><span class="content-files__name">Заключение БТИ.doc</span><button class="btn_remove"></button></li>
+                            </ul>-->
+                            <div class="form__row mar_b_40">
+                                <label class="btn_attach">Загрузить документ
+                                    <input type="file">
+                                </label>
+                            </div>
+
+                            <h2 class="h2_small">Контактные данные</h2>
+                            <div class="form__row">
+                                <input class="form__item" type="text" placeholder="Ваше имя">
+                            </div>
+                            <div class="form__row">
+                                <input class="form__item" type="email" placeholder="E-mail">
+                            </div>
+                            <div class="form__row mar_b_20">
+                                <input class="form__item" type="tel" placeholder="Телефон">
+                            </div>
+
+                            <button class="btn btn_standart btn_big" type="submit">Отправить заявление</button>
+                        </form>
+                    </section>
+
+                    <section class="sidebar_big">
+                        <div class="sidebar__item">
+                            <p class="sidebar__title">Для проведения экспертизы, Заявителем предоставляются:</p>
+                            <ul class="sidebar-list">
+                                <li>копия задания на проектирование;</li>
+                                <li>копия задания на выполнение инженерных изысканий;</li>
+                                <li>проектная документация на объект капитального строительства в соответствии с требованиями, установленными законодательством Российской Федерации;</li>
+                                <li>результаты инженерных изысканий в соответствии с требованиями, установленными законодательством Российской Федерации;</li>
+                                <li>документы, подтверждающие полномочия заявителя действовать от имени застройщика, технического заказчика (в случае, если Заявитель не является техническим заказчиком и (или) застройщиком;</li>
+                                <li>копия выданного саморегулируемой организацией свидетельства о допуске исполнителя работ к соответствующему виду работ по подготовке проектной документации и (или) инженерным;</li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    //= html/_footer.html
+</div>
+
+//= html/_scripts.html
+</body>
+</html>

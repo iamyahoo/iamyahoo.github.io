@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    //= html/_head.html
+    <title>Транспортная компания ФинТранс - доставка грузов из Финляндии.</title>
+</head>
+<body>
+<div class="page-container page-terminal">
+    <div class="page-wrapper">
+        //= html/_header.html
+        <main class="page">
+            <div class="page__inner">
+                <div class="page__item top-bg top-bg_light top-bg_terminal_1">
+                    <div class="top-bg__content content-color-invert">
+                        <ul class="breadcrumbs">
+                            <li>
+                                <a href="main.html" class="breadcrumbs__item">Финтранс ГЛ</a>
+                            </li>
+                            <li>
+                                <a href="main.html" class="breadcrumbs__item">География</a>
+                            </li>
+                            <li>
+                                <span class="breadcrumbs__item active">Терминал</span>
+                            </li>
+                        </ul>
+                        <div class="terminal__top">
+                            <h1>Терминал <span class="terminal__name">«Усть-Илимск»</span></h1>
+                            <p class="terminal__adress">Иркутская область, Усть-Илимск, Усть-Илимское шоссе, Промплощадка ЛПК</p>
+                            <a href="#terminal-map-wrapper" class="link link_promo link_map">посмотреть на карте</a>
+                            <div class="terminal__info">
+                                <p>Режим работы: пн-пт 8.30—17</p>
+                                <p>Тел: <a class="link link_light" href="tel:+73953591770">8 (395) 359-17-70</a></p>
+                                <p>E-mail: <a class="link link_light" href="mainto:example@fintransgl.com">example@fintransgl.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="terminal__buttons">
+                    <button class="btn btn_icon btn_icon_sea"><img src="img/svg/svg-icon-sea.svg" alt="">Морские перевозки</button>
+                    <button class="btn btn_icon btn_icon_railway"><img src="img/svg/svg-icon-railway.svg" alt="">Ж/Д перевозки</button>
+                    <button class="btn btn_icon btn_icon_multimodal"><img src="img/svg/svg-icon-multimodal.svg" alt="">Мультимодальные перевозки</button>
+                    <button class="btn btn_icon btn_icon_road"><img src="img/svg/svg-icon-road.svg" alt="">Дорожные перевозки</button>
+                    <button class="btn btn_icon btn_icon_container"><img src="img/svg/svg-icon-container.svg" alt="">Контейнерные перевозки</button>
+                </div>
+                <div class="page__item">
+                    <div class="columns">
+                        <div class="column__start">
+                            <div class="terminal__desc content-text">
+                                <h2>Описание</h2>
+                                <p>Терминал был введён в эксплуатацию в 2000 г.</p>
+                                <p>Он расположен в 30 км от Усть-Илимска. К нему примыкает железнодорожная станция Октябрьской Железной Дороги - Усть-Илимск.</p>
+                                <p>Площадь контейнерной площадки составляет 10000 кв. м, что позволяет вместить до 600 TEU. Так же на территории расположен крытый склад площадью 1000 кв. м. Путевое развитие - 2 ж.д. п/пути, 2 фронта погрузки по 350 м + ж.д. эстакада вместимостью 2 крытых вагона. Численность работников терминала составляет 30 чел.</p>
+                            </div>
+                            <div class="terminal__desc content-text">
+                                <h2>Характеристики терминала</h2>
+                                <ul class="list list_dotted">
+                                    <li>Кран козловой г/п 33 тн – 1 ед.</li>
+                                    <li>Автопогрузчик TOP LIFT г/п 9 тн</li>
+                                    <li>Автопогрузчик вилочный г/п 7 тн – 1 ед.</li>
+                                    <li>Автопогрузчик вилочный г/п 3,2 тн – 2 ед.</li>
+                                    <li>Возможности перегрузки – 350'000 т/год</li>
+                                    <li>Возможности складирования – 60'000 т/год</li>
+                                    <li>Погрузка из/в контейнеры</li>
+                                   <li>Складирование груза</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="column__end">
+                            <div class="sticky">
+                                <div class="dialog dialog_colored">
+                                    <h5 class="dialog__title">Контактная информация</h5>
+                                    <p class="text_bold">Жанна Васильевна Пинчук</p>
+                                    <p>Глава отдела по работе с клиентами Усть-Илимского терминала</p>
+                                    <a href="tel:+73953591770" class="link">+7 (395) 359-17-70</a>                            </a>
+                                    <a href="mailto:example@fintransgl.com" class="link link_promo">example@fintransgl.com</a>                            </a>
+                                    <a href="#modal-terminal" rel="modal:open" class="btn btn_primary btn_next">Связаться</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="terminal-map-wrapper" id="terminal-map-wrapper">
+                    <h2 class="terminal-map__title">Расположение терминала</h2>
+                    <div class="map terminal-map" id="map-terminal"></div>
+                </div>
+            </div>
+        </main>
+        //= html/_menu-bottom.html
+        //= html/_footer.html
+        //= html/_menu-mobile.html
+        //= html/modals/_modal-terminal.html
+    </div>
+</div>
+//= html/_scripts.html
+</body>
+</html>

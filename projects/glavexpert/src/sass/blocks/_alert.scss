@@ -1,0 +1,39 @@
+.alert-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.alert {
+  position: relative;
+  display: block;
+  width: 270px;
+  height: 60px;
+  border: 1px solid $color-gray-35;
+  border-radius: 5px;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: 13px center;
+  margin-bottom: 15px;
+  padding: 10px 15px 10px 55px;
+
+  & .btn_remove {
+    position: absolute;
+    top: 7px;
+    right: 5px;
+  }
+}
+
+.alert_ok {
+  background-image: url(../img/icon_alert_ok.png);
+}
+
+.alert_fail {
+  background-image: url(../img/icon_alert_fail.png);
+}
+
+.alert__text {
+  @extend .nowrap;
+  line-height: 40px;
+}

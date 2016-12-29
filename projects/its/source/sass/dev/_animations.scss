@@ -1,0 +1,102 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes show {
+  0% {
+    display: none !important;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  1% {
+    display: block !important;
+  }
+
+  100% {
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes hide {
+  0% {
+    display: block !important;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  99% {
+    display: block !important;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  100% {
+    display: none !important;
+  }
+}
+
+@keyframes skewIn {
+
+  0% {
+    transform: rotateY(120deg);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  20% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  70% {
+    transform: rotateY(-10deg);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  100% {
+    transform: rotateY(0deg);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes bounceInOut {
+
+  0% {
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+  }
+
+  40% {
+    top: 20%;
+    left: 50%;
+    width: 3000px;
+    height: 3000px;
+  }
+
+  99% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  100% {
+    top: 90%;
+    left: 120%;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
+}

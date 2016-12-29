@@ -1,0 +1,70 @@
+.arrow {
+  position: absolute;
+  width: 100px;
+  padding: 20px 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  background-color: transparent;
+  border: none;
+  outline: 0;
+  transition: all .2s;
+
+  &:hover {
+    opacity: .5;
+  }
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 19px;
+    transition: all .2s;
+    width: 100px;
+    height: 2px;
+    background-color: $color-gray-90;
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 2px;
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid $color-gray-90;
+    border-top: 2px solid $color-gray-90;
+    transform: rotate(45deg);
+  }
+}
+
+.arrow_short {
+  width: 50px;
+
+  &:before {
+    width: 50px;
+  }
+}
+
+.arrow_long {
+  width: 130px;
+
+  &:before {
+    width: 130px;
+  }
+}
+
+.arrow_prev {
+  left: 0;
+
+  &:after {
+    top: 15px;
+    left: 0px;
+    transform: rotate(-135deg);
+  }
+}
+
+.arrow_next {
+  right: 0;
+}

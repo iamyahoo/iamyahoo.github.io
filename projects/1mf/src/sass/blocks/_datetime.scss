@@ -1,0 +1,34 @@
+.datetime {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 60px;
+}
+
+.datetime__form {
+  width: 60%;
+  max-width: 700px;
+}
+
+.datetime__img {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  width: 40%;
+  max-width: 400px;
+
+  & .svg-roulette {
+    display: block;
+    margin-top: auto;
+  }
+}
+
+@media (max-width: 640px) {
+
+  .datetime__form {
+    width: 100%;
+  }
+
+  .datetime__img {
+    display: none;
+  }
+}

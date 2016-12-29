@@ -1,0 +1,245 @@
+.item-buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+
+  & .btn {
+    margin-right: 20px;
+  }
+}
+
+.item-feedback {
+  padding-top: 60px !important;
+}
+
+.item-quote {
+  display: flex;
+  flex-direction: row;
+  max-width: 400px;
+  min-width: 300px;
+  margin-bottom: 50px;
+}
+
+.item-quote__left {
+  width: 140px;
+  height: 140px;
+  overflow: hidden;
+  margin-right: 50px;
+
+  & > img {
+    @extend .responsive-img;
+  }
+}
+
+.item-quote__right {
+  width: 220px;
+}
+
+.item-quote__text {
+  position: relative;
+  font-size: 18px;
+  line-height: 22px;
+  padding-top: 15px;
+  margin: 0;
+  margin-bottom: 30px;
+  font-family: $font-family_bold;
+
+  &:before {
+    content: '\201D';
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 50px;
+  }
+}
+
+.item-callback {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 250px;
+  margin-bottom: 60px;
+}
+
+.item-callback__left {
+  width: 73px;
+  height: 73px;
+
+  & > img {
+    @extend .responsive-img;
+  }
+}
+
+.item-callback__right {
+  width: 150px;
+}
+
+.item-callback__text {
+  line-height: 20px;
+  margin-bottom: 15px;
+}
+
+.item-checkup_bottom {
+  background: url(../img/content/item-motor_bottom.png) 90% 0% no-repeat;
+}
+
+.item-checkup_top {
+  background: url(../img/content/item-motor_top.png) 100% 100% no-repeat;
+}
+
+.item-season {
+  background: url(../img/content/item-white-car.png) 100% -10px no-repeat;
+}
+
+.item-summer_top {
+  background: url(../img/content/item-white-car_top.png) 100% -30px no-repeat;
+}
+
+.item-repair_top {
+  background: url(../img/content/item-repair_top.png) 100% 100% no-repeat;
+}
+
+.item-repair {
+  background: url(../img/content/item-pipe.png) 100% 0px no-repeat;
+}
+
+.item-body {
+  background: url(../img/content/item-razbor.png) 100% 0px no-repeat;
+}
+
+.item-body_top {
+  background: url(../img/content/item-razbor_top.png) 100% 0px no-repeat;
+}
+
+.item-feedback {
+  & h1, h2, h3, h4 {
+    margin-bottom: 30px;
+    line-height: 34px;
+  }
+}
+
+@media (max-width: 1279px) {
+  .item-checkup_bottom {
+    background: url(../img/content/item-motor_bottom.png) 500px 0% no-repeat;
+  }
+
+  .item-season {
+    background: url(../img/content/item-white-car.png) 500px -10px no-repeat;
+  }
+
+  .item-repair {
+    background: url(../img/content/item-pipe.png) 500px 0px no-repeat;
+  }
+
+  .item-body {
+    background: url(../img/content/item-razbor.png) 520px 0px no-repeat;
+  }
+}
+
+@media (max-width: 1024px) {
+  .item-quote__left {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .item-repair_top {
+    background: url(../img/content/item-repair_top.png) 350px 100% no-repeat;
+  }
+}
+
+@media (max-width: 720px) {
+
+  .item-season {
+    background: url(../img/content/item-white-car.png) 440px -10px no-repeat;
+  }
+
+  .item-repair {
+    background: url(../img/content/item-pipe.png) 460px 0px no-repeat;
+  }
+}
+
+@media (max-width: 719px) {
+
+  .item-checkup_top {
+    background: url(../img/content/item-motor_top.png) 200px 100% no-repeat;
+  }
+
+  .item-checkup_bottom {
+    background: url(../img/content/item-motor_bottom.png) 350px -10% no-repeat;
+  }
+
+  .item-season {
+    background: url(../img/content/item-white-car.png) 440px -40px no-repeat;
+  }
+
+  .item-summer_top {
+    background: url(../img/content/item-white-car_top.png) 330px -30px no-repeat;
+  }
+}
+
+@media (max-width: 639px) {
+
+  .item-buttons {
+
+    & .btn {
+      width: 395px !important;
+    }
+
+    & .btn_primary {
+      margin-bottom: 10px;
+    }
+  }
+
+  .item-repair_top {
+    background: url(../img/content/item-repair_top.png) 120px 100% no-repeat;
+  }
+}
+
+@media (max-width: 450px) {
+
+  .item-buttons {
+
+    & .btn {
+      width: 320px !important;
+    }
+  }
+
+  .item-checkup_bottom {
+    background: url(../img/content/item-motor_bottom.png) 250px -10% no-repeat;
+  }
+
+  .item-season {
+    background: url(../img/content/item-white-car.png) 300px 0px no-repeat;
+    background-size: 400px;
+  }
+
+  .item-summer_top {
+    background: url(../img/content/item-white-car_top.png) 150px -30px no-repeat;
+  }
+
+  .item-body_top {
+    background: url(../img/content/item-razbor_top.png) 200px 0px no-repeat;
+  }
+}
+
+@media (max-width: 360px) {
+
+  .item-buttons {
+
+    & .btn {
+      width: 285px !important;
+    }
+  }
+
+  .item-checkup_bottom {
+    background: url(../img/content/item-motor_bottom.png) 200px -10% no-repeat;
+  }
+
+  .item-season {
+    background: url(../img/content/item-white-car.png) 200px 0px no-repeat;
+    background-size: 400px;
+  }
+}

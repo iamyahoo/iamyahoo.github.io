@@ -1,0 +1,27 @@
+.layout-inner {
+  width: 100%;
+  min-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.layout-padding {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+@media (max-width: 750px) {
+
+  .layout-padding {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .layout-padding {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

@@ -1,0 +1,16 @@
+.internet-explorer {
+
+  & .header__inner {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  & .page {
+    min-height: calc(100vh - 150px - 80px); /* viewport height - header height - footer height  */
+  }
+
+  & .footer__inner {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}

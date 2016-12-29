@@ -1,0 +1,120 @@
+.table-dropdown {
+  width: 100%;
+  max-width: 645px;
+  border-bottom: none;
+  border-radius: 2px;
+  margin-bottom: 30px;
+}
+
+.table-dropdown__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.table-dropdown__item {
+  position: relative;
+  border-top: 1px solid $color-gray-30;
+}
+
+.table-dropdown__item_open {
+
+  & .table-dropdown__sublist {
+    display: block;
+  }
+}
+
+.table-dropdown__btn {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  line-height: 48px;
+  padding: 0 20px 0 50px;
+  background-color: $color-gray-10;
+  text-decoration: none;
+  color: $color-gray-70;
+  cursor: pointer;
+  transition: all .15s;
+  will-change: background-color;
+
+  &:hover:before {
+    border-color: $color-red-50;
+  }
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 25px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-135deg);
+    width: 6px;
+    height: 6px;
+    border-left: 1px solid $color-gray-50;
+    border-bottom: 1px solid $color-gray-50;
+    background: transparent;
+    will-change: transform;
+    transition: all .15s;
+  }
+}
+
+.table-dropdown__text {
+  @extend .nowrap;
+}
+
+.table-dropdown__price {
+  max-width: 500px;
+  text-align: right;
+  padding-left: 20px;
+  float: right;
+  white-space: nowrap;
+}
+
+.table-dropdown__sublist {
+  display: none;
+  position: absolute;
+  left: 45px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+  margin: 0;
+  padding: 5px 0;
+  list-style: none;
+  width: 290px;
+  border-radius: 2px;
+  background: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.31);
+
+  & li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 6px 15px;
+    background: #fff;
+    transition: all .2s;
+  }
+
+  & li:hover {
+    background: $color-gray-10;
+  }
+  
+  & .active {
+    color: $color-red-50;
+  }
+}
+
+.table-dropdown__subtext {}
+
+.table-dropdown__subprice {
+  white-space: nowrap;
+}
+
+@media (max-width: 449px) {
+  .table-dropdown__sublist {
+    left: 0;
+  }
+}

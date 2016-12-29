@@ -1,0 +1,203 @@
+.portfolio {}
+
+.portfolio__inner {}
+
+.portfolio__item {
+  position: relative;
+}
+
+.portfolio__img {
+  position: absolute;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  background-repeat: no-repeat;
+}
+
+.portfolio__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  z-index: 1;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.portfolio__info {}
+
+.portfolio__type {
+  font-size: 24px;
+  font-family: $font-family_medium;
+}
+
+.portfolio__title {
+  max-width: 580px;
+  font-family: $font-family;
+  margin-bottom: 10px;
+}
+
+.portfolio__adress {
+  margin-bottom: 40px;
+}
+
+.portfolio__adress-link {
+  font-size: 18px;
+  font-family: $font-family_medium;
+}
+
+.portfolio__text {
+  max-width: 300px;
+  font-family: $font-family_medium;
+  margin-bottom: 30px;
+}
+
+.portfolio__tags {
+  max-width: 290px;
+  margin-bottom: 10px;
+}
+
+.portfolio__tags_light {
+
+  & .portfolio__tag {
+    color: #fff;
+  }
+}
+
+.portfolio__tag {
+  color: $font-color;
+  opacity: .5;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.portfolio__link {
+  font-family: $font-family_medium;
+  color: $font-color;
+  text-decoration: none;
+}
+
+.portfolio__link_next {
+  position: relative;
+  padding-right: 20px;
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid $font-color;
+    border-top: 2px solid $font-color;
+    transform: translateY(-40%) rotate(45deg);
+    opacity: .8;
+  }
+}
+
+
+/* Asya Malberstein */
+.portfolio__item_am {
+
+  &:after {
+    background-color: darken(#e8ebf0, 5%);
+  }
+}
+
+.portfolio__img_am {
+  background-color: #e8ebf0;
+}
+
+
+/* Adastra */
+.portfolio__item_adastra {
+  color: #fff;
+
+  &:after {
+    background-color: darken(#fb4449, 5%);
+  }
+}
+
+.portfolio__img_adastra {
+  background-color: #fb4449;
+}
+
+
+/* Rich’Art Club */
+.portfolio__item_richart {
+  color: #fff;
+
+  &:after {
+    background-color: darken(#36102c, 5%);
+  }
+}
+
+.portfolio__img_richart {
+  background-color: #36102c;
+}
+
+
+/* Atlant */
+.portfolio__item_atlant {
+
+  &:after {
+    background-color: darken(#fff, 5%);
+  }
+}
+
+.portfolio__img_atlant {
+  background-color: #fff;
+}
+
+
+/* Modul */
+.portfolio__item_modul {
+  color: #ffffff;
+
+  &:after {
+    background-color: darken(#0b2e4f, 5%);
+  }
+}
+
+.portfolio__img_modul {
+  background-color: #0b2e4f;
+}
+
+
+/* WeGym */
+.portfolio__item_wegym {
+  color: #ffffff;
+
+  &:after {
+    background-color: darken(#242834, 5%);
+  }
+}
+
+.portfolio__img_wegym {
+  background-color: #242834;
+}
+
+@media (max-width: 960px) {
+
+  .portfolio__text {
+    max-width: 420px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .portfolio__type {
+    font-size: 18px;
+  }
+
+  .portfolio__title {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}

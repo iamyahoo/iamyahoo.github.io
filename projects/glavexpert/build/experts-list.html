@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Главэкспертиза - Список экспертов</title>
+</head>
+<body>
+<div class="page-container">
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__logo">
+                <a href="index.html" class="logo"><img src="img/logo.png" alt="Главэкспертиза"></a>
+            </div>
+            <nav class="nav nav_header" role="navigation">
+                <ul class="nav__list">
+                    <li><a href="#" class="nav__link">Деятельность</a></li>
+                    <li><a href="#" class="nav__link">Новости</a></li>
+                    <li><a href="#" class="nav__link">Эксперты</a></li>
+                    <li><a href="#" class="nav__link">Документы</a></li>
+                    <li><a href="#" class="nav__link">Реестр</a></li>
+                </ul>
+            </nav>
+            <div class="profile">
+                <div class="dropdown-light profile-menu">
+                    <span class="dropdown-light__text profile__account">Мой кабинет</span>
+                    <div class="dropdown-light__menu">
+                        <ul class="dropdown-light__list">
+                            <li><span class="profile-menu__link">Константин Недашковский</span></li>
+                            <li><a href="user-profile.html" class="dropdown-light__link">Профиль</a></li>
+                            <li><a href="#" class="dropdown-light__link">Выйти</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="page page-content">
+        <div class="submenu">
+            <div class="submenu__inner">
+                <div class="submenu-back">
+                    <a href="#" class="submenu-back__link">Назад к списку</a>
+                </div>
+                <ul class="submenu__list">
+                    <li><a href="expert-objects-list.html" class="submenu__link link_active">Объекты</a></li>
+                    <li><a href="expert-profile.html" class="submenu__link">Профиль</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="page__inner">
+            <section class="page-content">
+                <h1>Заявителей: 147</h1>
+                <div class="page-filters">
+                    <p class="page-filters__text">Фильтр</p>
+                    <div class="dropdown-light mar_r_100">
+                        <p class="dropdown-light__text">Не выбран</p>
+                        <div class="dropdown-light__menu">
+                            <ul class="dropdown-light__list">
+                                <li><a href="#" class="dropdown-light__link">В работе</a></li>
+                                <li><a href="#" class="dropdown-light__link">Утвержден</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <label class="form__checkbox">
+                        <input class="form__checkbox_hidden" name="checkbox" id="checkbox_active" type="checkbox">
+                        <span class="form__checkbox_indicator"></span>
+                        <span class="form__checkbox_text">Активные</span>
+                    </label>
+                </div>
+
+                <table class="page-table page-table_experts">
+                    <thead>
+                    <th class="page-table__head">Эксперт</th>
+                    <th class="page-table__head">В работе</th>
+                    <th class="page-table__head">Направление</th>
+                    <th class="page-table__head">Аттестат</th>
+                    <th class="page-table__head">Срок действия</th>
+                    </thead>
+                    <tbody class="page-table__body">
+                    <tr class="page-table__row">
+                        <td class="page-table__data">Константин Нидашевский</td>
+                        <td class="page-table__data">3</td>
+                        <td class="page-table__data">Водоснабжение, водотведение</td>
+                        <td class="page-table__data">ГС-Э-20-2-0444</td>
+                        <td class="page-table__data">21.01.2013 - 21.01.2016</td>
+                    </tr>
+                    <tr class="page-table__row">
+                        <td class="page-table__data">Филипп Левинсон</td>
+                        <td class="page-table__data">2</td>
+                        <td class="page-table__data">Инженерно-геодезестические</td>
+                        <td class="page-table__data">ГС-Э-1-2-0084</td>
+                        <td class="page-table__data">22.02.2013 - 22.02.2016</td>
+                    </tr>
+                    <tr class="page-table__row">
+                        <td class="page-table__data">Максим Черепахин</td>
+                        <td class="page-table__data">1</td>
+                        <td class="page-table__data">Конструктивные решения</td>
+                        <td class="page-table__data">ГС-Э-56-1-1937</td>
+                        <td class="page-table__data">22.03.2015 - 22.03.2018</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__part_top">
+                <div class="footer__part_top_left">
+                    <p class="mar_b_10">Санкт-Петербург, пл. Конституции, д. 7</p>
+                    <a class="footer__link mar_b_10" href="tel:+78126022921">8 (812) 602-29-21</a><br>
+                    <a class="footer__link mar_b_10" href="mailto:info@glavexpert.spb.ru">info@glavexpert.spb.ru</a>
+                </div>
+                <div class="footer__part_top_right">
+                    <nav class="nav nav_footer">
+                        <ul class="nav__list">
+                            <li><a href="#" class="nav__link">Деятельность</a></li>
+                            <li><a href="#" class="nav__link">Новости</a></li>
+                            <li><a href="#" class="nav__link">Эксперты</a></li>
+                            <li><a href="#" class="nav__link">Документы</a></li>
+                            <li><a href="#" class="nav__link">Реестр</a></li>
+                            <li><a href="#" class="nav__link">Кабинет</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer__part_bottom">
+                <div class="footer__part_bottom_left">
+                    <p>&copy; ООО «Главная Негосударственная Экспертиза», 2016</p>
+                </div>
+                <div class="footer__part_bottom_right">
+                    <a href="http://itstudio.ru/" class="link_development" target="_blank">Сделано в ITS</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="js/libs/jquery/jquery.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

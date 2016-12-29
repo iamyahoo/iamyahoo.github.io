@@ -1,0 +1,54 @@
+.map {
+  position: relative;
+  min-height: 400px;
+  overflow: hidden;
+
+  & > ymaps {
+    height: 400px !important;
+  }
+}
+
+.map-contacts {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: #fff;
+  width: 330px;
+  height: 80%;
+  padding: 15px 20px;
+
+  & p {
+    padding-left: 30px;
+    padding-bottom: 30px;
+  }
+
+  & .btn_secondary {
+    margin-top: auto;
+  }
+}
+
+@media (max-width: 1279px) {
+  .map-contacts {
+    left: 20px;
+  }
+}
+
+@media (max-width: 979px) {
+  .map-contacts {
+    position: relative;
+    top: 0;
+    width: 290px;
+    transform: none;
+    padding: 15px 10px;
+  }
+}
+
+@media (max-width: 719px) {
+  .map-contacts {
+    left: 15px;
+  }
+}

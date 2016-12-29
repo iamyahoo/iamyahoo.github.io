@@ -1,0 +1,31 @@
+.nav {}
+
+.nav__inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav__link {
+  @extend .link;
+  padding: 35px;
+  font-size: 16px;
+  text-decoration: none;
+  font-family: $font-family;
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
+
+@media (max-width: 640px) {
+
+  .nav {
+    display: none;
+  }
+}

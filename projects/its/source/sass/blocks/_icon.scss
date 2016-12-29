@@ -1,0 +1,42 @@
+.icon {
+  transition: all .2s;
+
+  path {
+    fill: #fff;
+    transition: .2s;
+  }
+}
+
+.icon_behance {
+  width: 20px;
+  height: 12px;
+}
+
+.icon_instagram {
+  width: 16px;
+  height: 16px;
+}
+
+.icon_fb {
+  width: 16px;
+  height: 16px;
+}
+
+.icon_vk {
+  width: 16px;
+  height: 16px;
+}
+
+.icon-inst {
+  display: block;
+  width: 16px;
+  height: 20px;
+  background: url('../i/svg/icon-instagram.svg') no-repeat center center;
+}
+
+.icon-quote {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url('../i/svg/icon-quote.svg') no-repeat center center;
+}

@@ -1,0 +1,177 @@
+.gallery {
+  padding: 80px 80px 130px;
+}
+
+.gallery-slider-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gallery-slider {
+  width: 100%;
+  max-width: 1200px;
+  max-height: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gallery__item {
+  //height: 100%;
+  height: auto !important;
+  margin: 0 80px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .4s;
+  will-change: opacity;
+}
+
+.gallery__item.slick-current {
+  opacity: 1;
+  visibility: visible;
+}
+
+.gallery__img {
+  width: 100%;
+
+  img {
+    width: 100%;
+    height: auto;
+    max-height: 700px;
+  }
+}
+
+.gallery__arrow {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%);
+  width: 54px;
+  height: 54px;
+  background: $color-gold;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  transition: all .2s;
+
+  &:active,
+  &:focus,
+  &:hover {
+    outline: none;
+  }
+
+  &:hover {
+    background: lighten($color-gold, 5%);
+  }
+
+  &:before,
+  &:after {
+    position: absolute;
+    content: '';
+    transition: all .2s;
+  }
+
+  &:before {
+    top: 50%;
+    right: 20px;
+    width: 16px;
+    height: 2px;
+    background-color: $color-gray-90;
+  }
+
+  &:after {
+    top: 50%;
+    right: 18px;
+    width: 6px;
+    height: 6px;
+    border-right: 2px solid $color-gray-90;
+    border-top: 2px solid $color-gray-90;
+    transform: rotate(45deg) translateX(-50%);
+  }
+}
+
+.gallery__arrow_prev {
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.gallery__arrow_next {
+  right: 0;
+}
+
+.gallery-dots {
+  position: absolute;
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  li {
+    display: inline-block;
+    font-size: 0;
+    margin: 0 5px;
+
+    &.slick-active {
+
+      & button {
+        background-color: $color-blue-50;
+        border-color: $color-blue-50;
+        cursor: default;
+      }
+    }
+  }
+
+  button {
+    display: block;
+    background-color: $color-blue-10;
+    border: 2px solid $color-blue-10;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    transition: all .2s;
+
+    &:active,
+    &:focus,
+    &:hover {
+      outline: none;
+    }
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}
+
+
+@media (max-width: 640px) {
+
+  .gallery {
+    padding: 0 0 100px;
+  }
+
+  .gallery__item {
+    width: 100%;
+    margin: 0;
+  }
+
+  .gallery__arrow {
+    top: initial;
+    bottom: -70px;
+    transform: scale(.7);
+  }
+
+  .gallery__arrow_prev {
+    left: 10px;
+    transform: rotate(180deg) scale(.7);
+  }
+
+  .gallery__arrow_next {
+    right: 10px;
+  }
+}

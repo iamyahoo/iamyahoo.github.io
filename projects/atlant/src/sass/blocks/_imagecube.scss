@@ -1,0 +1,21 @@
+.imagecube {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.imagecube__item {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.imagecube__item_1 {
+  background-image: url('../img/content/photo-top_day.jpg');
+}
+
+.imagecube__item_2 {
+  background-image: url('../img/content/photo-top_night.jpg');
+}

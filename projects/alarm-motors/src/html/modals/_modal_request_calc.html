@@ -1,0 +1,20 @@
+<section class="modal modal_request_calc" id="modal_request_calc">
+    <div class="modal__backdrop"></div>
+    <div class="modal__popup">
+        <div class="btn_close" onclick="hideModal('modal_request_calc')"></div>
+        <h1 class="modal__title">Плановое ТО</h1>
+        <h2><span class="price">1 000 <span class="rouble">у</span></span></h2>
+        <form class="form form-popup" id="form-order">
+            <select name="" id="" class="dropdown-custom" title="Адрес">
+                <option value="1">Выборгское шоссе, д. 23 к.1</option>
+                <option value="2">Коломяжский пр., д. 18А</option>
+                <option value="3">Пр.М.Жукова, д. 51</option>
+            </select>
+            <input type="text" class="form__item" placeholder="Имя">
+            <input type="text" class="form__item" placeholder="Телефон">
+            <textarea class="form__textarea" placeholder="Комментарий"></textarea>
+            <button type="submit" class="btn btn_action btn_l">Записаться</button>
+        </form>
+        <p class="text_secondary mar_b_30">Нажимая кнопку отправить, я соглашаюсь с <a href="#" class="link_gray">условиями</a></p>
+    </div>
+</section>

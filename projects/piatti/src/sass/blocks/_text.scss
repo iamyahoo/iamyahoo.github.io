@@ -1,0 +1,15 @@
+.text-quote {
+  position: relative;
+  padding-left: 80px;
+
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    content: '«';
+    font-size: 72px;
+    line-height: 36px;
+    color: $color-red-50;
+    font-family: $font-family_bold;
+  }
+}

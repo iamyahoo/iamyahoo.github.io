@@ -1,0 +1,24 @@
+.tabs {
+  position: relative;
+  z-index: 0;
+}
+
+.tabs__item {
+  display: none;
+  animation-name: show;
+  animation-duration: .2s;
+  animation-timing-function: ease-in;
+
+  &.active {
+    display: block;
+  }
+}
+
+.tabs__btn {
+  transition: all .2s;
+}
+
+.tabs__buttons {
+  padding: 0;
+  margin: 0;
+}

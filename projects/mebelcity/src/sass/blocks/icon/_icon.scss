@@ -1,0 +1,27 @@
+.icon-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.icon {
+  width: 55px;
+  margin-right: 38px;
+  text-align: center;
+  color: $color-gray-30;
+}
+
+.icon__title {
+  margin-bottom: 5px;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 640px) {
+  .icon-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,178 @@
+.promo {
+  width: 100%;
+  max-height: 300px;
+  margin-bottom: 60px;
+
+  & > img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.promo-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.promo-post {
+  width: 49%;
+  max-width: 490px;
+  min-width: 400px;
+}
+
+.promo-post__link {
+  display: block;
+  transition: opacity .2s;
+
+  &:hover {
+    opacity: .9;
+  }
+}
+
+.promo-post__img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  vertical-align: top;
+}
+
+.promo-post__content {
+  padding: 0 15px;
+}
+
+.promo-post__title {
+  margin-bottom: 15px;
+}
+
+.promo-post__subtitle {
+  margin-bottom: 15px;
+  font-size: 12px;
+  font-family: $font-family_italic;
+}
+
+.promo-block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.promo-block__img {
+  max-width: 490px;
+  width: 100%;
+  margin-right: 20px;
+
+  & > img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.promo-block__desc {
+  max-width: 270px;
+  padding: 0 15px;
+}
+
+.promo-block__title {
+  margin-bottom: 10px;
+}
+
+.promo-block__subtitle {
+  font-family: "OpenSansItalic", "Arial", serif;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.promo-block__text {
+  font-family: "OpenSansItalic", "Arial", serif;
+  font-size: 12px;
+  max-width: 270px;
+}
+
+.promo-banner-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  max-width: 1300px;
+  margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.promo-banner {
+  display: block;
+  width: 49%;
+  min-width: 490px;
+  max-width: 640px;
+  margin: 0 10px 20px;
+  padding: 30px;
+  height: 320px;
+  background-repeat: no-repeat;
+  background-position: top right;
+  //background-size: cover;
+}
+
+.promo-banner_mc1 {
+  background-image: url(../img/content/MC1.png);
+}
+
+.promo-banner_mc2 {
+  background-image: url(../img/content/MC2.png);
+}
+
+.promo-banner__content {
+  width: 100%;
+  max-width: 350px;
+
+  h1 {
+    font-family: $font-family_bold;
+    margin-bottom: 15px;
+  }
+
+  h2 {
+    margin-bottom: 12px;
+  }
+}
+
+.promo-banner__link {
+  margin-bottom: 30px;
+}
+
+
+@media (max-width: 1080px) {
+  .promo-banner-wrapper {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 850px) {
+  .promo-content {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+
+  .promo-post {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 640px) {
+  .promo-banner {
+    width: 100%;
+    min-width: 290px;
+    padding: 15px;
+  }
+
+  .promo-post {
+    min-width: 290px;
+  }
+
+  .promo-block__desc {
+    max-width: 100%;
+  }
+}

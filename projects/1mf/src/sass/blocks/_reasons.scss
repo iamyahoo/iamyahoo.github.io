@@ -1,0 +1,11 @@
+.reasons {
+  position: relative;
+  background-color: $color-blue-70;
+  margin-top: 150px;
+  min-height: 600px;
+
+  & .advantages-promo {
+    position: relative;
+    top: -100px;
+  }
+}

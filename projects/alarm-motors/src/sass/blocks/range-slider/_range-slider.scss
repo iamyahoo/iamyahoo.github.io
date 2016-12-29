@@ -1,0 +1,30 @@
+.range-slider {
+  display: inline-block;
+  width: 280px;
+}
+
+.range-slider__fields {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.range-slider__input {
+  @extend .form__item;
+  width: 50%;
+  background-color: #fff;
+  height: 40px;
+  border-bottom: none;
+
+  &:first-child {
+    border-radius: 2px 0 0 0;
+  }
+
+  &:last-child {
+    border-radius: 0 2px 0 0;
+  }
+}
+
+.range-slider__item {
+
+}

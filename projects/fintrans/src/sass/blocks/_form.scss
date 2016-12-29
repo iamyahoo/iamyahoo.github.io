@@ -1,0 +1,221 @@
+.form {}
+
+.form__input {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  height: 46px;
+  line-height: 44px;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  border-radius: 2px;
+  border: 1px solid $color-gray-30;
+  background-color: $color-gray-10;
+  font-size: $font_default;
+  color: $font-color_dark;
+  transition: all .2s;
+  
+  &:focus {
+    outline: 0;
+    border-color: $color-green-50;
+  }
+
+  &[disabled] {
+    background-color: $color-gray-10;
+    cursor: default;
+  }
+
+  &:invalid {
+    //border-color: $color-peach; // TODO: не забыть про валидацию
+  }
+
+  &:focus::-webkit-input-placeholder {color: transparent; transition: color .3s;}
+  &:focus::-moz-placeholder          {color: transparent; transition: color .3s;}
+  &:focus:-moz-placeholder           {color: transparent; transition: color .3s;}
+  &:focus:-ms-input-placeholder      {color: transparent; transition: color .3s;}
+}
+
+.form__input_filled {
+  background-color: #fff;
+}
+
+.form__textarea {
+  @extend .scrollbar-custom;
+  width: 100%;
+  height: 100px;
+  padding: 12px 20px;
+  margin-bottom: 15px;
+  border-radius: 2px;
+  border: 1px solid $color-gray-30;
+  box-shadow: none;
+  background-color: $color-gray-10;
+  font-size: $font_default;
+  color: $font-color_dark;
+  resize: none;
+  transition: all .2s;
+
+  &:focus {
+    outline: 0;
+    border-color: $color-green-50;
+  }
+
+  &[disabled] {
+    background-color: $color-gray-10;
+    cursor: default;
+  }
+
+  &:focus::-webkit-input-placeholder {color: transparent; transition: color .3s;}
+  &:focus::-moz-placeholder          {color: transparent; transition: color .3s;}
+  &:focus:-moz-placeholder           {color: transparent; transition: color .3s;}
+  &:focus:-ms-input-placeholder      {color: transparent; transition: color .3s;}
+}
+
+.form__textarea_filled {
+  background-color: #fff;
+}
+
+.form-label {
+  display: block;
+}
+
+.form__text,
+.form-label__text {
+  display: block;
+  //vertical-align: baseline;
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 5px;
+}
+
+.form__fieldset {
+  border: none;
+  padding: 0;
+  margin: 0 0 30px;
+}
+
+.form__legend {
+  font-size: 16px;
+  font-family: $font-family_bold;
+  margin-bottom: 20px;
+}
+
+.form__select {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 15px;
+  user-select: none;
+}
+
+.form__item {}
+
+.form__group {}
+
+.form-feedback {
+  @extend .clearfix;
+  max-width: 280px;
+  width: 100%;
+}
+
+.form-account {
+  max-width: 480px;
+  width: 100%;
+
+  & .btn {
+    margin-right: 20px;
+  }
+}
+
+.form-quality {
+
+  & .form__radio {
+    display: block;
+  }
+}
+
+.form-simple {
+  max-width: 450px;
+  width: 100%;
+}
+
+.form-conversation {
+
+  & .form-label__text {
+    font-family: $font-family_bold;
+  }
+}
+
+.form-filename {
+  position: relative;
+  margin: 0 0 20px;
+}
+
+.form-filename__text {
+  display: inline-block;
+  max-width: 300px;
+  overflow: hidden;
+  white-space: nowrap;
+  vertical-align: text-bottom;
+  text-overflow: ellipsis;
+  padding-right: 8px;
+}
+
+.form-search {
+  position: relative;
+  max-width: 220px;
+  width: 100%;
+}
+
+.form-search__input {
+  width: 100%;
+  height: 45px;
+  line-height: 44px;
+  padding: 0 20px;
+  border-radius: 2px;
+  border: 1px solid $color-gray-50;
+  background-color: $color-gray-70;
+  outline: none;
+  transition: all .2s;
+  color: $color-gray-50;
+  
+  &:focus {
+    outline: none;
+    border-color: $color-gray-40;
+  }
+
+  &::-webkit-input-placeholder {color: $color-gray-50; transition: color .3s;}
+  &::-moz-placeholder          {color: $color-gray-50; transition: color .3s;}
+  &:-moz-placeholder           {color: $color-gray-50; transition: color .3s;}
+  &:-ms-input-placeholder      {color: $color-gray-50; transition: color .3s;}
+
+  &:focus::-webkit-input-placeholder {color: transparent;}
+  &:focus::-moz-placeholder          {color: transparent;}
+  &:focus:-moz-placeholder           {color: transparent;}
+  &:focus:-ms-input-placeholder      {color: transparent;}
+}
+
+.form-search__btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 45px;
+  outline: none;
+  border: none;
+  background: transparent url('../img/svg/svg-icon-search.svg') no-repeat 40% 50%;
+  background-size: 18px;
+  opacity: .6;
+  transition: all .2s;
+
+  &:hover,
+  &:focus {
+    opacity: .9;
+  }
+}
+
+
+@media (max-width: 640px) {
+
+  .form-search {
+    max-width: 280px;
+  }
+}

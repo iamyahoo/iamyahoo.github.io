@@ -1,0 +1,27 @@
+.indicator {
+  display: inline-block;
+  vertical-align: baseline;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  background: $color-peach;
+  border-radius: 50%;
+}
+
+.no-submenu {
+  padding-top: 50px;
+}
+
+.map {
+  height: 300px;
+}
+
+.text-comment {
+  color: $font-color;
+}
+
+.icon_alert {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+}

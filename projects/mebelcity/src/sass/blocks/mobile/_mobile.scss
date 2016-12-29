@@ -1,0 +1,34 @@
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background-color: $color-gray-50;
+  z-index: 50;
+
+  & .dropdown {
+    display: block !important;
+    text-align: center;
+    margin: 15px auto;
+    color: #fff;
+    width: 125px;
+  }
+}
+
+.mobile-menu_active {
+  display: block;
+}
+
+.mobile-menu__list {
+  text-align: center;
+  list-style: none;
+  padding: 20px 0 10px;
+  margin: 0;
+  border-bottom: 1px solid #fff;
+
+  li {
+    margin-bottom: 15px;
+  }
+}

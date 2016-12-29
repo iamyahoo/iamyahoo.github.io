@@ -1,0 +1,47 @@
+.page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  position: relative;
+  min-width: 320px;
+  width: 100%;
+  min-height: 100%;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.page-parallax {
+  background: linear-gradient(to bottom, $color-gray-10 1px, transparent 1px);
+  background: -ms-linear-gradient(bottom, $color-gray-10 1px, transparent 1px);
+  background-size: 1px 300px;
+  background-position: 0 130px;
+  background-attachment: fixed;
+  will-change: background-position;
+}
+
+.page__inner {
+  @extend .layout-inner;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.page__item {
+  @extend .layout-padding;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+}
+
+
+@media (max-width: 750px) {
+
+  & .page-parallax {
+    background: transparent;
+  }
+}

@@ -1,0 +1,57 @@
+//development styles
+@import "dev/_normalize";
+@import "dev/_variables";
+@import "dev/_fonts";
+@import "dev/_base";
+@import "dev/_animations";
+
+//blocks styles
+@import "blocks/_arrows";
+@import "blocks/_blog";
+@import "blocks/_buttons";
+@import "blocks/_breadcrumbs";
+@import "blocks/_case";
+@import "blocks/_checkbox";
+@import "blocks/_choice";
+@import "blocks/_contacts";
+@import "blocks/_content";
+@import "blocks/_footer";
+@import "blocks/_form";
+@import "blocks/_hamburger";
+@import "blocks/_header";
+@import "blocks/_icon";
+@import "blocks/_ie";
+@import "blocks/_grid";
+@import "blocks/_nav";
+@import "blocks/news/_news";
+@import "blocks/news/_news-templates";
+@import "blocks/_links";
+@import "blocks/_list";
+@import "blocks/_layout";
+@import "blocks/_map";
+@import "blocks/_main";
+@import "blocks/_menu-mobile";
+@import "blocks/_page";
+@import "blocks/_post";
+@import "blocks/portfolio/_portfolio";
+@import "blocks/portfolio/_portfolio-list";
+@import "blocks/portfolio/_portfolio-slider";
+@import "blocks/portfolio/_portfolio-tabs";
+@import "blocks/service/_service";
+@import "blocks/service/_service-tabs";
+@import "blocks/_social";
+@import "blocks/_slick";
+@import "blocks/_styles";
+@import "blocks/_tabs";
+
+//pages
+@import "pages/_blog-page";
+@import "pages/_case-page";
+@import "pages/_post-page";
+@import "pages/_portfolio-page";
+@import "pages/_contacts-page";
+@import "pages/_main-page";
+
+
+//don't move
+@import "dev/_helpers";

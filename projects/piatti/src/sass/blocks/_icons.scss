@@ -1,0 +1,43 @@
+.icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  & .icon {
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.icon {
+  transition: all .15s;
+  opacity: .4;
+
+  &:hover {
+    opacity: .7;
+  }
+}
+
+.icon_vk {
+  display: block;
+  width: 25px;
+  height: 15px;
+  background: url('../img/svg/icon-vk.svg') no-repeat center center;
+}
+
+.icon_fb {
+  display: block;
+  width: 10px;
+  height: 18px;
+  background: url('../img/svg/icon-fb.svg') no-repeat center center;
+}
+
+.icon_inst {
+  display: block;
+  height: 18px;
+  width: 18px;
+  background: url('../img/svg/icon-inst.svg') no-repeat center center;
+}
