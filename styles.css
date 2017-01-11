@@ -87,7 +87,7 @@ p {
 }
 
 .page {
-  padding: 50px 20px;
+  padding: 50px 20px 0;
 }
 
 .cv {
@@ -103,10 +103,23 @@ p {
 
 .cv__project-desc {
   padding-top: 5px;
+  margin-bottom: 10px;
 }
 
 .cv__contact {
   margin-bottom: 5px;
+}
+
+.cv__photo {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.cv__photo img {
+  vertical-align: top;
+  max-width: 360px;
+  width: 100%;
+  height: auto;
 }
 
 .list {
@@ -196,6 +209,6 @@ p {
   }
 
   .page {
-    padding: 50px 15px;
+    padding: 50px 15px 0;
   }
 }
